@@ -47,6 +47,7 @@ export default function () {
     studentLoadDuration.add(responseTime);
 
     let cantidad = 0;
+    
     let success = check(res, {
       '✅ PR-03.1-02: Status 200 OK': (r) => r.status === 200,
       '✅ PR-03.1-02: Tiempo ≤ 2s': (r) => r.timings.duration <= 2000,
@@ -61,7 +62,7 @@ export default function () {
       '✅ PR-03.1-02: Lista sin errores ni cortes': (r) => {
         try {
           const json = JSON.parse(r.body);
-          return !json.error && Array.isArray(json);
+          return !json.error && json.students !== undefined;
         } catch {
           return false;
         }
@@ -69,11 +70,20 @@ export default function () {
     });
 
     try {
-      const students = JSON.parse(res.body);
-      cantidad = Array.isArray(students) ? students.length : 0;
+      const responseData = JSON.parse(res.body);
+      
+      // El endpoint devuelve un objeto con la propiedad 'students' que es un array
+      if (responseData.students && Array.isArray(responseData.students)) {
+        cantidad = responseData.students.length;
+      } else {
+        cantidad = 0;
+      }
+      
       studentsPerCourse.add(cantidad);
       if (cantidad > 1000) coursesOver1000.add(1);
-    } catch {}
+    } catch (e) {
+      console.log(`❌ Error parseando estudiantes para curso ${courseId}:`, e.message);
+    }
 
     console.log(`📘 Curso ${i + 1} (ID: ${courseId}): ${cantidad} estudiantes | ${responseTime}ms`);
     sleep(0.5);
@@ -84,9 +94,16 @@ export function teardown(data) {
   console.log('\n' + '='.repeat(60));
   console.log('📊 RESUMEN FINAL - PR-03.1-02: Estudiantes por Curso');
   console.log('='.repeat(60));
-  console.log(`📚 Cursos evaluados: ${data.metrics.students_per_course.values.count}`);
-  console.log(`🎯 Cursos con >1000 estudiantes: ${data.metrics.courses_over_1000_students.values.count}`);
-  console.log(`📉 Promedio de estudiantes por curso: ${Math.round(data.metrics.students_per_course.values.avg)}`);
-  console.log(`⏱️  Tiempo promedio por consulta: ${Math.round(data.metrics.student_load_duration.values.avg)}ms`);
+  
+  // Verificar si data y data.metrics existen
+  if (data && data.metrics) {
+    console.log(`📚 Cursos evaluados: ${data.metrics.students_per_course?.values?.count || 'N/A'}`);
+    console.log(`🎯 Cursos con >1000 estudiantes: ${data.metrics.courses_over_1000_students?.values?.count || 0}`);
+    console.log(`📉 Promedio de estudiantes por curso: ${Math.round(data.metrics.students_per_course?.values?.avg || 0)}`);
+    console.log(`⏱️  Tiempo promedio por consulta: ${Math.round(data.metrics.student_load_duration?.values?.avg || 0)}ms`);
+  } else {
+    console.log('⚠️  Datos de métricas no disponibles en teardown');
+  }
+  
   console.log('='.repeat(60) + '\n');
 }
