@@ -8,12 +8,6 @@ export const options = {
   duration: '10m',  // Tiempo máximo permitido para completar el proceso
 };
 
-// Información del administrador para acceder a los cursos
-const administrador = {
-  email: 'jcusilaymeg@unsa.edu.pe',  // Usuario funcional descubierto
-  name: 'Juan Carlos Usilay Mejia',
-  institute: 'UNSA'
-};
 
 // Variables para métricas de rendimiento
 let cursosDesarchivados = 0;
