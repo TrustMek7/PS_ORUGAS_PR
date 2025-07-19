@@ -1,0 +1,144 @@
+{
+  "students": [
+    {
+      "section": "Tutorial Group 1",
+      "team": "Team A1",
+      "name": "Alex Garcia",
+      "email": "alex.garcia@example.com",
+      "comments": "New student"
+    },
+    {
+      "section": "Tutorial Group 1",
+      "team": "Team A2",
+      "name": "Maria Rodriguez",
+      "email": "maria.rodriguez@example.com",
+      "comments": "Transfer student"
+    },
+    {
+      "section": "Tutorial Group 1",
+      "team": "Team A3",
+      "name": "John Martinez",
+      "email": "john.martinez@example.com",
+      "comments": "Exchange student"
+    },
+    {
+      "section": "Tutorial Group 2",
+      "team": "Team B1",
+      "name": "Sofia Lopez",
+      "email": "sofia.lopez@example.com",
+      "comments": "International student"
+    },
+    {
+      "section": "Tutorial Group 2",
+      "team": "Team B2",
+      "name": "Carlos Gonzalez",
+      "email": "carlos.gonzalez@example.com",
+      "comments": "Regular enrollment"
+    },
+    {
+      "section": "Tutorial Group 2",
+      "team": "Team B3",
+      "name": "Emma Perez",
+      "email": "emma.perez@example.com",
+      "comments": "Advanced placement"
+    },
+    {
+      "section": "Section A",
+      "team": "Team C1",
+      "name": "Luis Sanchez",
+      "email": "luis.sanchez@example.com",
+      "comments": "Special program"
+    },
+    {
+      "section": "Section A",
+      "team": "Team C2",
+      "name": "Ana Ramirez",
+      "email": "ana.ramirez@example.com",
+      "comments": ""
+    },
+    {
+      "section": "Section A",
+      "team": "Team C3",
+      "name": "David Cruz",
+      "email": "david.cruz@example.com",
+      "comments": "New student"
+    },
+    {
+      "section": "Section B",
+      "team": "Team D1",
+      "name": "Laura Flores",
+      "email": "laura.flores@example.com",
+      "comments": "Transfer student"
+    },
+    {
+      "section": "Section B",
+      "team": "Team D2",
+      "name": "Miguel Gomez",
+      "email": "miguel.gomez@example.com",
+      "comments": "Exchange student"
+    },
+    {
+      "section": "Section B",
+      "team": "Team D3",
+      "name": "Isabella Morales",
+      "email": "isabella.morales@example.com",
+      "comments": "International student"
+    },
+    {
+      "section": "Tutorial Group 1",
+      "team": "Team A1",
+      "name": "Diego Vazquez",
+      "email": "diego.vazquez@example.com",
+      "comments": "Regular enrollment"
+    },
+    {
+      "section": "Tutorial Group 1",
+      "team": "Team A2",
+      "name": "Camila Jimenez",
+      "email": "camila.jimenez@example.com",
+      "comments": "Advanced placement"
+    },
+    {
+      "section": "Tutorial Group 2",
+      "team": "Team B1",
+      "name": "Sebastian Hernandez",
+      "email": "sebastian.hernandez@example.com",
+      "comments": "Special program"
+    },
+    {
+      "section": "Section A",
+      "team": "Team C1",
+      "name": "Valentina Castillo",
+      "email": "valentina.castillo@example.com",
+      "comments": ""
+    },
+    {
+      "section": "Section B",
+      "team": "Team D2",
+      "name": "Andres Torres",
+      "email": "andres.torres@example.com",
+      "comments": "New student"
+    },
+    {
+      "section": "Tutorial Group 1",
+      "team": "Team A3",
+      "name": "Gabriela Rivera",
+      "email": "gabriela.rivera@example.com",
+      "comments": "Transfer student"
+    },
+    {
+      "section": "Section A",
+      "team": "Team C2",
+      "name": "Felipe Moreno",
+      "email": "felipe.moreno@example.com",
+      "comments": "Exchange student"
+    },
+    {
+      "section": "Section B",
+      "team": "Team D1",
+      "name": "Natalia Gutierrez",
+      "email": "natalia.gutierrez@example.com",
+      "comments": "International student"
+    }
+  ]
+}
