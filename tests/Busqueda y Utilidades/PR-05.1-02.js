@@ -1,59 +1,53 @@
 import http from 'k6/http';
-import { check, sleep } from 'k6';
+import { check } from 'k6';
 import { SharedArray } from 'k6/data';
 import { getHeadersWithCSRF } from '../login_token.js';
 
 export const options = {
   vus: 1,
-  iterations: 5
+  iterations: 100, // debe coincidir con la cantidad de notificaciones si quieres ver 500 checks
 };
 
-// Cargar notificaciones desde archivo
-const notificaciones = new SharedArray('notificaciones', function() {
-  const file = open('./notificaciones.txt');
-  const lines = file.split('\n');
-  
-  return lines.map(line => {
-    if (!line.trim()) return null;
-    const parts = line.split('|').map(part => part.trim());
-    if (parts.length !== 6) return null;
-    
-    return {
-      title: parts[0],
-      message: parts[1],
-      style: parts[2],
-      targetUser: parts[3],
-      startTimestamp: Number(parts[4]),
-      endTimestamp: Number(parts[5])
-    };
-  }).filter(noti => noti !== null);
+// 📥 Cargar notificaciones desde archivo
+const notificaciones = new SharedArray('notificaciones', function () {
+  try {
+    const contenido = open('./notificaciones.txt');
+    return contenido
+      .split('\n')
+      .map(linea => linea.trim())
+      .filter(linea => linea.length > 0 && linea.includes('|'))
+      .map(linea => {
+        const partes = linea.split('|').map(p => p.trim());
+        return {
+          title: partes[0],
+          message: partes[1],
+          style: partes[2],
+          targetUser: partes[3],
+          startTimestamp: Number(partes[4]),
+          endTimestamp: Number(partes[5]),
+        };
+      });
+  } catch (error) {
+    throw new Error(`Error al leer archivo de notificaciones: ${error}`);
+  }
 });
 
-let index = 0;
-let exitosas = 0;
-
 export default function () {
-  if (index >= notificaciones.length) return;
+  const noti = notificaciones[__ITER % notificaciones.length];
 
-  const noti = notificaciones[index++];
-  const url = 'https://teammates-orugas.appspot.com/webapi/notification';
   const payload = JSON.stringify(noti);
-  const res = http.post(url, payload, { headers: getHeadersWithCSRF() });
+  const headers = getHeadersWithCSRF();
 
-  const resultado = check(res, {
-    '✅ Solicitud exitosa (201 o 200)': (r) => r.status === 201 || r.status === 200,
-    '✅ Respuesta contiene el título enviado': (r) => r.body && r.body.includes(noti.title),
+  const res = http.post(`https://teammates-orugas.appspot.com/webapi/notification`, payload, {
+    headers,
   });
 
-  if (resultado) {
-    exitosas++;
-  }
+  console.log(`🔔 Enviando notificación: ${noti.title}`);
+  console.log(`📩 Status: ${res.status}`);
+  console.log(`📬 Respuesta: ${res.body}`);
 
-  sleep(0.5); // pequeño delay para evitar saturar el servidor
-}
-
-// Mostrar resultado total una vez terminado el test
-export function handleSummary(data) {
-  console.log(`\n🔔 Total de notificaciones verificadas exitosamente: ${exitosas} de ${notificaciones.length}\n`);
-  return {};
+  check(res, {
+    '✅ Solicitud exitosa (201 o 200)': r => r.status === 201 || r.status === 200,
+    '✅ Respuesta contiene el título enviado': r => r.body && r.body.includes(noti.title),
+  });
 }
