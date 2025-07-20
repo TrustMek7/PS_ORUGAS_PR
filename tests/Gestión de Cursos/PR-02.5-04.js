@@ -126,41 +126,29 @@ export default function () {
 }
 
 export function handleSummary(data) {
-  console.log('\n' + '='.repeat(60));
-  console.log('📊 RESUMEN FINAL - PR-02.5-04: Restaurar Cursos Eliminados');
-  console.log('='.repeat(60));
+  const stats = {
+    checksTotal: data.metrics.checks?.values.count || 0,
+    checksExitosos: data.metrics.checks?.values.passes || 0,
+    requestsTotal: data.metrics.http_reqs?.values.count || 0,
+    requestsFallidos: Math.round((data.metrics.http_req_failed?.values.rate || 0) * 100),
+    duracionPromedio: Math.round(data.metrics.http_req_duration?.values.avg || 0),
+    tiempoTotal: (data.metrics.iteration_duration?.values.avg / 1000).toFixed(2),
+    iteraciones: data.metrics.iterations?.values.count || 0
+  };
   
-  const intentados = data.metrics?.restore_course_duration?.values?.count ?? 0;
-  const exitos = data.metrics?.restore_successes?.values?.count ?? 0;
-  const fallos = data.metrics?.restore_failures?.values?.count ?? 0;
-  const promedio = Math.round(data.metrics?.restore_course_duration?.values?.avg ?? 0);
-  const tiempoTotal = Math.round((data.metrics?.restore_course_duration?.values?.sum ?? 0) / 1000);
-  
-  console.log(`🔄 Total de cursos procesados: ${intentados}`);
-  console.log(`✅ Restauraciones exitosas: ${exitos}`);
-  console.log(`❌ Restauraciones fallidas: ${fallos}`);
-  console.log(`⏱️  Tiempo promedio por restauración: ${promedio}ms`);
-  console.log(`🕐 Tiempo total de la operación: ${tiempoTotal}s`);
-  
-  if (exitos > 0) {
-    console.log(`🎯 ÉXITO: ${exitos} cursos restaurados desde la papelera`);
-    if (exitos >= 100) {
-      console.log(`🏆 OBJETIVO CUMPLIDO: Se restauraron ≥100 cursos`);
-    } else {
-      console.log(`📈 PROGRESO: ${exitos}/100 cursos objetivo restaurados`);
-    }
-  } else if (intentados === 0) {
-    console.log(`ℹ️  No había cursos eliminados para restaurar`);
-  } else {
-    console.log(`⚠️  No se pudieron restaurar cursos de la papelera`);
-  }
+  const checksFallidos = stats.checksTotal - stats.checksExitosos;
+  const exitoTotal = stats.checksTotal > 0 ? Math.round((stats.checksExitosos / stats.checksTotal) * 100) : 0;
 
-  if (promedio <= 3000) {
-    console.log(`⚡ RENDIMIENTO: Tiempo promedio ≤ 3s ✅`);
-  } else {
-    console.log(`⚠️  RENDIMIENTO: Tiempo promedio > 3s (${promedio}ms)`);
-  }
-  
-  console.log('='.repeat(60) + '\n');
-  return {};
+  return {
+    'stdout': `
+═══════════════════════════════════════════════════════════════════════════════
+  🎯 PR-02.5-04: ACCIÓN MASIVA - RESTAURAR TODOS LOS CURSOS ELIMINADOS
+═══════════════════════════════════════════════════════════════════════════════
+  � RESUMEN: ${stats.checksExitosos}/${stats.checksTotal} checks (${exitoTotal}%)
+  🌐 HTTP: ${stats.requestsTotal} requests, ${stats.requestsFallidos}% fallidos, ${stats.duracionPromedio}ms promedio
+  ⏱️ TIEMPO: ${stats.tiempoTotal}s total, ${stats.iteraciones} iteraciones
+  🎯 OBJETIVO: Validar eficiencia de recuperación masiva de cursos
+═══════════════════════════════════════════════════════════════════════════════
+`
+  };
 }

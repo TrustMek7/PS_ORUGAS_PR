@@ -297,17 +297,7 @@ export function handleSummary(data) {
   📊 RENDIMIENTO INDIVIDUAL: ${rendimientoIndividual}
   🔍 ENDPOINT: DELETE /webapi/bin/course?courseid={courseId}&restore=true
   ✅ OBJETIVO GENERAL: ${objetivoGeneral}
-  
-  📋 MÉTRICAS DETALLADAS:
-  • Cursos restaurados exitosamente: ${cursosRestaurados}/100
-  • Tiempo promedio por restauración: ${stats.duracionPromedio}ms
-  • Objetivo de tiempo individual (≤4s): ${stats.duracionPromedio <= 4000 ? 'ALCANZADO' : 'NO ALCANZADO'}
-  • Rendimiento óptimo (≤2s): ${stats.duracionPromedio <= 2000 ? 'ALCANZADO' : 'NO ALCANZADO'}
-  • Variabilidad de tiempo: ${stats.duracionMax - stats.duracionMin}ms
-  • Throughput de restauración: ${throughput} cursos/minuto
-  • Errores consecutivos máximos: ${errorConsecutivos}
-  • Éxito de restauraciones individuales: ${cursosRestaurados > 0 ? Math.round((cursosRestaurados / stats.iteraciones) * 100) : 0}%
-  
+  🎯 OBJETIVO DE RENDIMIENTO: ${stats.duracionPromedio <= 2000 ? "⚡ ÓPTIMO" : stats.duracionPromedio <= 4000 ? "✅ BUENO" : "⚠️ MEJORAR"}
   🎯 RESUMEN DEL OBJETIVO:
   ✓ Restaurar 100 cursos uno por uno: ${cursosRestaurados >= 100 ? 'COMPLETADO' : `PARCIAL (${cursosRestaurados}/100)`}
   ✓ Tiempo ≤ 4s por curso: ${objetivoTiempo}

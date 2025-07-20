@@ -88,28 +88,29 @@ export default function () {
 }
 
 export function handleSummary(data) {
-  console.log('\n' + '='.repeat(60));
-  console.log('📊 RESUMEN FINAL - PR-02.5-03: Eliminación Definitiva de Cursos');
-  console.log('='.repeat(60));
+  const stats = {
+    checksTotal: data.metrics.checks?.values.count || 0,
+    checksExitosos: data.metrics.checks?.values.passes || 0,
+    requestsTotal: data.metrics.http_reqs?.values.count || 0,
+    requestsFallidos: Math.round((data.metrics.http_req_failed?.values.rate || 0) * 100),
+    duracionPromedio: Math.round(data.metrics.http_req_duration?.values.avg || 0),
+    tiempoTotal: (data.metrics.iteration_duration?.values.avg / 1000).toFixed(2),
+    iteraciones: data.metrics.iterations?.values.count || 0
+  };
   
-  const intentados = data.metrics?.delete_course_duration?.values?.count ?? 0;
-  const exitos = data.metrics?.delete_successes?.values?.count ?? 0;
-  const fallos = data.metrics?.delete_failures?.values?.count ?? 0;
-  const promedio = Math.round(data.metrics?.delete_course_duration?.values?.avg ?? 0);
-  
-  console.log(`🗑️ Total de cursos procesados: ${intentados}`);
-  console.log(`✅ Eliminaciones exitosas: ${exitos}`);
-  console.log(`❌ Eliminaciones fallidas: ${fallos}`);
-  console.log(`⏱️  Tiempo promedio por eliminación: ${promedio}ms`);
-  
-  if (exitos > 0) {
-    console.log(`🎯 ÉXITO: ${exitos} cursos eliminados definitivamente de la papelera`);
-  } else if (intentados === 0) {
-    console.log(`ℹ️  No había cursos en la papelera para eliminar`);
-  } else {
-    console.log(`⚠️  No se pudieron eliminar cursos de la papelera`);
-  }
-  
-  console.log('='.repeat(60) + '\n');
-  return {};
+  const checksFallidos = stats.checksTotal - stats.checksExitosos;
+  const exitoTotal = stats.checksTotal > 0 ? Math.round((stats.checksExitosos / stats.checksTotal) * 100) : 0;
+
+  return {
+    'stdout': `
+═══════════════════════════════════════════════════════════════════════════════
+  🎯 PR-02.5-03: ACCIÓN MASIVA - ELIMINAR DEFINITIVAMENTE CURSOS
+═══════════════════════════════════════════════════════════════════════════════
+  📊 RESUMEN: ${stats.checksExitosos}/${stats.checksTotal} checks (${exitoTotal}%)
+  🌐 HTTP: ${stats.requestsTotal} requests, ${stats.requestsFallidos}% fallidos, ${stats.duracionPromedio}ms promedio
+  ⏱️ TIEMPO: ${stats.tiempoTotal}s total, ${stats.iteraciones} iteraciones
+  🎯 OBJETIVO: Validar eliminación definitiva individual de cursos
+═══════════════════════════════════════════════════════════════════════════════
+`
+  };
 }

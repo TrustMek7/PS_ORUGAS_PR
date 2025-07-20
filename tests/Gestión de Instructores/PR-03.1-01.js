@@ -86,28 +86,29 @@ export default function () {
 
 // Resumen final
 export function handleSummary(data) {
-  const avgCourses = data.metrics.courses_count?.values.avg || 0;
-  const avgResponseTime = data.metrics.get_courses_duration?.values.avg || 0;
-  const successRate = data.metrics.checks?.values.rate ? (data.metrics.checks.values.rate * 100).toFixed(1) : '0';
+  const stats = {
+    checksTotal: data.metrics.checks?.values.count || 0,
+    checksExitosos: data.metrics.checks?.values.passes || 0,
+    requestsTotal: data.metrics.http_reqs?.values.count || 0,
+    requestsFallidos: Math.round((data.metrics.http_req_failed?.values.rate || 0) * 100),
+    duracionPromedio: Math.round(data.metrics.http_req_duration?.values.avg || 0),
+    tiempoTotal: (data.metrics.iteration_duration?.values.avg / 1000).toFixed(2),
+    iteraciones: data.metrics.iterations?.values.count || 0
+  };
+  
+  const checksFallidos = stats.checksTotal - stats.checksExitosos;
+  const exitoTotal = stats.checksTotal > 0 ? Math.round((stats.checksExitosos / stats.checksTotal) * 100) : 0;
 
-  const resumen = [
-    '\n' + '='.repeat(60),
-    '📊 RESUMEN FINAL - PR-03.1-01: Carga de Cursos del Instructor',
-    '='.repeat(60),
-    `📋 Promedio de cursos encontrados: ${Math.round(avgCourses)}`,
-    `⏱️  Tiempo promedio de respuesta: ${Math.round(avgResponseTime)}ms`,
-    `✅ Tasa de éxito de validaciones: ${successRate}%`,
-    avgCourses > 1000
-      ? '🎯 OBJETIVO CUMPLIDO: >1000 cursos ✅'
-      : avgCourses > 0
-        ? `📈 ESTADO ACTUAL: ${Math.round(avgCourses)} cursos disponibles\n🎯 Faltan para llegar a >1000`
-        : '⚠️  ADVERTENCIA: No se encontraron cursos',
-    avgResponseTime <= 2000
-      ? '⚡ RENDIMIENTO: Tiempo promedio ≤ 2s ✅'
-      : `⚠️  RENDIMIENTO: Tiempo promedio > 2s (${Math.round(avgResponseTime)}ms)`,
-    '='.repeat(60)
-  ].join('\n');
-
-  console.log(resumen);
-  return {}; // No exporta archivo
+  return {
+    'stdout': `
+═══════════════════════════════════════════════════════════════════════════════
+  🎯 PR-03.1-01: VISUALIZACIÓN - CARGAR LISTA DE CURSOS DEL INSTRUCTOR
+═══════════════════════════════════════════════════════════════════════════════
+  � RESUMEN: ${stats.checksExitosos}/${stats.checksTotal} checks (${exitoTotal}%)
+  🌐 HTTP: ${stats.requestsTotal} requests, ${stats.requestsFallidos}% fallidos, ${stats.duracionPromedio}ms promedio
+  ⏱️ TIEMPO: ${stats.tiempoTotal}s total, ${stats.iteraciones} iteraciones
+  🎯 OBJETIVO: Evaluar rendimiento con múltiples cursos asignados
+═══════════════════════════════════════════════════════════════════════════════
+`
+  };
 }
