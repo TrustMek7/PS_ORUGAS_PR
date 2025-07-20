@@ -1,11 +1,27 @@
 import http from 'k6/http';
 import { check } from 'k6';
 import { SharedArray } from 'k6/data';
+import { Trend, Counter } from 'k6/metrics';
 import { getHeadersWithCSRF } from '../login_token.js';
 
+// 📊 Métricas personalizadas
+const duracionCreacionNotificacion = new Trend('notification_creation_duration');
+const contadorNotificacionesCreadas = new Counter('notifications_created');
+
 export const options = {
-  vus: 1,
-  iterations: 100, // debe coincidir con la cantidad de notificaciones si quieres ver 500 checks
+  scenarios: {
+    create_notifications: {
+      executor: 'shared-iterations',
+      vus: 1,
+      iterations: 100,
+      maxDuration: '10m',
+    },
+  },
+  thresholds: {
+    'notification_creation_duration': ['avg<=5000'],
+    'http_req_duration': ['avg<=5000'],
+    'checks': ['rate>=0.95'],
+  },
 };
 
 // 📥 Cargar notificaciones desde archivo
@@ -33,21 +49,59 @@ const notificaciones = new SharedArray('notificaciones', function () {
 });
 
 export default function () {
+  if (__ITER === 0) {
+    console.log('🚀 PR-05.1-02: Creación Masiva de Notificaciones (100 individuales)');
+  }
+  
   const noti = notificaciones[__ITER % notificaciones.length];
-
-  const payload = JSON.stringify(noti);
   const headers = getHeadersWithCSRF();
-
-  const res = http.post(`https://teammates-orugas.appspot.com/webapi/notification`, payload, {
-    headers,
-  });
-
-  console.log(`🔔 Enviando notificación: ${noti.title}`);
-  console.log(`📩 Status: ${res.status}`);
-  console.log(`📬 Respuesta: ${res.body}`);
+  
+  const inicioCreacion = Date.now();
+  const payload = JSON.stringify(noti);
+  const res = http.post('https://teammates-orugas.appspot.com/webapi/notification', payload, { headers });
+  const duracion = Date.now() - inicioCreacion;
+  
+  duracionCreacionNotificacion.add(duracion);
+  
+  const exitoso = res.status === 201 || res.status === 200;
+  if (exitoso) {
+    contadorNotificacionesCreadas.add(1);
+    console.log(`✅ Notificación ${__ITER + 1}/100: "${noti.title}" creada | ${duracion}ms`);
+  } else {
+    console.log(`❌ Error ${__ITER + 1}/100: "${noti.title}" - Status: ${res.status}`);
+  }
 
   check(res, {
-    '✅ Solicitud exitosa (201 o 200)': r => r.status === 201 || r.status === 200,
-    '✅ Respuesta contiene el título enviado': r => r.body && r.body.includes(noti.title),
+    '✅ PR-05.1-02: Notificación creada exitosamente': r => exitoso,
+    '✅ PR-05.1-02: Tiempo de creación aceptable': r => duracion <= 5000,
+    '✅ PR-05.1-02: Respuesta contiene datos de la notificación': r => r.body && r.body.includes(noti.title),
   });
+}
+
+export function handleSummary(data) {
+  const stats = {
+    checksTotal: data.metrics.checks?.values.count || 0,
+    checksExitosos: data.metrics.checks?.values.passes || 0,
+    requestsTotal: data.metrics.http_reqs?.values.count || 0,
+    requestsFallidos: Math.round((data.metrics.http_req_failed?.values.rate || 0) * 100),
+    duracionPromedio: Math.round(data.metrics.http_req_duration?.values.avg || 0),
+    tiempoTotal: (data.metrics.iteration_duration?.values.avg / 1000).toFixed(2),
+    iteraciones: data.metrics.iterations?.values.count || 0
+  };
+  
+  const checksFallidos = stats.checksTotal - stats.checksExitosos;
+  const exitoTotal = stats.checksTotal > 0 ? Math.round((stats.checksExitosos / stats.checksTotal) * 100) : 0;
+
+  return {
+    'stdout': `
+═══════════════════════════════════════════════════════════════════════════════
+  🎯 PR-05.1-02: CARGA - CREACIÓN MASIVA DE NOTIFICACIONES
+═══════════════════════════════════════════════════════════════════════════════
+  📊 RESUMEN: ${stats.checksExitosos}/${stats.checksTotal} checks (${exitoTotal}%)
+  🌐 HTTP: ${stats.requestsTotal} requests, ${stats.requestsFallidos}% fallidos, ${stats.duracionPromedio}ms promedio
+  ⏱️ TIEMPO: ${stats.tiempoTotal}s total, ${stats.iteraciones} iteraciones
+  🎯 OBJETIVO: Evaluar estabilidad del sistema en carga secuencial (100 notificaciones)
+═══════════════════════════════════════════════════════════════════════════════
+`
+  };
 }

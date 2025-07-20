@@ -159,19 +159,30 @@ export default function () {
   }
 }
 
-export function teardown(data) {
-  console.log('\n' + '='.repeat(60));
-  console.log('📊 RESUMEN FINAL - PR-03.1-03: Eliminación Masiva de Estudiantes');
-  console.log('='.repeat(60));
+export function handleSummary(data) {
+  const stats = {
+    checksTotal: data.metrics.checks?.values.count || 0,
+    checksExitosos: data.metrics.checks?.values.passes || 0,
+    requestsTotal: data.metrics.http_reqs?.values.count || 0,
+    requestsFallidos: Math.round((data.metrics.http_req_failed?.values.rate || 0) * 100),
+    duracionPromedio: Math.round(data.metrics.http_req_duration?.values.avg || 0),
+    tiempoTotal: (data.metrics.iteration_duration?.values.avg / 1000).toFixed(2),
+    iteraciones: data.metrics.iterations?.values.count || 0
+  };
   
-  if (data && data.metrics) {
-    console.log(`🗑️  Total de estudiantes eliminados: ${data.metrics.students_deleted?.values?.count || 0}`);
-    console.log(`❌ Total de fallos: ${data.metrics.failed_deletes?.values?.count || 0}`);
-    console.log(`⏱️  Tiempo promedio por eliminación: ${Math.round(data.metrics.delete_student_duration?.values?.avg || 0)}ms`);
-    console.log(`🕐 Tiempo total promedio: ${Math.round(data.metrics.total_delete_duration?.values?.avg || 0)}ms`);
-  } else {
-    console.log('⚠️  Datos de métricas no disponibles en teardown');
-  }
-  
-  console.log('='.repeat(60) + '\n');
+  const checksFallidos = stats.checksTotal - stats.checksExitosos;
+  const exitoTotal = stats.checksTotal > 0 ? Math.round((stats.checksExitosos / stats.checksTotal) * 100) : 0;
+
+  return {
+    'stdout': `
+═══════════════════════════════════════════════════════════════════════════════
+  🎯 PR-03.1-03: ACCIÓN MASIVA - ELIMINAR MÚLTIPLES ESTUDIANTES DE UN CURSO
+═══════════════════════════════════════════════════════════════════════════════
+  📊 RESUMEN: ${stats.checksExitosos}/${stats.checksTotal} checks (${exitoTotal}%)
+  🌐 HTTP: ${stats.requestsTotal} requests, ${stats.requestsFallidos}% fallidos, ${stats.duracionPromedio}ms promedio
+  ⏱️ TIEMPO: ${stats.tiempoTotal}s total, ${stats.iteraciones} iteraciones
+  🎯 OBJETIVO: Validar consistencia al remover usuarios en lote
+═══════════════════════════════════════════════════════════════════════════════
+`
+  };
 }

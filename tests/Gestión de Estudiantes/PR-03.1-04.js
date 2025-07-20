@@ -142,21 +142,30 @@ export default function () {
   }
 }
 
-export function teardown(data) {
-  console.log('\n' + '='.repeat(60));
-  console.log('📊 RESUMEN FINAL - PR-03.1-04: Lista de Estudiantes Existentes');
-  console.log('='.repeat(60));
+export function handleSummary(data) {
+  const stats = {
+    checksTotal: data.metrics.checks?.values.count || 0,
+    checksExitosos: data.metrics.checks?.values.passes || 0,
+    requestsTotal: data.metrics.http_reqs?.values.count || 0,
+    requestsFallidos: Math.round((data.metrics.http_req_failed?.values.rate || 0) * 100),
+    duracionPromedio: Math.round(data.metrics.http_req_duration?.values.avg || 0),
+    tiempoTotal: (data.metrics.iteration_duration?.values.avg / 1000).toFixed(2),
+    iteraciones: data.metrics.iterations?.values.count || 0
+  };
   
-  if (data && data.metrics) {
-    console.log(`📚 Cursos procesados: ${data.metrics.student_count_per_course?.values?.count || 'N/A'}`);
-    console.log(`👥 Total de estudiantes cargados: ${data.metrics.total_students_loaded?.values?.count || 0}`);
-    console.log(`🎯 Cursos con ≥1000 estudiantes: ${data.metrics.courses_with_1000_plus_students?.values?.count || 0}`);
-    console.log(`❌ Páginas fallidas: ${data.metrics.failed_page_loads?.values?.count || 0}`);
-    console.log(`⏱️  Tiempo promedio de carga: ${Math.round(data.metrics.page_load_duration?.values?.avg || 0)}ms`);
-    console.log(`📊 Promedio de estudiantes por curso: ${Math.round(data.metrics.student_count_per_course?.values?.avg || 0)}`);
-  } else {
-    console.log('⚠️  Datos de métricas no disponibles en teardown');
-  }
-  
-  console.log('='.repeat(60) + '\n');
+  const checksFallidos = stats.checksTotal - stats.checksExitosos;
+  const exitoTotal = stats.checksTotal > 0 ? Math.round((stats.checksExitosos / stats.checksTotal) * 100) : 0;
+
+  return {
+    'stdout': `
+═══════════════════════════════════════════════════════════════════════════════
+  🎯 PR-03.1-04: VISUALIZACIÓN - CARGAR LISTA DE ESTUDIANTES EXISTENTES
+═══════════════════════════════════════════════════════════════════════════════
+  📊 RESUMEN: ${stats.checksExitosos}/${stats.checksTotal} checks (${exitoTotal}%)
+  🌐 HTTP: ${stats.requestsTotal} requests, ${stats.requestsFallidos}% fallidos, ${stats.duracionPromedio}ms promedio
+  ⏱️ TIEMPO: ${stats.tiempoTotal}s total, ${stats.iteraciones} iteraciones
+  🎯 OBJETIVO: Asegurar velocidad y respuesta sin errores
+═══════════════════════════════════════════════════════════════════════════════
+`
+  };
 }

@@ -86,9 +86,30 @@ export default function () {
   console.log(`📊 Resultado: ${totalEnrolled}/${students.length} estudiantes (${((totalEnrolled/students.length)*100).toFixed(1)}%)`);
 }
 
-export function teardown(data) {
-  console.log('\n📊 RESUMEN FINAL - PR-03.1-05');
-  console.log(`👥 Estudiantes añadidos: ${data?.metrics?.students_enrolled?.values?.count || 0}`);
-  console.log(`❌ Fallos: ${data?.metrics?.failed_enrolls?.values?.count || 0}`);
-  console.log(`⏱️ Tiempo promedio: ${Math.round(data?.metrics?.enroll_duration?.values?.avg || 0)}ms`);
+export function handleSummary(data) {
+  const stats = {
+    checksTotal: data.metrics.checks?.values.count || 0,
+    checksExitosos: data.metrics.checks?.values.passes || 0,
+    requestsTotal: data.metrics.http_reqs?.values.count || 0,
+    requestsFallidos: Math.round((data.metrics.http_req_failed?.values.rate || 0) * 100),
+    duracionPromedio: Math.round(data.metrics.http_req_duration?.values.avg || 0),
+    tiempoTotal: (data.metrics.iteration_duration?.values.avg / 1000).toFixed(2),
+    iteraciones: data.metrics.iterations?.values.count || 0
+  };
+  
+  const checksFallidos = stats.checksTotal - stats.checksExitosos;
+  const exitoTotal = stats.checksTotal > 0 ? Math.round((stats.checksExitosos / stats.checksTotal) * 100) : 0;
+
+  return {
+    'stdout': `
+═══════════════════════════════════════════════════════════════════════════════
+  🎯 PR-03.1-05: CARGA - AÑADIR MÚLTIPLES ESTUDIANTES CON "ENROLL"
+═══════════════════════════════════════════════════════════════════════════════
+  📊 RESUMEN: ${stats.checksExitosos}/${stats.checksTotal} checks (${exitoTotal}%)
+  🌐 HTTP: ${stats.requestsTotal} requests, ${stats.requestsFallidos}% fallidos, ${stats.duracionPromedio}ms promedio
+  ⏱️ TIEMPO: ${stats.tiempoTotal}s total, ${stats.iteraciones} iteraciones
+  🎯 OBJETIVO: Validar reglas de validación y procesamiento masivo
+═══════════════════════════════════════════════════════════════════════════════
+`
+  };
 }
