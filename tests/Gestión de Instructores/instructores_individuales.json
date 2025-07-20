@@ -1,0 +1,102 @@
+[
+  {
+    "instructorName": "Teresa Salazar",
+    "instructorEmail": "teresa.salazar+001@unsa.edu.pe",
+    "instructorInstitution": "UNSA"
+  },
+  {
+    "instructorName": "Miguel Vásquez",
+    "instructorEmail": "miguel.vasquez+001@udep.edu.pe",
+    "instructorInstitution": "UDEP"
+  },
+  {
+    "instructorName": "Raúl Ramírez",
+    "instructorEmail": "raul.ramirez+001@utec.edu.pe",
+    "instructorInstitution": "UTEC"
+  },
+  {
+    "instructorName": "José Mendoza",
+    "instructorEmail": "jose.mendoza+001@ul.edu.pe",
+    "instructorInstitution": "UL"
+  },
+  {
+    "instructorName": "Carlos Cano",
+    "instructorEmail": "carlos.cano+001@ul.edu.pe",
+    "instructorInstitution": "UL"
+  },
+  {
+    "instructorName": "Victor Torres",
+    "instructorEmail": "victor.torres+001@unmsm.edu.pe",
+    "instructorInstitution": "UNMSM"
+  },
+  {
+    "instructorName": "Patricia Céspedes",
+    "instructorEmail": "patricia.cespedes+001@upch.edu.pe",
+    "instructorInstitution": "UPCH"
+  },
+  {
+    "instructorName": "Carmen Fernández",
+    "instructorEmail": "carmen.fernandez+001@pucp.edu.pe",
+    "instructorInstitution": "PUCP"
+  },
+  {
+    "instructorName": "Daniel Quispe",
+    "instructorEmail": "daniel.quispe+001@pucp.edu.pe",
+    "instructorInstitution": "PUCP"
+  },
+  {
+    "instructorName": "Hugo Fernández",
+    "instructorEmail": "hugo.fernandez+001@utec.edu.pe",
+    "instructorInstitution": "UTEC"
+  },
+  {
+    "instructorName": "Luis García",
+    "instructorEmail": "luis.garcia+001@unsa.edu.pe",
+    "instructorInstitution": "UNSA"
+  },
+  {
+    "instructorName": "Ana López",
+    "instructorEmail": "ana.lopez+001@udep.edu.pe",
+    "instructorInstitution": "UDEP"
+  },
+  {
+    "instructorName": "Pedro Martínez",
+    "instructorEmail": "pedro.martinez+001@utec.edu.pe",
+    "instructorInstitution": "UTEC"
+  },
+  {
+    "instructorName": "María González",
+    "instructorEmail": "maria.gonzalez+001@ul.edu.pe",
+    "instructorInstitution": "UL"
+  },
+  {
+    "instructorName": "Roberto Silva",
+    "instructorEmail": "roberto.silva+001@unmsm.edu.pe",
+    "instructorInstitution": "UNMSM"
+  },
+  {
+    "instructorName": "Elena Castro",
+    "instructorEmail": "elena.castro+001@upch.edu.pe",
+    "instructorInstitution": "UPCH"
+  },
+  {
+    "instructorName": "Andrés Morales",
+    "instructorEmail": "andres.morales+001@pucp.edu.pe",
+    "instructorInstitution": "PUCP"
+  },
+  {
+    "instructorName": "Lucía Herrera",
+    "instructorEmail": "lucia.herrera+001@utec.edu.pe",
+    "instructorInstitution": "UTEC"
+  },
+  {
+    "instructorName": "Fernando Ruiz",
+    "instructorEmail": "fernando.ruiz+001@unsa.edu.pe",
+    "instructorInstitution": "UNSA"
+  },
+  {
+    "instructorName": "Sofía Vargas",
+    "instructorEmail": "sofia.vargas+001@udep.edu.pe",
+    "instructorInstitution": "UDEP"
+  }
+]

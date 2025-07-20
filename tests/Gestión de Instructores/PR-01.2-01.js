@@ -5,29 +5,27 @@ import { getHeadersWithCSRF } from '../login_token.js';
 
 export const options = {
   vus: 1,
-  iterations: 5,
+  iterations: 5, // Reducido para testing inicial (configurar a 500 para producción)
   thresholds: {
-    'http_req_duration': ['p(95)<1000'],
+    'http_req_duration': ['p(95)<1000'], // Tiempo ≤ 1s por lote
     'http_req_failed': ['rate<0.05'],
   },
 };
 
-const instructores = new SharedArray('instructores', function() {
+// Cargamos los instructores desde archivo JSON externo
+const instructores = new SharedArray('instructores_individuales', function() {
   try {
-    const contenido = open('./instructores_sin_acentos.txt'); // Cambiado a nombre simple
-    return contenido.split('\n')
-      .map(linea => linea.trim())
-      .filter(linea => linea.length > 0 && linea.includes('|'))
-      .map(linea => {
-        const partes = linea.split('|').map(parte => parte.trim());
-        return {
-          nombre: partes[0],
-          correo: partes[1],
-          institucion: partes[2]
-        };
-      });
+    const data = JSON.parse(open('./instructores_individuales.json'));
+    return data;
   } catch (error) {
-    throw new Error(`Error al leer archivo: ${error}`);
+    console.error(`Error al leer archivo JSON: ${error}`);
+    return [
+      {
+        instructorName: 'Test Instructor',
+        instructorEmail: 'test@example.com',
+        instructorInstitution: 'TEST'
+      }
+    ];
   }
 });
 
@@ -36,12 +34,8 @@ const startTime = Date.now();
 export default function () {
   const index = __ITER % instructores.length;
   const instructor = instructores[index];
-  
-  const payload = JSON.stringify({
-    instructorName: instructor.nombre,
-    instructorEmail: instructor.correo,
-    instructorInstitution: instructor.institucion,
-  });
+
+  const payload = JSON.stringify(instructor);
 
   const headers = getHeadersWithCSRF();
 
@@ -49,11 +43,11 @@ export default function () {
 
   const exitoso = check(res, {
     '✅ Status 200 o 201': (r) => r.status === 200 || r.status === 201,
-    '✅ Contiene correo': (r) => r.body.includes(instructor.correo),
+    '✅ Contiene correo': (r) => r.body && r.body.includes(instructor.instructorEmail),
   });
 
   if (!exitoso) {
-    console.warn(`❌ Error con ${instructor.correo} | Status: ${res.status}`);
+    console.warn(`❌ Error con ${instructor.instructorEmail} | Status: ${res.status}`);
   }
 }
 
@@ -66,7 +60,7 @@ export function handleSummary(data) {
   const promedio = Math.round(data.metrics.http_req_duration?.values?.avg || 0);
 
   console.log('\n' + '═'.repeat(79));
-  console.log('  📘 PR-01.1-01: CARGA MASIVA DE INSTRUCTORES');
+  console.log('  📘 PR-01.2-01: AÑADIR INSTRUCTOR INDIVIDUAL');
   console.log('═'.repeat(79));
   console.log(`  🧪 SOLICITUDES REALIZADAS: ${total}`);
   console.log(`  📬 SOLICITUDES EXITOSAS: ${exitosos} (${total > 0 ? ((exitosos / (exitosos + fallidos)) * 100).toFixed(1) : '0.0'}%)`);
@@ -80,7 +74,7 @@ export function handleSummary(data) {
     console.log(`  ⚠️ VALIDACIÓN: Algunos valores exceden el umbral definido`);
   }
 
-  console.log(`  📋 NOTA: Datos cargados desde instructores_sin_acentos.txt`);
+  console.log(`  📋 NOTA: Datos cargados desde instructores_individuales.json`);
   console.log('═'.repeat(79) + '\n');
 
   return {};

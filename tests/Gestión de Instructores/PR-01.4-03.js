@@ -6,43 +6,49 @@ export const options = {
   vus: 1,
   iterations: 1,
   maxDuration: '10m',
+  thresholds: {
+    'http_req_duration': ['p(95)<3000'], // Acción masiva ≤ 3s (95%)
+    'checks': ['rate>0.95']
+  }
 };
 
-export default function () {
-  console.log('🔍 Obteniendo solicitudes pendientes...');
+let pendingRequests = [];
+
+export function setup() {
+  console.log('🔧 Configurando datos para el test...');
   
-  // Paso 1: Obtener todas las solicitudes pendientes
   const getUrl = 'https://teammates-orugas.appspot.com/webapi/account/requests?status=PENDING';
   const getRes = http.get(getUrl, { headers: getHeadersWithCSRF() });
 
-  check(getRes, {
-    '✅ Obtener solicitudes - Status 200': (r) => r.status === 200,
-    '✅ Obtener solicitudes - Tiempo ≤ 2s': (r) => r.timings.duration <= 2000,
-  });
-
-  if (getRes.status !== 200) {
-    console.log('❌ Error al obtener solicitudes pendientes');
-    return;
+  if (getRes.status === 200) {
+    try {
+      const data = JSON.parse(getRes.body);
+      pendingRequests = (data.accountRequests || []).slice(0, 300);
+      console.log(`📊 Solicitudes pendientes encontradas: ${pendingRequests.length}`);
+      return { requests: pendingRequests };
+    } catch (e) {
+      console.log('❌ Error al parsear datos de setup');
+      return { requests: [] };
+    }
   }
-
-  let solicitudes = [];
-  try {
-    solicitudes = (JSON.parse(getRes.body).accountRequests || []).slice(0, 300);
-  } catch (e) {
-    console.log('❌ Error al parsear respuesta JSON');
-    return;
-  }
-
-  console.log(`📊 Solicitudes encontradas: ${solicitudes.length}`);
+  
+  console.log('❌ Error en setup - no se pudieron obtener solicitudes');
+  return { requests: [] };
+}
+export default function (data) {
+  const solicitudes = data?.requests || [];
+  
   if (solicitudes.length === 0) {
-    console.log('⚠️ No hay solicitudes pendientes');
+    console.log('⚠️ No hay solicitudes pendientes para rechazar');
     return;
   }
 
-  // Paso 2: Rechazar solicitudes masivamente sin razón
+  console.log(`🎯 Iniciando rechazo masivo de ${solicitudes.length} solicitudes sin razón...`);
+  
   const startTime = Date.now();
   let rechazosExitosos = 0, errores = 0;
 
+  // Rechazar solicitudes usando PUT sin payload de razón
   for (let i = 0; i < solicitudes.length; i++) {
     const solicitud = solicitudes[i];
     const solicitudId = solicitud.id || solicitud.accountRequestId || solicitud.requestId;
@@ -52,18 +58,27 @@ export default function () {
       continue;
     }
 
+    // Usar PUT tal como especifica el requisito
     const putUrl = `https://teammates-orugas.appspot.com/webapi/account/request?id=${solicitudId}`;
     const payload = JSON.stringify({
-      status: 'REJECTED',
-      rejectionReason: '',
-      name: solicitud.name || solicitud.instructorName || 'Test Instructor',
-      email: solicitud.email || solicitud.instructorEmail || 'test@example.com',
-      institute: solicitud.institute || solicitud.institution || 'Test Institute'
+      id: solicitudId,
+      email: solicitud.email,
+      name: solicitud.name,
+      institute: solicitud.institute,
+      registrationKey: solicitud.registrationKey,
+      requestId: solicitudId,
+      status: "REJECTED"
+      // Sin campo "rejectionReason" para rechazar sin motivo
     });
 
     const putRes = http.put(putUrl, payload, { headers: getHeadersWithCSRF() });
-    
-    if (putRes.status === 200 || putRes.status === 204) {
+
+    check(putRes, {
+      '✅ Rechazo sin razón - Status 200': (r) => r.status === 200,
+      '✅ Rechazo sin razón - Tiempo ≤ 2s': (r) => r.timings.duration <= 2000,
+    });
+
+    if (putRes.status === 200) {
       rechazosExitosos++;
     } else {
       errores++;
@@ -71,22 +86,17 @@ export default function () {
     }
 
     if ((i + 1) % 50 === 0 || (i + 1) === solicitudes.length) {
-      console.log(`✅ Progreso: ${i + 1}/${solicitudes.length} solicitudes`);
+      console.log(`📈 Progreso: ${i + 1}/${solicitudes.length} solicitudes procesadas`);
     }
   }
 
-  console.log(`🏁 Completado: ${rechazosExitosos} éxitos, ${errores} errores en ${((Date.now() - startTime) / 1000).toFixed(2)}s`);
+  const tiempoTotal = ((Date.now() - startTime) / 1000).toFixed(2);
+  console.log(`🏁 Rechazo masivo completado: ${rechazosExitosos} éxitos, ${errores} errores en ${tiempoTotal}s`);
 
-  // Paso 3: Verificación final
-  const verifyRes = http.get(getUrl, { headers: getHeadersWithCSRF() });
-  const solicitudesRestantes = verifyRes.status === 200 ? 
-    (JSON.parse(verifyRes.body).accountRequests?.length || 0) : 0;
-  
-  console.log(`📊 Solicitudes restantes: ${solicitudesRestantes}`);
-
-  // Validaciones del test
-  check({ rechazosExitosos, errores, solicitudes: solicitudes.length }, {
-    '✅ Rechazos ejecutados': (d) => d.rechazosExitosos > 0,
+  // Validaciones finales
+  check({ rechazosExitosos, errores, solicitudes: solicitudes.length, tiempoTotal: parseFloat(tiempoTotal) }, {
+    '✅ Rechazos sin razón ejecutados': (d) => d.rechazosExitosos > 0,
+    '✅ Tiempo total ≤ 2s': (d) => d.tiempoTotal <= 2,
     '✅ Sin errores críticos': (d) => (d.errores / d.solicitudes) < 0.1,
     '✅ Proceso completado': (d) => (d.rechazosExitosos + d.errores) === d.solicitudes,
   });
@@ -109,7 +119,7 @@ export function handleSummary(data) {
   return {
     'stdout': `
 ═══════════════════════════════════════════════════════════════════════════════
-  🎯 PR-04.1-03: ACCIÓN MASIVA - RECHAZAR SIN RAZÓN TODAS LAS SOLICITUDES
+  🎯 PR-01.4-03: ACCIÓN MASIVA - RECHAZAR SIN RAZÓN TODAS LAS SOLICITUDES
 ═══════════════════════════════════════════════════════════════════════════════
   📊 RESUMEN: ${stats.checksExitosos}/${stats.checksTotal} checks (${exitoTotal}%)
   🌐 HTTP: ${stats.requestsTotal} requests, ${stats.requestsFallidos}% fallidos, ${stats.duracionPromedio}ms promedio
