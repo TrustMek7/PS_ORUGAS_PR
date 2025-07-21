@@ -1,0 +1,883 @@
+{
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "✅ PR-05.1-04: Consulta de notificaciones exitosa": {
+                    "name": "✅ PR-05.1-04: Consulta de notificaciones exitosa",
+                    "path": "::✅ PR-05.1-04: Consulta de notificaciones exitosa",
+                    "id": "53aa57201e9451a9f3630230884e78c9",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Respuesta contiene datos válidos": {
+                    "path": "::✅ PR-05.1-04: Respuesta contiene datos válidos",
+                    "id": "01812dc7a61f0bafde91828753fb7f89",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Respuesta contiene datos válidos"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti2 EDITADO\" eliminada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti2 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti2 EDITADO\" eliminada exitosamente",
+                    "id": "78814f77e0596975f7d050294aa5f9f7"
+                },
+                "✅ PR-05.1-04: Tiempo de eliminación aceptable": {
+                    "id": "61981c425c52a550af3082dcdecf06c7",
+                    "passes": 100,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Tiempo de eliminación aceptable",
+                    "path": "::✅ PR-05.1-04: Tiempo de eliminación aceptable"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti3 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti3 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti3 EDITADO\" eliminada exitosamente",
+                    "id": "025a8e4d6a5042347b37df081741c491",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti4 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti4 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti4 EDITADO\" eliminada exitosamente",
+                    "id": "c858973717c841790e1bccd98e3b6323",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti5 EDITADO\" eliminada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti5 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti5 EDITADO\" eliminada exitosamente",
+                    "id": "125108c528fc019a1ab4a374be6a7cf4"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti6 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti6 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti6 EDITADO\" eliminada exitosamente",
+                    "id": "d8e42a6189d2df42640fb6f4c9dbb765",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti7 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti7 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti7 EDITADO\" eliminada exitosamente",
+                    "id": "2fc9a61b2c1efac9a95a3f73952af059",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti8 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti8 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti8 EDITADO\" eliminada exitosamente",
+                    "id": "4ac94dccbfd7a7120b6801412e8a77a0",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti9 EDITADO\" eliminada exitosamente": {
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti9 EDITADO\" eliminada exitosamente",
+                    "id": "e7e7942d84d84cdf982c1533a4a52ccc",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti9 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti10 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti10 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti10 EDITADO\" eliminada exitosamente",
+                    "id": "d302c44fbf04012c6c4ffc8e1672c709",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti12 EDITADO\" eliminada exitosamente": {
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti12 EDITADO\" eliminada exitosamente",
+                    "id": "b15e9331271996145b354e457e4edf77",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti12 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti13 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti13 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti13 EDITADO\" eliminada exitosamente",
+                    "id": "d3cd6efcf1891bebc5f4fa45ffe37dff",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti14 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti14 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti14 EDITADO\" eliminada exitosamente",
+                    "id": "11ca98bc888d24c613590586f8334694",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti15 EDITADO\" eliminada exitosamente": {
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti15 EDITADO\" eliminada exitosamente",
+                    "id": "7e2aa7b77279ce14a89b8296aff8c160",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti15 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti16 EDITADO\" eliminada exitosamente": {
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti16 EDITADO\" eliminada exitosamente",
+                    "id": "22e10614ae7d6bf85e9d475594ef341f",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti16 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti17 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti17 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti17 EDITADO\" eliminada exitosamente",
+                    "id": "e9c7ae1e5292fcb377994793cd590480",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti18 EDITADO\" eliminada exitosamente": {
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti18 EDITADO\" eliminada exitosamente",
+                    "id": "b91beae59f5d3e7d847912e97abd862f",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti18 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti19 EDITADO\" eliminada exitosamente": {
+                    "id": "6c1caad43cce77ecd72addef9b9cfd6b",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti19 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti19 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti20 EDITADO\" eliminada exitosamente": {
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti20 EDITADO\" eliminada exitosamente",
+                    "id": "1c044009733fd07402866d53d83d2e26",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti20 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti22 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti22 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti22 EDITADO\" eliminada exitosamente",
+                    "id": "e1a32d8df7943c1758406febe7a2c451",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti23 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti23 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti23 EDITADO\" eliminada exitosamente",
+                    "id": "ce070d69e4455de00c1bf78af5e1dc52",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti24 EDITADO\" eliminada exitosamente": {
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti24 EDITADO\" eliminada exitosamente",
+                    "id": "835839c5c52e5d3d240649dd25e88ef1",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti24 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti25 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti25 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti25 EDITADO\" eliminada exitosamente",
+                    "id": "1d32855e739bc60839f23acceaf9741a",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti26 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti26 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti26 EDITADO\" eliminada exitosamente",
+                    "id": "edc4690607f980837b8b3b26089db036",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti27 EDITADO\" eliminada exitosamente": {
+                    "id": "eef40e6d7760623668411d52033dc5bc",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti27 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti27 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti28 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti28 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti28 EDITADO\" eliminada exitosamente",
+                    "id": "c24a05e65359cc0490d6c07396e7d63e",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti29 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti29 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti29 EDITADO\" eliminada exitosamente",
+                    "id": "ebe8caa8b382227ef417437945b36de4",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti30 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti30 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti30 EDITADO\" eliminada exitosamente",
+                    "id": "19aae59dba872781a619ecb6f8ff7e03",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti31 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti31 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti31 EDITADO\" eliminada exitosamente",
+                    "id": "8909a0d5edda9378d2350f1cbcba2773",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti32 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti32 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti32 EDITADO\" eliminada exitosamente",
+                    "id": "1659feabd90a5cec6c25853f7c5662f6",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti34 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti34 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti34 EDITADO\" eliminada exitosamente",
+                    "id": "8a1b4734fed4fc75e4ae86d43ed30d3a",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti35 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti35 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti35 EDITADO\" eliminada exitosamente",
+                    "id": "f808686ab86d9720139576de864794df",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti36 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti36 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti36 EDITADO\" eliminada exitosamente",
+                    "id": "9e660b32a491a51b9d25e7f9c12e6516",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti37 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti37 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti37 EDITADO\" eliminada exitosamente",
+                    "id": "81fb123b16ae79221bfdab1d78b07330",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti38 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti38 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti38 EDITADO\" eliminada exitosamente",
+                    "id": "c6e15fe51944ba49a6154d4fa5fb2505",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti39 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti39 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti39 EDITADO\" eliminada exitosamente",
+                    "id": "a157edebb8c0b049c9d247063c9abfbe",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti40 EDITADO\" eliminada exitosamente": {
+                    "id": "a039801423747455d12482b9e6e3ab15",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti40 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti40 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti41 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti41 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti41 EDITADO\" eliminada exitosamente",
+                    "id": "c1a788b4eb00975252ff71f4e105e700",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti42 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti42 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti42 EDITADO\" eliminada exitosamente",
+                    "id": "705a7d2ea9e6ba0915c8074fb8c46b1d",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti43 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti43 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti43 EDITADO\" eliminada exitosamente",
+                    "id": "1b087b2bbdbfe5b5bf92593e6e5ead4b",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti45 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti45 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti45 EDITADO\" eliminada exitosamente",
+                    "id": "0e2448dae8aeb67eedbd24bce794a403",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti46 EDITADO\" eliminada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti46 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti46 EDITADO\" eliminada exitosamente",
+                    "id": "ec7309e296d47e7b5b654b3bf9f9c23f"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti47 EDITADO\" eliminada exitosamente": {
+                    "id": "c519e10b3fa63e45795ee2b5c1e0be45",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti47 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti47 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti48 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti48 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti48 EDITADO\" eliminada exitosamente",
+                    "id": "feebf2f84221613288b8a3e3b202e80b",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti49 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti49 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti49 EDITADO\" eliminada exitosamente",
+                    "id": "06f058c9383527446ae0ea563deb4396",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti50 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti50 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti50 EDITADO\" eliminada exitosamente",
+                    "id": "decc9c292970eb9f4cd53cd79c6488d3",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti51 EDITADO\" eliminada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti51 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti51 EDITADO\" eliminada exitosamente",
+                    "id": "74b255c94e2ab30a1dc3f876e57d6d6c"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti52 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti52 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti52 EDITADO\" eliminada exitosamente",
+                    "id": "2f85a39100fd7c4cdcd056abc84a1de1",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti53 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti53 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti53 EDITADO\" eliminada exitosamente",
+                    "id": "4670c9d57d0b2c98ee3f64c55dc00e96",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti54 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti54 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti54 EDITADO\" eliminada exitosamente",
+                    "id": "c497de8db8c756a156f17385be199d6c",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti56 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti56 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti56 EDITADO\" eliminada exitosamente",
+                    "id": "0dad48cc0fe990f4838a1734aed9c43d",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti57 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti57 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti57 EDITADO\" eliminada exitosamente",
+                    "id": "9bda4937941074ce4cb416cbe1a4e29e",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti58 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti58 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti58 EDITADO\" eliminada exitosamente",
+                    "id": "347ef7677758680dc9d3420bf2c9149a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti59 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti59 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti59 EDITADO\" eliminada exitosamente",
+                    "id": "2dfaa7546bfde5d7738158f94d230b54",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti60 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti60 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti60 EDITADO\" eliminada exitosamente",
+                    "id": "46d6f97d6d216c1cd7fc86f65926cf5e",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti61 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti61 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti61 EDITADO\" eliminada exitosamente",
+                    "id": "f1f72e102b7df3a1f44e92be737844f9",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti62 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti62 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti62 EDITADO\" eliminada exitosamente",
+                    "id": "db2072a14eaccc8c615523ae7ceae8e8",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti63 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti63 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti63 EDITADO\" eliminada exitosamente",
+                    "id": "e145249af76a3563b46855a60e8a486b",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti64 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti64 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti64 EDITADO\" eliminada exitosamente",
+                    "id": "28605d509103eb077be6c88ceb9e6c75",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti65 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti65 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti65 EDITADO\" eliminada exitosamente",
+                    "id": "645d5531c653f3869367cf025c2992f3",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti1 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti1 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti1 EDITADO\" eliminada exitosamente",
+                    "id": "b581b27edb22b66c7ad4b296ed31cb79",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti21 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti21 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti21 EDITADO\" eliminada exitosamente",
+                    "id": "781c4314ae3bb3c5acb53df686c29419",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti33 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti33 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti33 EDITADO\" eliminada exitosamente",
+                    "id": "f99bf3b76e981eca547cc15b01c840e3",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti66 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti66 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti66 EDITADO\" eliminada exitosamente",
+                    "id": "20638dd4a556a8f35e54b72d707c5c73",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti68 EDITADO\" eliminada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti68 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti68 EDITADO\" eliminada exitosamente",
+                    "id": "deec9e90b25561552eab118b7cc8ab94"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti69 EDITADO\" eliminada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti69 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti69 EDITADO\" eliminada exitosamente",
+                    "id": "62f3d0cbadfc3d900f537617bc4c44d8"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti70 EDITADO\" eliminada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti70 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti70 EDITADO\" eliminada exitosamente",
+                    "id": "69bf795ad5577df9c59fb0c6eaacf4d4"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti71 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti71 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti71 EDITADO\" eliminada exitosamente",
+                    "id": "20a8e4fe1e482c88d94053a5b1d4ad00",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti72 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti72 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti72 EDITADO\" eliminada exitosamente",
+                    "id": "e2e44d44fcbaebf5643957f2b3a24e7a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti73 EDITADO\" eliminada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti73 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti73 EDITADO\" eliminada exitosamente",
+                    "id": "8b35247e34eea1757d3c70b176d3422b"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti75 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti75 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti75 EDITADO\" eliminada exitosamente",
+                    "id": "ee46f03971ecbf96bb12452de89c9df8",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti76 EDITADO\" eliminada exitosamente": {
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti76 EDITADO\" eliminada exitosamente",
+                    "id": "1a7261bd73a9ac8f6b37c13ab9ab119e",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti76 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti78 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti78 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti78 EDITADO\" eliminada exitosamente",
+                    "id": "290dae93b61ffbd3267426ff75d0134e",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti80 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti80 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti80 EDITADO\" eliminada exitosamente",
+                    "id": "1ca824b0ae5b3aa8dd2ccf9be79a97ca",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti81 EDITADO\" eliminada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti81 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti81 EDITADO\" eliminada exitosamente",
+                    "id": "8869543d479ed1b1bf81d17f88c7a19d"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti82 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti82 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti82 EDITADO\" eliminada exitosamente",
+                    "id": "ea485a084be9e73ba870f8effff91b70",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti83 EDITADO\" eliminada exitosamente": {
+                    "id": "c2d0c5fe33d09d275499b1485866c4f3",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti83 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti83 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti85 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti85 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti85 EDITADO\" eliminada exitosamente",
+                    "id": "f9c622c22bf014c5b730f0d6618d5fa4",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti87 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti87 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti87 EDITADO\" eliminada exitosamente",
+                    "id": "fda40ee523c9d7c455b5d3194b631439",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti88 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti88 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti88 EDITADO\" eliminada exitosamente",
+                    "id": "3e0e3c0fdf25249a8ae3d2e954d26f5e",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti89 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti89 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti89 EDITADO\" eliminada exitosamente",
+                    "id": "365baccf608fdde4666d9083ef459874",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti90 EDITADO\" eliminada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti90 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti90 EDITADO\" eliminada exitosamente",
+                    "id": "5ecc6fe6b7e95adc34fe273751fe6bb0"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti92 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti92 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti92 EDITADO\" eliminada exitosamente",
+                    "id": "7fee99300c4796bc9c116dc168e11a82",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti94 EDITADO\" eliminada exitosamente": {
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti94 EDITADO\" eliminada exitosamente",
+                    "id": "b72c5a436ea35820642f7aaa5dd98c72",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti94 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti95 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti95 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti95 EDITADO\" eliminada exitosamente",
+                    "id": "0009f3fe44672f73d5b668c80e1a3962",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti96 EDITADO\" eliminada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti96 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti96 EDITADO\" eliminada exitosamente",
+                    "id": "d0408e4610810ea995d0d804ecef4832"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti97 EDITADO\" eliminada exitosamente": {
+                    "id": "bddd837eb0bfb8085a3f3e6f4e64a633",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti97 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti97 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti99 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti99 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti99 EDITADO\" eliminada exitosamente",
+                    "id": "c2f2e9db6b332e4e8b6a9f422251ef6e",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti11 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti11 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti11 EDITADO\" eliminada exitosamente",
+                    "id": "1868811c36798c38e4aee0c50190e28c",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti44 EDITADO\" eliminada exitosamente": {
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti44 EDITADO\" eliminada exitosamente",
+                    "id": "5235a39eeb33556756db88039a9f7c94",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti44 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti55 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti55 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti55 EDITADO\" eliminada exitosamente",
+                    "id": "0bd25f8b639203c3912427b897f23c5d",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti67 EDITADO\" eliminada exitosamente": {
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti67 EDITADO\" eliminada exitosamente",
+                    "id": "f5e1cdd997475f290b1449b124661576",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti67 EDITADO\" eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti74 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti74 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti74 EDITADO\" eliminada exitosamente",
+                    "id": "e1ef467d7f93bec196ab9975526dc457",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti77 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti77 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti77 EDITADO\" eliminada exitosamente",
+                    "id": "ab07048f9d6cc9402631fd4919f3a20a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti79 EDITADO\" eliminada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti79 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti79 EDITADO\" eliminada exitosamente",
+                    "id": "525734dbd9bba0a0f50ecdd30684910c"
+                },
+                "✅ PR-05.1-04: Notificación \"Noti84 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti84 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti84 EDITADO\" eliminada exitosamente",
+                    "id": "bc4c619bb8e3e36eaa7c7c034b58fae9",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti86 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti86 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti86 EDITADO\" eliminada exitosamente",
+                    "id": "d065aad3d065f23afd7af3875113c2d3",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti91 EDITADO\" eliminada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Notificación \"Noti91 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti91 EDITADO\" eliminada exitosamente",
+                    "id": "2f4ee82e415fa2e8fd6f81f607c98ec2",
+                    "passes": 1
+                },
+                "✅ PR-05.1-04: Notificación \"Noti93 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti93 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti93 EDITADO\" eliminada exitosamente",
+                    "id": "4111e8c5e0246db6958b08341727a9dc",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti98 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti98 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti98 EDITADO\" eliminada exitosamente",
+                    "id": "9ab46db37e5a8dc0416c83c1a6a36abd",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Notificación \"Noti100 EDITADO\" eliminada exitosamente": {
+                    "name": "✅ PR-05.1-04: Notificación \"Noti100 EDITADO\" eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Notificación \"Noti100 EDITADO\" eliminada exitosamente",
+                    "id": "4520071ff0dc16cdb10afe2c59dbcdd7",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-04: Al menos una notificación eliminada exitosamente": {
+                    "id": "04ab20b9136942253ec980700915a442",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Al menos una notificación eliminada exitosamente",
+                    "path": "::✅ PR-05.1-04: Al menos una notificación eliminada exitosamente"
+                },
+                "✅ PR-05.1-04: Tasa de éxito aceptable": {
+                    "id": "4058563e23dd3e64aa3f471c26c779bc",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-04: Tasa de éxito aceptable",
+                    "path": "::✅ PR-05.1-04: Tasa de éxito aceptable"
+                },
+                "✅ PR-05.1-04: Proceso completado": {
+                    "name": "✅ PR-05.1-04: Proceso completado",
+                    "path": "::✅ PR-05.1-04: Proceso completado",
+                    "id": "8973b58c938f56dda83ddbb6314ad5ee",
+                    "passes": 1,
+                    "fails": 0
+                }
+            },
+        "name": "",
+        "path": ""
+    },
+    "metrics": {
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "checks": {
+            "passes": 205,
+            "fails": 0,
+            "thresholds": {
+                "rate>=0.95": false
+            },
+            "value": 1
+        },
+        "http_reqs": {
+            "count": 101,
+            "rate": 3.200671286612784
+        },
+        "http_req_connecting": {
+            "avg": 0.5181178217821782,
+            "min": 0,
+            "med": 0,
+            "max": 52.3299,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "iteration_duration": {
+            "avg": 31555.8803,
+            "min": 31555.8803,
+            "med": 31555.8803,
+            "max": 31555.8803,
+            "p(90)": 31555.8803,
+            "p(95)": 31555.8803
+        },
+        "http_req_blocked": {
+            "p(95)": 0,
+            "avg": 1.5730356435643564,
+            "min": 0,
+            "med": 0,
+            "max": 158.8766,
+            "p(90)": 0
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 101,
+            "value": 0
+        },
+        "http_req_waiting": {
+            "avg": 308.600795049505,
+            "min": 223.2295,
+            "med": 293.1488,
+            "max": 590.2966,
+            "p(90)": 383.5491,
+            "p(95)": 417.5751
+        },
+        "http_req_duration": {
+            "med": 293.2644,
+            "max": 590.2966,
+            "p(90)": 383.5491,
+            "p(95)": 434.4407,
+            "avg": 309.1126069306929,
+            "min": 223.2493,
+            "thresholds": {
+                "avg<=3000": false
+            }
+        },
+        "http_req_sending": {
+            "max": 0.6186,
+            "p(90)": 0.5514,
+            "p(95)": 0.5692,
+            "avg": 0.09806039603960398,
+            "min": 0,
+            "med": 0
+        },
+        "iterations": {
+            "count": 1,
+            "rate": 0.031689814718938454
+        },
+        "data_sent": {
+            "count": 15871,
+            "rate": 502.9490494042722
+        },
+        "http_req_receiving": {
+            "avg": 0.41375148514851484,
+            "min": 0,
+            "med": 0,
+            "max": 30.43,
+            "p(90)": 0.5732,
+            "p(95)": 0.7283
+        },
+        "notifications_deleted": {
+            "count": 100,
+            "rate": 3.1689814718938454
+        },
+        "data_received": {
+            "count": 56627,
+            "rate": 1794.499138089328
+        },
+        "notification_delete_duration": {
+            "avg": 308.09,
+            "min": 223,
+            "med": 294,
+            "max": 592,
+            "p(90)": 375.0000000000001,
+            "p(95)": 420.4499999999998,
+            "thresholds": {
+                "avg<=3000": false
+            }
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 309.1126069306929,
+            "min": 223.2493,
+            "med": 293.2644,
+            "max": 590.2966,
+            "p(90)": 383.5491,
+            "p(95)": 434.4407
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 82.9732,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.8215168316831684
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        }
+    }
+}

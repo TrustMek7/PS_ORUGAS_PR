@@ -1,0 +1,175 @@
+{
+    "metrics": {
+        "http_req_receiving": {
+            "med": 0,
+            "max": 272.4783,
+            "p(90)": 0.6101,
+            "p(95)": 0.787,
+            "avg": 0.6901652694610784,
+            "min": 0
+        },
+        "iterations": {
+            "count": 1,
+            "rate": 0.004770133330488044
+        },
+        "http_req_blocked": {
+            "med": 0,
+            "max": 204.6646,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.4108193612774451,
+            "min": 0
+        },
+        "iteration_duration": {
+            "p(90)": 209637.2373,
+            "p(95)": 209637.2373,
+            "avg": 209637.2373,
+            "min": 209637.2373,
+            "med": 209637.2373,
+            "max": 209637.2373
+        },
+        "checks": {
+            "fails": 4,
+            "passes": 1001,
+            "thresholds": {
+                "rate>0.95": false
+            },
+            "value": 0.9960199004975124
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "avg": 0.18416546906187625,
+            "min": 0,
+            "med": 0,
+            "max": 92.2669,
+            "p(90)": 0
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 501,
+            "value": 0
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 544.596,
+            "avg": 416.5681816367265,
+            "min": 296.1622,
+            "med": 366.7396,
+            "max": 13558.4304,
+            "p(90)": 473.149
+        },
+        "data_sent": {
+            "count": 80536,
+            "rate": 384.16745790418514
+        },
+        "http_req_duration": {
+            "avg": 416.5681816367265,
+            "min": 296.1622,
+            "med": 366.7396,
+            "max": 13558.4304,
+            "p(90)": 473.149,
+            "p(95)": 544.596,
+            "thresholds": {
+                "p(95)<1000": false
+            }
+        },
+        "vus_max": {
+            "max": 1,
+            "value": 1,
+            "min": 1
+        },
+        "http_req_connecting": {
+            "avg": 0.10317305389221557,
+            "min": 0,
+            "med": 0,
+            "max": 51.6897,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_reqs": {
+            "count": 501,
+            "rate": 2.3898367985745104
+        },
+        "data_received": {
+            "count": 909596,
+            "rate": 4338.894196878603
+        },
+        "http_req_sending": {
+            "med": 0,
+            "max": 0.9978,
+            "p(90)": 0.536,
+            "p(95)": 0.5683,
+            "avg": 0.11398363273453095,
+            "min": 0
+        },
+        "http_req_waiting": {
+            "p(95)": 544.596,
+            "avg": 415.76403273453116,
+            "min": 295.5117,
+            "med": 366.3632,
+            "max": 13285.437,
+            "p(90)": 472.631
+        }
+    },
+    "root_group": {
+        "groups": {},
+        "checks": {
+                "✅ PR-04.2-01: Consulta de sesiones - Status 200": {
+                    "name": "✅ PR-04.2-01: Consulta de sesiones - Status 200",
+                    "path": "::✅ PR-04.2-01: Consulta de sesiones - Status 200",
+                    "id": "ce558f684aa63dfbbacb53abf50153fe",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-01: Tiempo de consulta ≤ 2s": {
+                    "name": "✅ PR-04.2-01: Tiempo de consulta ≤ 2s",
+                    "path": "::✅ PR-04.2-01: Tiempo de consulta ≤ 2s",
+                    "id": "c67e55c0ff747a3080c503e228a7e8c5",
+                    "passes": 0,
+                    "fails": 1
+                },
+                "✅ PR-04.2-01: Envío a papelera - Status OK": {
+                    "name": "✅ PR-04.2-01: Envío a papelera - Status OK",
+                    "path": "::✅ PR-04.2-01: Envío a papelera - Status OK",
+                    "id": "f9a835f46785ba1337c8c51696c1906a",
+                    "passes": 500,
+                    "fails": 0
+                },
+                "✅ PR-04.2-01: Tiempo ≤ 1s": {
+                    "path": "::✅ PR-04.2-01: Tiempo ≤ 1s",
+                    "id": "8fc83dc3d1acb85e955b9d0f3627c82f",
+                    "passes": 497,
+                    "fails": 3,
+                    "name": "✅ PR-04.2-01: Tiempo ≤ 1s"
+                },
+                "✅ PR-04.2-01: Sesiones enviadas a papelera": {
+                    "name": "✅ PR-04.2-01: Sesiones enviadas a papelera",
+                    "path": "::✅ PR-04.2-01: Sesiones enviadas a papelera",
+                    "id": "87a135b018594278024938ec7836fa1f",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-01: Sin errores críticos": {
+                    "name": "✅ PR-04.2-01: Sin errores críticos",
+                    "path": "::✅ PR-04.2-01: Sin errores críticos",
+                    "id": "3683fd9599aa498ab2788131c84179a4",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-01: Proceso completado": {
+                    "path": "::✅ PR-04.2-01: Proceso completado",
+                    "id": "f579717dbee33958d7c367d3aabfbbb3",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-01: Proceso completado"
+                }
+            },
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e"
+    }
+}

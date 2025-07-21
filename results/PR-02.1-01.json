@@ -1,0 +1,162 @@
+{
+    "metrics": {
+        "http_reqs": {
+            "count": 100,
+            "rate": 3.0390928789148752
+        },
+        "data_sent": {
+            "count": 125838,
+            "rate": 3824.3336969689008
+        },
+        "http_req_duration": {
+            "avg": 22845.208059,
+            "min": 7674.1015,
+            "med": 23357.463,
+            "max": 32530.2139,
+            "p(90)": 28243.06099,
+            "p(95)": 30071.519954999996
+        },
+        "http_req_tls_handshaking": {
+            "avg": 198.11267200000003,
+            "min": 173.3848,
+            "med": 201.86700000000002,
+            "max": 237.0491,
+            "p(90)": 211.72581000000002,
+            "p(95)": 217.04763499999996
+        },
+        "http_req_sending": {
+            "min": 0,
+            "med": 0,
+            "max": 0.9976,
+            "p(90)": 0.525,
+            "p(95)": 0.5428799999999999,
+            "avg": 0.12532300000000002
+        },
+        "checks": {
+            "passes": 493,
+            "fails": 107,
+            "value": 0.8216666666666667
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 100
+        },
+        "http_req_receiving": {
+            "p(90)": 0.6787100000000004,
+            "p(95)": 0.97171,
+            "avg": 0.247485,
+            "min": 0,
+            "med": 0,
+            "max": 10.464
+        },
+        "http_req_failed": {
+            "passes": 5,
+            "fails": 95,
+            "value": 0.05
+        },
+        "data_received": {
+            "count": 560647,
+            "rate": 17038.58305284988
+        },
+        "iterations": {
+            "count": 100,
+            "rate": 3.0390928789148752
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(90)": 27963.685400000002,
+            "p(95)": 29652.97897,
+            "avg": 23188.035470526316,
+            "min": 16830.393,
+            "med": 23430.7059,
+            "max": 32530.2139
+        },
+        "iteration_duration": {
+            "avg": 23157.160743,
+            "min": 7937.5691,
+            "med": 23664.58775,
+            "max": 32898.0629,
+            "p(90)": 28607.08055,
+            "p(95)": 30437.418204999998
+        },
+        "http_req_blocked": {
+            "med": 295.92975,
+            "max": 370.1525,
+            "p(90)": 364.14627,
+            "p(95)": 366.2253,
+            "avg": 309.6703649999999,
+            "min": 249.9885
+        },
+        "http_req_connecting": {
+            "min": 67.8897,
+            "med": 84.09765,
+            "max": 162.125,
+            "p(90)": 158.8236,
+            "p(95)": 159.952295,
+            "avg": 111.09044099999996
+        },
+        "http_req_waiting": {
+            "min": 7673.5765,
+            "med": 23356.9653,
+            "max": 32530.2139,
+            "p(90)": 28242.50531,
+            "p(95)": 30071.519954999996,
+            "avg": 22844.835250999993
+        },
+        "vus_max": {
+            "value": 100,
+            "min": 100,
+            "max": 100
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "✅ API responde consistentemente bajo carga": {
+                    "path": "::✅ API responde consistentemente bajo carga",
+                    "id": "4545a4abdbedf32084cac5bd2b9920e7",
+                    "passes": 100,
+                    "fails": 0,
+                    "name": "✅ API responde consistentemente bajo carga"
+                },
+                "✅ Autenticación funciona correctamente": {
+                    "name": "✅ Autenticación funciona correctamente",
+                    "path": "::✅ Autenticación funciona correctamente",
+                    "id": "41b7dfca75226dc6fac916d758195563",
+                    "passes": 100,
+                    "fails": 0
+                },
+                "✅ Tiempo de respuesta aceptable (≤15s)": {
+                    "name": "✅ Tiempo de respuesta aceptable (≤15s)",
+                    "path": "::✅ Tiempo de respuesta aceptable (≤15s)",
+                    "id": "d700b06019f94b9bc3bcff18fd9f0108",
+                    "passes": 3,
+                    "fails": 97
+                },
+                "✅ Sin errores críticos del servidor": {
+                    "path": "::✅ Sin errores críticos del servidor",
+                    "id": "b6ea0e4e485d0b2bd8628ad0942d8166",
+                    "passes": 95,
+                    "fails": 5,
+                    "name": "✅ Sin errores críticos del servidor"
+                },
+                "✅ Sistema maneja carga concurrente": {
+                    "path": "::✅ Sistema maneja carga concurrente",
+                    "id": "9b543c06d26856b334a597db5ca10512",
+                    "passes": 100,
+                    "fails": 0,
+                    "name": "✅ Sistema maneja carga concurrente"
+                },
+                "✅ Cursos se crean exitosamente": {
+                    "name": "✅ Cursos se crean exitosamente",
+                    "path": "::✅ Cursos se crean exitosamente",
+                    "id": "398ec50efb4357f23b90b717df03a34e",
+                    "passes": 95,
+                    "fails": 5
+                }
+            }
+    }
+}

@@ -1,0 +1,175 @@
+{
+    "metrics": {
+        "http_req_duration{expected_response:true}": {
+            "min": 325.9318,
+            "med": 487.3544,
+            "max": 17302.9083,
+            "p(90)": 866.9189,
+            "p(95)": 954.102,
+            "avg": 719.2611881188118
+        },
+        "http_req_duration": {
+            "avg": 719.2611881188118,
+            "min": 325.9318,
+            "med": 487.3544,
+            "max": 17302.9083,
+            "p(90)": 866.9189,
+            "p(95)": 954.102,
+            "thresholds": {
+                "p(95)<4000": false
+            }
+        },
+        "http_req_blocked": {
+            "avg": 1.3530514851485147,
+            "min": 0,
+            "med": 0,
+            "max": 136.6582,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 101,
+            "value": 0
+        },
+        "iteration_duration": {
+            "max": 72955.3321,
+            "p(90)": 72955.3321,
+            "p(95)": 72955.3321,
+            "avg": 72955.3321,
+            "min": 72955.3321,
+            "med": 72955.3321
+        },
+        "iterations": {
+            "count": 1,
+            "rate": 0.013707017310664808
+        },
+        "http_req_connecting": {
+            "avg": 0.4937366336633664,
+            "min": 0,
+            "med": 0,
+            "max": 49.8674,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_receiving": {
+            "avg": 4.14789702970297,
+            "min": 0,
+            "med": 0,
+            "max": 401.9647,
+            "p(90)": 0.7189,
+            "p(95)": 0.8764
+        },
+        "http_reqs": {
+            "count": 101,
+            "rate": 1.3844087483771457
+        },
+        "http_req_waiting": {
+            "med": 487.3434,
+            "max": 16900.9436,
+            "p(90)": 866.7959,
+            "p(95)": 954.102,
+            "avg": 715.0447801980195,
+            "min": 325.3626
+        },
+        "checks": {
+            "passes": 204,
+            "fails": 1,
+            "thresholds": {
+                "rate>0.95": false
+            },
+            "value": 0.9951219512195122
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "data_sent": {
+            "count": 18003,
+            "rate": 246.76743264389853
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 82.802,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.8198217821782179
+        },
+        "http_req_sending": {
+            "min": 0,
+            "med": 0,
+            "max": 0.7085,
+            "p(90)": 0.5066,
+            "p(95)": 0.5496,
+            "avg": 0.0685108910891089
+        },
+        "data_received": {
+            "rate": 8089.155144836905,
+            "count": 590147
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "✅ PR-04.2-03: Consulta de sesiones papelera - Status 200": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-03: Consulta de sesiones papelera - Status 200",
+                    "path": "::✅ PR-04.2-03: Consulta de sesiones papelera - Status 200",
+                    "id": "0e5143ee195c50669cbe32d2f103db76"
+                },
+                "✅ PR-04.2-03: Tiempo de consulta ≤ 2s": {
+                    "path": "::✅ PR-04.2-03: Tiempo de consulta ≤ 2s",
+                    "id": "8eee7ef5164e1b2ae21b6772cd55fec5",
+                    "passes": 0,
+                    "fails": 1,
+                    "name": "✅ PR-04.2-03: Tiempo de consulta ≤ 2s"
+                },
+                "✅ PR-04.2-03: Restauración - Status OK": {
+                    "name": "✅ PR-04.2-03: Restauración - Status OK",
+                    "path": "::✅ PR-04.2-03: Restauración - Status OK",
+                    "id": "1c143fc58eaecaa2ed8595e7fb6fb41b",
+                    "passes": 100,
+                    "fails": 0
+                },
+                "✅ PR-04.2-03: Tiempo ≤ 4s": {
+                    "name": "✅ PR-04.2-03: Tiempo ≤ 4s",
+                    "path": "::✅ PR-04.2-03: Tiempo ≤ 4s",
+                    "id": "2d98bc26b9b4218ae06a590c59cb73bc",
+                    "passes": 100,
+                    "fails": 0
+                },
+                "✅ PR-04.2-03: Sesiones restauradas": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-03: Sesiones restauradas",
+                    "path": "::✅ PR-04.2-03: Sesiones restauradas",
+                    "id": "a61c73237527cafdebde326abd558bb3"
+                },
+                "✅ PR-04.2-03: Sin errores críticos": {
+                    "name": "✅ PR-04.2-03: Sin errores críticos",
+                    "path": "::✅ PR-04.2-03: Sin errores críticos",
+                    "id": "ceed06d6e131c1819c6dbbf32790d968",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-03: Proceso completado": {
+                    "name": "✅ PR-04.2-03: Proceso completado",
+                    "path": "::✅ PR-04.2-03: Proceso completado",
+                    "id": "8eff7966856aec77bdedb64119d481a7",
+                    "passes": 1,
+                    "fails": 0
+                }
+            }
+    }
+}

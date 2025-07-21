@@ -1,0 +1,183 @@
+{
+    "metrics": {
+        "http_req_failed": {
+            "passes": 2,
+            "fails": 3,
+            "value": 0.4
+        },
+        "http_req_blocked": {
+            "med": 0,
+            "max": 181.1757,
+            "p(90)": 108.70542000000002,
+            "p(95)": 144.94055999999998,
+            "avg": 36.23514,
+            "min": 0
+        },
+        "checks": {
+            "passes": 25,
+            "fails": 20,
+            "value": 0.5555555555555556
+        },
+        "http_reqs": {
+            "count": 5,
+            "rate": 0.08049771362826968
+        },
+        "http_req_tls_handshaking": {
+            "p(90)": 47.549400000000006,
+            "p(95)": 63.39919999999998,
+            "avg": 15.849799999999998,
+            "min": 0,
+            "med": 0,
+            "max": 79.249
+        },
+        "http_req_duration": {
+            "avg": 11363.07788,
+            "min": 7045.9678,
+            "med": 11272.1043,
+            "max": 16316.3874,
+            "p(90)": 15474.07676,
+            "p(95)": 15895.23208
+        },
+        "http_req_receiving": {
+            "avg": 112.0549,
+            "min": 0,
+            "med": 75.8345,
+            "max": 270.4616,
+            "p(90)": 247.25956,
+            "p(95)": 258.86057999999997
+        },
+        "http_req_waiting": {
+            "avg": 11250.71244,
+            "min": 7045.9386,
+            "med": 11001.6427,
+            "max": 16239.5763,
+            "p(90)": 15343.0075,
+            "p(95)": 15791.2919
+        },
+        "http_req_connecting": {
+            "avg": 9.01288,
+            "min": 0,
+            "med": 0,
+            "max": 45.0644,
+            "p(90)": 27.038640000000004,
+            "p(95)": 36.05151999999999
+        },
+        "iterations": {
+            "count": 5,
+            "rate": 0.08049771362826968
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "data_sent": {
+            "count": 3073,
+            "rate": 49.47389479593455
+        },
+        "data_received": {
+            "count": 438191,
+            "rate": 7054.674726497024
+        },
+        "iteration_duration": {
+            "avg": 12422.66128,
+            "min": 8237.3668,
+            "med": 12292.6659,
+            "max": 17334.3233,
+            "p(90)": 16510.40638,
+            "p(95)": 16922.36484
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 13933.034166666666,
+            "min": 11272.1043,
+            "med": 14210.6108,
+            "max": 16316.3874,
+            "p(90)": 15895.23208,
+            "p(95)": 16105.809739999999
+        },
+        "http_req_sending": {
+            "avg": 0.31054000000000004,
+            "min": 0,
+            "med": 0.0292,
+            "max": 0.9766,
+            "p(90)": 0.8047200000000001,
+            "p(95)": 0.89066
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "✅ Lista de cursos cargada correctamente": {
+                    "fails": 2,
+                    "name": "✅ Lista de cursos cargada correctamente",
+                    "path": "::✅ Lista de cursos cargada correctamente",
+                    "id": "715daef8b1bb028a0f1c8e5ccd168b58",
+                    "passes": 3
+                },
+                "✅ Tiempo de carga rápido (≤2s)": {
+                    "name": "✅ Tiempo de carga rápido (≤2s)",
+                    "path": "::✅ Tiempo de carga rápido (≤2s)",
+                    "id": "612be2852111a46d6481947d75b0ccae",
+                    "passes": 0,
+                    "fails": 5
+                },
+                "✅ Respuesta contiene datos": {
+                    "name": "✅ Respuesta contiene datos",
+                    "path": "::✅ Respuesta contiene datos",
+                    "id": "d4fb657266f6e8a81065299b9c802fc7",
+                    "passes": 5,
+                    "fails": 0
+                },
+                "✅ Sin errores del servidor": {
+                    "name": "✅ Sin errores del servidor",
+                    "path": "::✅ Sin errores del servidor",
+                    "id": "ddb67ecb32b9a2cab99083ed2f1f5e0f",
+                    "passes": 3,
+                    "fails": 2
+                },
+                "✅ Autenticación válida": {
+                    "passes": 5,
+                    "fails": 0,
+                    "name": "✅ Autenticación válida",
+                    "path": "::✅ Autenticación válida",
+                    "id": "d4a463161cb06b720b306a7ba6a63b9b"
+                },
+                "✅ Formato JSON válido": {
+                    "name": "✅ Formato JSON válido",
+                    "path": "::✅ Formato JSON válido",
+                    "id": "e2d285dcb5175f03b03b1f7254d2bf35",
+                    "passes": 3,
+                    "fails": 2
+                },
+                "✅ Más de 100 cursos cargados": {
+                    "name": "✅ Más de 100 cursos cargados",
+                    "path": "::✅ Más de 100 cursos cargados",
+                    "id": "bd6012e6ba33ee63ac81bba5bba443f9",
+                    "passes": 3,
+                    "fails": 2
+                },
+                "✅ Sistema con cursos suficientes": {
+                    "id": "b9853816c858655591c9cbff81687043",
+                    "passes": 3,
+                    "fails": 2,
+                    "name": "✅ Sistema con cursos suficientes",
+                    "path": "::✅ Sistema con cursos suficientes"
+                },
+                "✅ Objetivo ideal >1000 cursos": {
+                    "id": "713eb34f0dce61401d464b2382223622",
+                    "passes": 0,
+                    "fails": 5,
+                    "name": "✅ Objetivo ideal >1000 cursos",
+                    "path": "::✅ Objetivo ideal >1000 cursos"
+                }
+            }
+    }
+}

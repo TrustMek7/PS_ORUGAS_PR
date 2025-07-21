@@ -1,0 +1,2983 @@
+{
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "✅ PR-04.2-04: Consulta de sesiones en papelera exitosa": {
+                    "path": "::✅ PR-04.2-04: Consulta de sesiones en papelera exitosa",
+                    "id": "3ac08669f6b7200f9fd96d516d96b38f",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Consulta de sesiones en papelera exitosa"
+                },
+                "✅ PR-04.2-04: Respuesta contiene datos válidos": {
+                    "name": "✅ PR-04.2-04: Respuesta contiene datos válidos",
+                    "path": "::✅ PR-04.2-04: Respuesta contiene datos válidos",
+                    "id": "13c8962b398ad4fb866bd83f33c61044",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 189-1753058260111-188\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 189-1753058260111-188\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 189-1753058260111-188\" eliminada permanentemente",
+                    "id": "dbb50590948bbc7b64a73616a6b53537",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Tiempo de eliminación aceptable": {
+                    "path": "::✅ PR-04.2-04: Tiempo de eliminación aceptable",
+                    "id": "410e7fdb6a38b14b6bf63264fa6ddd46",
+                    "passes": 399,
+                    "fails": 1,
+                    "name": "✅ PR-04.2-04: Tiempo de eliminación aceptable"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 19-1753058260109-18\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 19-1753058260109-18\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 19-1753058260109-18\" eliminada permanentemente",
+                    "id": "24097682035514ba6d732715cfa9f69a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 190-1753058260111-189\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 190-1753058260111-189\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 190-1753058260111-189\" eliminada permanentemente",
+                    "id": "0c9fe9de6deda63cc762a5ae338895a1",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 191-1753058260111-190\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 191-1753058260111-190\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 191-1753058260111-190\" eliminada permanentemente",
+                    "id": "ad7fab3a6311f4ef6423c7035faeb9cc",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 192-1753058260111-191\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 192-1753058260111-191\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 192-1753058260111-191\" eliminada permanentemente",
+                    "id": "ddec65ce00bef1f68a6ea0d4421f3fc4",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 193-1753058260111-192\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 193-1753058260111-192\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 193-1753058260111-192\" eliminada permanentemente",
+                    "id": "7b02ce471c620cf327897453615ca9a9",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 194-1753058260111-193\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 194-1753058260111-193\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 194-1753058260111-193\" eliminada permanentemente",
+                    "id": "d9b96562b2e48305d24eb1814953ae43",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 195-1753058260111-194\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 195-1753058260111-194\" eliminada permanentemente",
+                    "id": "e91290d7402aea896e764bf21496298e",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 195-1753058260111-194\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 196-1753058260111-195\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 196-1753058260111-195\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 196-1753058260111-195\" eliminada permanentemente",
+                    "id": "cd14b6709364235462fb3448831d6de5",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 197-1753058260111-196\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 197-1753058260111-196\" eliminada permanentemente",
+                    "id": "6c3af90c92ebc5186362ee5a6dde8f08",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 197-1753058260111-196\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 198-1753058260111-197\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 198-1753058260111-197\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 198-1753058260111-197\" eliminada permanentemente",
+                    "id": "71877ad1ebec0c9782ef2a5fcc084ea1",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 199-1753058260111-198\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 199-1753058260111-198\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 199-1753058260111-198\" eliminada permanentemente",
+                    "id": "98dc75494fe4439188476bee357b670a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 2-1753045174128-1\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 2-1753045174128-1\" eliminada permanentemente",
+                    "id": "a315008201aa30b4519b751144b86fca",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 2-1753045174128-1\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 2-1753045257574-1\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 2-1753045257574-1\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 2-1753045257574-1\" eliminada permanentemente",
+                    "id": "93901688a73fe7457a9e1fbb31f7e932",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 2-1753058260109-1\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 2-1753058260109-1\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 2-1753058260109-1\" eliminada permanentemente",
+                    "id": "6c077ea34f625686d7882822ef7ee2c2",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 20-1753058260109-19\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 20-1753058260109-19\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 20-1753058260109-19\" eliminada permanentemente",
+                    "id": "f7795bf3848f8885a4d78a4649a6dfe6",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 200-1753058260111-199\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 200-1753058260111-199\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 200-1753058260111-199\" eliminada permanentemente",
+                    "id": "e95fe92c7d250c98308f09ea499ffd79",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 201-1753058260111-200\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 201-1753058260111-200\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 201-1753058260111-200\" eliminada permanentemente",
+                    "id": "f85b2c4f85a577f2b3c5b9271cef9147",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 202-1753058260111-201\" eliminada permanentemente": {
+                    "id": "46ff44bbc1ae1e0d780803443bbcc39b",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 202-1753058260111-201\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 202-1753058260111-201\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 203-1753058260111-202\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 203-1753058260111-202\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 203-1753058260111-202\" eliminada permanentemente",
+                    "id": "e63a708260575a4e9a6f21b419b6e7cd",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 204-1753058260111-203\" eliminada permanentemente": {
+                    "id": "7242db72e8678da560dd895004abeae3",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 204-1753058260111-203\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 204-1753058260111-203\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 205-1753058260111-204\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 205-1753058260111-204\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 205-1753058260111-204\" eliminada permanentemente",
+                    "id": "efc519ae8da4e7ed5325bb319a59f68c",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 206-1753058260111-205\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 206-1753058260111-205\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 206-1753058260111-205\" eliminada permanentemente",
+                    "id": "07c321d2863fc9603adc05b34c8f9948",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 207-1753058260111-206\" eliminada permanentemente": {
+                    "id": "ce98ffe1f045c0c23f78fcb12894c174",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 207-1753058260111-206\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 207-1753058260111-206\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 208-1753058260111-207\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 208-1753058260111-207\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 208-1753058260111-207\" eliminada permanentemente",
+                    "id": "9affeb63ecaeb2492591e6844ba6c785",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 209-1753058260111-208\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 209-1753058260111-208\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 209-1753058260111-208\" eliminada permanentemente",
+                    "id": "97a6c96bf9ff56e144ab0e001a98a507"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 21-1753058260109-20\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 21-1753058260109-20\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 21-1753058260109-20\" eliminada permanentemente",
+                    "id": "56ce2828c1946e3c75a37b943c3318a2",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 210-1753058260111-209\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 210-1753058260111-209\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 210-1753058260111-209\" eliminada permanentemente",
+                    "id": "5076fb9ee4367b57a7f1066e6be42633",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 211-1753058260111-210\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 211-1753058260111-210\" eliminada permanentemente",
+                    "id": "d914c200daf84c8fb0a5cc86cf1bdd93",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 211-1753058260111-210\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 212-1753058260111-211\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 212-1753058260111-211\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 212-1753058260111-211\" eliminada permanentemente",
+                    "id": "8f1868c14feabc9a6bc2cf1672d99a69",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 213-1753058260111-212\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 213-1753058260111-212\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 213-1753058260111-212\" eliminada permanentemente",
+                    "id": "0eaa1eff4f0c58d123defa10df71f69b"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 214-1753058260111-213\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 214-1753058260111-213\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 214-1753058260111-213\" eliminada permanentemente",
+                    "id": "3835dd654079cca8ecf3660baf1d73ac",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 215-1753058260111-214\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 215-1753058260111-214\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 215-1753058260111-214\" eliminada permanentemente",
+                    "id": "871f03e51aa0178f49bb86961cc3cdb1",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 216-1753058260111-215\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 216-1753058260111-215\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 216-1753058260111-215\" eliminada permanentemente",
+                    "id": "82866ee5c2f787f3055bb68a0566ba68",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 217-1753058260111-216\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 217-1753058260111-216\" eliminada permanentemente",
+                    "id": "5130bb3baf09b1f0be8c566b3da32d51",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 217-1753058260111-216\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 218-1753058260111-217\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 218-1753058260111-217\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 218-1753058260111-217\" eliminada permanentemente",
+                    "id": "10116fd7fadf7d817e729b6fb5dbf9aa",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 219-1753058260111-218\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 219-1753058260111-218\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 219-1753058260111-218\" eliminada permanentemente",
+                    "id": "3ebfb281bd803ab9549eafb35fe93826",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 22-1753058260109-21\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 22-1753058260109-21\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 22-1753058260109-21\" eliminada permanentemente",
+                    "id": "33c9d7459c1e6c3f2f596b60620d11ad",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 220-1753058260111-219\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 220-1753058260111-219\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 220-1753058260111-219\" eliminada permanentemente",
+                    "id": "bad91a1199af1f66332b63e9c14dee3f",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 221-1753058260111-220\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 221-1753058260111-220\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 221-1753058260111-220\" eliminada permanentemente",
+                    "id": "809b10f0b53e5667c1c8fae2d6884036",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 222-1753058260111-221\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 222-1753058260111-221\" eliminada permanentemente",
+                    "id": "215eaf80151607d2b4fbf9813c311dfc",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 222-1753058260111-221\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 223-1753058260111-222\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 223-1753058260111-222\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 223-1753058260111-222\" eliminada permanentemente",
+                    "id": "9cad0c30553836e0bda322cb578b3416",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 224-1753058260111-223\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 224-1753058260111-223\" eliminada permanentemente",
+                    "id": "9fd482c45d48fbff4a74c972a5f5308c",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 224-1753058260111-223\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 225-1753058260111-224\" eliminada permanentemente": {
+                    "id": "96b55b2681b235e8c6e2c549ca66992b",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 225-1753058260111-224\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 225-1753058260111-224\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 226-1753058260111-225\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 226-1753058260111-225\" eliminada permanentemente",
+                    "id": "9162577329c4571729654128faa08217",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 226-1753058260111-225\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 227-1753058260111-226\" eliminada permanentemente": {
+                    "id": "81679921059c61684316d95b6b2f28fa",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 227-1753058260111-226\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 227-1753058260111-226\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 228-1753058260111-227\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 228-1753058260111-227\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 228-1753058260111-227\" eliminada permanentemente",
+                    "id": "752bdd7ef15533546a4e306e998722f0",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 229-1753058260111-228\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 229-1753058260111-228\" eliminada permanentemente",
+                    "id": "519047365a3d09a2785d4c99e6eb77e8",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 229-1753058260111-228\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 23-1753058260109-22\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 23-1753058260109-22\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 23-1753058260109-22\" eliminada permanentemente",
+                    "id": "605ec205a77c35eaa9ad164d5be6d468"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 230-1753058260111-229\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 230-1753058260111-229\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 230-1753058260111-229\" eliminada permanentemente",
+                    "id": "6d04917ddb9656c4ac2b26d372f2c7d5",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 231-1753058260111-230\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 231-1753058260111-230\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 231-1753058260111-230\" eliminada permanentemente",
+                    "id": "e42fefc8199433d88fd277a528d203ca",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 232-1753058260111-231\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 232-1753058260111-231\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 232-1753058260111-231\" eliminada permanentemente",
+                    "id": "8388a5d9590773733144b7959d96bbcf",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 233-1753058260111-232\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 233-1753058260111-232\" eliminada permanentemente",
+                    "id": "fdd5adbc55c0582e5197ea18180b64d1",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 233-1753058260111-232\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 234-1753058260111-233\" eliminada permanentemente": {
+                    "id": "15869beb3462e451c52b793835483b37",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 234-1753058260111-233\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 234-1753058260111-233\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 235-1753058260111-234\" eliminada permanentemente": {
+                    "id": "a784b21ca153b1bfd4e10b9d08fc8ddf",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 235-1753058260111-234\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 235-1753058260111-234\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 236-1753058260111-235\" eliminada permanentemente": {
+                    "id": "7ef086b5eb72f4ac474a8fc48f37405e",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 236-1753058260111-235\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 236-1753058260111-235\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 237-1753058260111-236\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 237-1753058260111-236\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 237-1753058260111-236\" eliminada permanentemente",
+                    "id": "7b6570cee5f64a31337d4a8b4c3b1365"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 238-1753058260111-237\" eliminada permanentemente": {
+                    "id": "504a8896dc81854bd1adef785a887eac",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 238-1753058260111-237\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 238-1753058260111-237\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 239-1753058260111-238\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 239-1753058260111-238\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 239-1753058260111-238\" eliminada permanentemente",
+                    "id": "48c32c95f112c186f1fcae0440e08b75",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 24-1753058260109-23\" eliminada permanentemente": {
+                    "id": "b30c21a48ac3d1dbc098ddeafef56b27",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 24-1753058260109-23\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 24-1753058260109-23\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 240-1753058260111-239\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 240-1753058260111-239\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 240-1753058260111-239\" eliminada permanentemente",
+                    "id": "69a749c41b937dc3d73d0ab41f55935f",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 241-1753058260111-240\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 241-1753058260111-240\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 241-1753058260111-240\" eliminada permanentemente",
+                    "id": "a12ef276046ca49e26dc99119262b1e0",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 242-1753058260111-241\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 242-1753058260111-241\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 242-1753058260111-241\" eliminada permanentemente",
+                    "id": "c46b5fbbb4ea64b56b40ac837fd2e36e",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 243-1753058260111-242\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 243-1753058260111-242\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 243-1753058260111-242\" eliminada permanentemente",
+                    "id": "a9d10da533772aeffd521175bddc1f55",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 244-1753058260111-243\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 244-1753058260111-243\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 244-1753058260111-243\" eliminada permanentemente",
+                    "id": "ed46bb851708b326ae03525477df95db",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 245-1753058260111-244\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 245-1753058260111-244\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 245-1753058260111-244\" eliminada permanentemente",
+                    "id": "437f524d48850ac4d63681214475f07a",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 246-1753058260111-245\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 246-1753058260111-245\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 246-1753058260111-245\" eliminada permanentemente",
+                    "id": "fef81cad8dd840a3be51a0a420638b2b",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 247-1753058260111-246\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 247-1753058260111-246\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 247-1753058260111-246\" eliminada permanentemente",
+                    "id": "67cc1e9ca705bd08a17ff65e64cfb34e",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 248-1753058260111-247\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 248-1753058260111-247\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 248-1753058260111-247\" eliminada permanentemente",
+                    "id": "791774423bf3e9174a2077e4815c5ff9",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 249-1753058260111-248\" eliminada permanentemente": {
+                    "id": "7afd5923e1dcca521f4f7c124e5a963e",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 249-1753058260111-248\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 249-1753058260111-248\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 25-1753058260109-24\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 25-1753058260109-24\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 25-1753058260109-24\" eliminada permanentemente",
+                    "id": "1a47b667fcf8006f4c76c1213901c8ae",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 250-1753058260111-249\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 250-1753058260111-249\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 250-1753058260111-249\" eliminada permanentemente",
+                    "id": "3dd8cfb0ff52bd898d8897133bbbe3d8",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 251-1753058260111-250\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 251-1753058260111-250\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 251-1753058260111-250\" eliminada permanentemente",
+                    "id": "1b2a374a198db4fb5d5abf1ecf9b90a4",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 252-1753058260111-251\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 252-1753058260111-251\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 252-1753058260111-251\" eliminada permanentemente",
+                    "id": "9ca8123f746d79832a1f3f0131393fd5",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 253-1753058260111-252\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 253-1753058260111-252\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 253-1753058260111-252\" eliminada permanentemente",
+                    "id": "d94da1acc4c15552682466a533859045",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 254-1753058260111-253\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 254-1753058260111-253\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 254-1753058260111-253\" eliminada permanentemente",
+                    "id": "99ad6d9344e1cebdb6c3fc672c7924ec",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 255-1753058260111-254\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 255-1753058260111-254\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 255-1753058260111-254\" eliminada permanentemente",
+                    "id": "b3419042d81faff0f55244b841516b16",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 256-1753058260111-255\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 256-1753058260111-255\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 256-1753058260111-255\" eliminada permanentemente",
+                    "id": "6cafbef8f72d41bc1aa57be48dac2981"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 257-1753058260111-256\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 257-1753058260111-256\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 257-1753058260111-256\" eliminada permanentemente",
+                    "id": "66fcbe8fae95886aa3829c72bbab17d9",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 258-1753058260111-257\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 258-1753058260111-257\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 258-1753058260111-257\" eliminada permanentemente",
+                    "id": "0da95c169c188e8e8210c2de16bb3ee5"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 259-1753058260111-258\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 259-1753058260111-258\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 259-1753058260111-258\" eliminada permanentemente",
+                    "id": "8a91afc41f031de6046d92a68490d505",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 26-1753058260109-25\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 26-1753058260109-25\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 26-1753058260109-25\" eliminada permanentemente",
+                    "id": "80b79bc2e0bb29ab47826d9bffaa22c7"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 260-1753058260111-259\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 260-1753058260111-259\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 260-1753058260111-259\" eliminada permanentemente",
+                    "id": "c9e786e8c4801ec9f35252b0c9d8e89a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 261-1753058260111-260\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 261-1753058260111-260\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 261-1753058260111-260\" eliminada permanentemente",
+                    "id": "714e516c9c260334073e0c77001268ae",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 262-1753058260111-261\" eliminada permanentemente": {
+                    "id": "130294be106142593aeeb7cf69c5fb11",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 262-1753058260111-261\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 262-1753058260111-261\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 263-1753058260111-262\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 263-1753058260111-262\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 263-1753058260111-262\" eliminada permanentemente",
+                    "id": "5b23952930b87b7aca0cf1cfbb9a3c00",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 264-1753058260111-263\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 264-1753058260111-263\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 264-1753058260111-263\" eliminada permanentemente",
+                    "id": "e5ffc0d4ed83fdecaef58dca265b56c6",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 265-1753058260111-264\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 265-1753058260111-264\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 265-1753058260111-264\" eliminada permanentemente",
+                    "id": "b0aea605848db14e460826ac06a5e33c",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 266-1753058260111-265\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 266-1753058260111-265\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 266-1753058260111-265\" eliminada permanentemente",
+                    "id": "73d60d39acfc05b6af27b3ec02f1c92c",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 267-1753058260111-266\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 267-1753058260111-266\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 267-1753058260111-266\" eliminada permanentemente",
+                    "id": "e211cbf09de9b96e0393268dc04176ac",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 268-1753058260111-267\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 268-1753058260111-267\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 268-1753058260111-267\" eliminada permanentemente",
+                    "id": "c997b980d4b210c4d7eb88774c337378",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 269-1753058260111-268\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 269-1753058260111-268\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 269-1753058260111-268\" eliminada permanentemente",
+                    "id": "8bc5d9268b21b621d3f26058e2d06ffd",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 27-1753058260109-26\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 27-1753058260109-26\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 27-1753058260109-26\" eliminada permanentemente",
+                    "id": "156fd5355735a9813e69a678ea196b48",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 270-1753058260111-269\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 270-1753058260111-269\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 270-1753058260111-269\" eliminada permanentemente",
+                    "id": "4ba869e05f46971f8892722358a35f4f",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 271-1753058260111-270\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 271-1753058260111-270\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 271-1753058260111-270\" eliminada permanentemente",
+                    "id": "a1bc345bf8d6475b81b64330af5fac71",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 272-1753058260111-271\" eliminada permanentemente": {
+                    "id": "522bb39c79c513270dff8df3aff65164",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 272-1753058260111-271\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 272-1753058260111-271\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 273-1753058260111-272\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 273-1753058260111-272\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 273-1753058260111-272\" eliminada permanentemente",
+                    "id": "52050b5184709a5236ed6200dde04f7c",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 274-1753058260111-273\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 274-1753058260111-273\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 274-1753058260111-273\" eliminada permanentemente",
+                    "id": "647d2aa4096d51dd0432352631eabe5c",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 275-1753058260111-274\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 275-1753058260111-274\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 275-1753058260111-274\" eliminada permanentemente",
+                    "id": "c6bd9b7edb19cba623c5c5abf0312f31",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 276-1753058260111-275\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 276-1753058260111-275\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 276-1753058260111-275\" eliminada permanentemente",
+                    "id": "8d77777920c933e64d41369bf43f7d03",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 277-1753058260111-276\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 277-1753058260111-276\" eliminada permanentemente",
+                    "id": "e95eb922b209111614751d35f40d5c07",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 277-1753058260111-276\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 278-1753058260111-277\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 278-1753058260111-277\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 278-1753058260111-277\" eliminada permanentemente",
+                    "id": "c2f850a5ccfbfcbb5def96fdf983e859",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 279-1753058260111-278\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 279-1753058260111-278\" eliminada permanentemente",
+                    "id": "3813c6e2debec34f0ed77ca724cb48b0",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 279-1753058260111-278\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 28-1753058260109-27\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 28-1753058260109-27\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 28-1753058260109-27\" eliminada permanentemente",
+                    "id": "756e29d39a6be1e8f6a57e6595fff95f"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 280-1753058260111-279\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 280-1753058260111-279\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 280-1753058260111-279\" eliminada permanentemente",
+                    "id": "ca1daa283c3b89a4f88bf39c8a9900a7",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 281-1753058260111-280\" eliminada permanentemente": {
+                    "id": "109100fac03d34e32dd448f47f2f8d74",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 281-1753058260111-280\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 281-1753058260111-280\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 282-1753058260111-281\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 282-1753058260111-281\" eliminada permanentemente",
+                    "id": "04b7c6ba81821aa5bcca57ec02eba32f",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 282-1753058260111-281\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 283-1753058260111-282\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 283-1753058260111-282\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 283-1753058260111-282\" eliminada permanentemente",
+                    "id": "0ef79ad125fcf75f2378bcc169fbe505",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 284-1753058260111-283\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 284-1753058260111-283\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 284-1753058260111-283\" eliminada permanentemente",
+                    "id": "56a90b5fe78e84d21ab21a3cc7514271"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 285-1753058260111-284\" eliminada permanentemente": {
+                    "id": "a809b94002f9217e19572ecdeb1a3ec6",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 285-1753058260111-284\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 285-1753058260111-284\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 286-1753058260111-285\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 286-1753058260111-285\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 286-1753058260111-285\" eliminada permanentemente",
+                    "id": "9df63c8b6594f91f7e2596f4acffd142",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 287-1753058260111-286\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 287-1753058260111-286\" eliminada permanentemente",
+                    "id": "4dcd56c43bca30bf9c3173d339abcfcd",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 287-1753058260111-286\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 288-1753058260111-287\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 288-1753058260111-287\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 288-1753058260111-287\" eliminada permanentemente",
+                    "id": "d3a3fac68a8d4db53de8a5365d21d9e5",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 289-1753058260111-288\" eliminada permanentemente": {
+                    "id": "65ba31d2df64f9f14f1d1b89c0bc864b",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 289-1753058260111-288\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 289-1753058260111-288\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 29-1753058260109-28\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 29-1753058260109-28\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 29-1753058260109-28\" eliminada permanentemente",
+                    "id": "3568c1a180c453583ff4d51c7fd8537c",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 290-1753058260111-289\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 290-1753058260111-289\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 290-1753058260111-289\" eliminada permanentemente",
+                    "id": "61d42c6e4de1764752ebf3edfd6da52c",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 291-1753058260111-290\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 291-1753058260111-290\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 291-1753058260111-290\" eliminada permanentemente",
+                    "id": "0dbb34b8361e3358f19f72aedf25f1cd",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 292-1753058260111-291\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 292-1753058260111-291\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 292-1753058260111-291\" eliminada permanentemente",
+                    "id": "c171d8eb8a230d28129a21b9b9e34398",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 293-1753058260111-292\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 293-1753058260111-292\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 293-1753058260111-292\" eliminada permanentemente",
+                    "id": "5a6ee56005f04c098e59bd934e70bfe9"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 294-1753058260111-293\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 294-1753058260111-293\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 294-1753058260111-293\" eliminada permanentemente",
+                    "id": "f882fa04b1e444ced0ec4831ba7f5e40"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 295-1753058260111-294\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 295-1753058260111-294\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 295-1753058260111-294\" eliminada permanentemente",
+                    "id": "10d5342064594653529e1a6aaf0dce11",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 296-1753058260111-295\" eliminada permanentemente": {
+                    "id": "e3b3eb56223c9547d5106adb6f6febf8",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 296-1753058260111-295\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 296-1753058260111-295\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 297-1753058260112-296\" eliminada permanentemente": {
+                    "id": "62dd39e43a2d1c79b74eb53ce192e7a9",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 297-1753058260112-296\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 297-1753058260112-296\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 298-1753058260112-297\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 298-1753058260112-297\" eliminada permanentemente",
+                    "id": "8367ea035abfd5ed9c6d204b47298320",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 298-1753058260112-297\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 299-1753058260112-298\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 299-1753058260112-298\" eliminada permanentemente",
+                    "id": "9616b9282f064317d562072c8de0c2c3",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 299-1753058260112-298\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 3-1753045257574-2\" eliminada permanentemente": {
+                    "id": "0c845af6de02bf8a367fcba491f3ec5c",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 3-1753045257574-2\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 3-1753045257574-2\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 3-1753058260109-2\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 3-1753058260109-2\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 3-1753058260109-2\" eliminada permanentemente",
+                    "id": "b6e3d229a3f484b0e92070186919fc28"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 30-1753058260109-29\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 30-1753058260109-29\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 30-1753058260109-29\" eliminada permanentemente",
+                    "id": "f4d742b0fee3da95e7973344f3c136c5",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 300-1753058260112-299\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 300-1753058260112-299\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 300-1753058260112-299\" eliminada permanentemente",
+                    "id": "ffa48d08cb8862f3d4995b20fdc45217",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 301-1753058260112-300\" eliminada permanentemente": {
+                    "id": "b4b0664c91c6161b36ee0ae7200c39de",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 301-1753058260112-300\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 301-1753058260112-300\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 302-1753058260112-301\" eliminada permanentemente": {
+                    "id": "1d1590ca709ae2d449c48fffb6cd9574",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 302-1753058260112-301\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 302-1753058260112-301\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 303-1753058260112-302\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 303-1753058260112-302\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 303-1753058260112-302\" eliminada permanentemente",
+                    "id": "becdfa079542de4cc4071094801c7d85"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 304-1753058260112-303\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 304-1753058260112-303\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 304-1753058260112-303\" eliminada permanentemente",
+                    "id": "ca67b225ffde434df08fe9d97805c4e5",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 305-1753058260112-304\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 305-1753058260112-304\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 305-1753058260112-304\" eliminada permanentemente",
+                    "id": "ce4cde4eee3c02c849e4a2a9b50ed1f7",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 306-1753058260112-305\" eliminada permanentemente": {
+                    "id": "6485c3f35625ee7557d0740aae4a40ff",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 306-1753058260112-305\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 306-1753058260112-305\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 307-1753058260112-306\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 307-1753058260112-306\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 307-1753058260112-306\" eliminada permanentemente",
+                    "id": "df8f15de171e2882f68b529b8fa78ff8",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 308-1753058260112-307\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 308-1753058260112-307\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 308-1753058260112-307\" eliminada permanentemente",
+                    "id": "e642cac69d6aca251bc176100aa96a71",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 309-1753058260112-308\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 309-1753058260112-308\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 309-1753058260112-308\" eliminada permanentemente",
+                    "id": "a772f6a14764cc3750b90a1a3654f75d",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 31-1753058260109-30\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 31-1753058260109-30\" eliminada permanentemente",
+                    "id": "ef6272ad0c6477aecb3ea86c72b34b29",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 31-1753058260109-30\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 310-1753058260112-309\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 310-1753058260112-309\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 310-1753058260112-309\" eliminada permanentemente",
+                    "id": "1cee4d952321829832732c17afac650e"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 311-1753058260112-310\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 311-1753058260112-310\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 311-1753058260112-310\" eliminada permanentemente",
+                    "id": "93c626644babe684c639621cfb071f91",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 312-1753058260112-311\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 312-1753058260112-311\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 312-1753058260112-311\" eliminada permanentemente",
+                    "id": "d2bfc228405eb1a0f72c3f8875da6b78",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 313-1753058260112-312\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 313-1753058260112-312\" eliminada permanentemente",
+                    "id": "d469d2b846dd71aab32c62c8c606de34",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 313-1753058260112-312\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 314-1753058260112-313\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 314-1753058260112-313\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 314-1753058260112-313\" eliminada permanentemente",
+                    "id": "32bc454b50321e3083e9165c750f3bd3"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 315-1753058260112-314\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 315-1753058260112-314\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 315-1753058260112-314\" eliminada permanentemente",
+                    "id": "9557875d289f122108890153a427f7f1",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 316-1753058260112-315\" eliminada permanentemente": {
+                    "id": "88cc74e7c08b2c7785d0690a310d7648",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 316-1753058260112-315\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 316-1753058260112-315\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 317-1753058260112-316\" eliminada permanentemente": {
+                    "id": "d6fd369a8c609337d306d76ec151dd07",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 317-1753058260112-316\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 317-1753058260112-316\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 318-1753058260112-317\" eliminada permanentemente": {
+                    "id": "4607311375f3c5718cbc1adaa6fd540e",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 318-1753058260112-317\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 318-1753058260112-317\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 319-1753058260112-318\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 319-1753058260112-318\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 319-1753058260112-318\" eliminada permanentemente",
+                    "id": "499357c9a2b079223577aed7779e7288",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 32-1753058260109-31\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 32-1753058260109-31\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 32-1753058260109-31\" eliminada permanentemente",
+                    "id": "bd12c655a9309f5263d4571a5b1966df"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 320-1753058260112-319\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 320-1753058260112-319\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 320-1753058260112-319\" eliminada permanentemente",
+                    "id": "e9f2a9645a83207b8221d5adb69467b9"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 321-1753058260112-320\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 321-1753058260112-320\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 321-1753058260112-320\" eliminada permanentemente",
+                    "id": "59dce7cd53435fc802afe9397deb37aa",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 322-1753058260112-321\" eliminada permanentemente": {
+                    "id": "acef1a84c7847160dfedc42aa8f56174",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 322-1753058260112-321\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 322-1753058260112-321\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 323-1753058260112-322\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 323-1753058260112-322\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 323-1753058260112-322\" eliminada permanentemente",
+                    "id": "7d32915fdae1dd9e92f516e9691ac493",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 324-1753058260112-323\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 324-1753058260112-323\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 324-1753058260112-323\" eliminada permanentemente",
+                    "id": "d1d1183d20996279a9bc4d4eb8bac21e",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 325-1753058260112-324\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 325-1753058260112-324\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 325-1753058260112-324\" eliminada permanentemente",
+                    "id": "7c0e6701309365684fbb64a4963ddd32",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 326-1753058260112-325\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 326-1753058260112-325\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 326-1753058260112-325\" eliminada permanentemente",
+                    "id": "616556363ce29115e986cdfbb8c75732",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 327-1753058260112-326\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 327-1753058260112-326\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 327-1753058260112-326\" eliminada permanentemente",
+                    "id": "e2038602a9c8ef0e6a4d9ed8de306faf",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 328-1753058260112-327\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 328-1753058260112-327\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 328-1753058260112-327\" eliminada permanentemente",
+                    "id": "43125968a334fd568012c5bedd75816c",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 329-1753058260112-328\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 329-1753058260112-328\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 329-1753058260112-328\" eliminada permanentemente",
+                    "id": "6025a3c511663f9d7adf8c0e9fc24036",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 33-1753058260109-32\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 33-1753058260109-32\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 33-1753058260109-32\" eliminada permanentemente",
+                    "id": "55ad7029e17cbcfa170bebd760c907b1",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 330-1753058260112-329\" eliminada permanentemente": {
+                    "id": "93fce33513d76347afea1d7c7544957e",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 330-1753058260112-329\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 330-1753058260112-329\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 331-1753058260112-330\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 331-1753058260112-330\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 331-1753058260112-330\" eliminada permanentemente",
+                    "id": "2cb7df171d5ae415b10b0862beb8f647",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 332-1753058260112-331\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 332-1753058260112-331\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 332-1753058260112-331\" eliminada permanentemente",
+                    "id": "1f40abd2a33f7de979c85784c37a3278",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 333-1753058260112-332\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 333-1753058260112-332\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 333-1753058260112-332\" eliminada permanentemente",
+                    "id": "4d03d7ca2b23c15486193d4bda1957f8",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 334-1753058260112-333\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 334-1753058260112-333\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 334-1753058260112-333\" eliminada permanentemente",
+                    "id": "cad673edc2e8fa15f3e986ada48962e8",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 335-1753058260112-334\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 335-1753058260112-334\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 335-1753058260112-334\" eliminada permanentemente",
+                    "id": "6ab524e244308ecc27273077a43b16a9"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 336-1753058260112-335\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 336-1753058260112-335\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 336-1753058260112-335\" eliminada permanentemente",
+                    "id": "ac04cb384de9dbdc7feb31f9888fd501",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 337-1753058260112-336\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 337-1753058260112-336\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 337-1753058260112-336\" eliminada permanentemente",
+                    "id": "264c82faad8b024c2d1bdea189e04883",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 338-1753058260112-337\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 338-1753058260112-337\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 338-1753058260112-337\" eliminada permanentemente",
+                    "id": "a011a9bfe07ea71de3247b9dc7c1e3b4",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 339-1753058260112-338\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 339-1753058260112-338\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 339-1753058260112-338\" eliminada permanentemente",
+                    "id": "d4f72cad0880104224962c710c8c09a6",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 34-1753058260109-33\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 34-1753058260109-33\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 34-1753058260109-33\" eliminada permanentemente",
+                    "id": "910b4dbde713d9b54712df9e6cc69aa8",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 340-1753058260112-339\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 340-1753058260112-339\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 340-1753058260112-339\" eliminada permanentemente",
+                    "id": "841149330d0adf607481a5084ddc2f10",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 341-1753058260112-340\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 341-1753058260112-340\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 341-1753058260112-340\" eliminada permanentemente",
+                    "id": "c56cbff47aa375870f10cf75d9b47340",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 342-1753058260112-341\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 342-1753058260112-341\" eliminada permanentemente",
+                    "id": "28c933a954840a5dc357a2e8ae937956",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 342-1753058260112-341\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 343-1753058260112-342\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 343-1753058260112-342\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 343-1753058260112-342\" eliminada permanentemente",
+                    "id": "324c2957f922ee91dd992d72406b8ccb",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 344-1753058260112-343\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 344-1753058260112-343\" eliminada permanentemente",
+                    "id": "799f88bbfbad1fe305846cbac771d3f1",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 344-1753058260112-343\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 345-1753058260112-344\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 345-1753058260112-344\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 345-1753058260112-344\" eliminada permanentemente",
+                    "id": "2905c52cdab6dd8579acc5d9f044a3f9"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 346-1753058260112-345\" eliminada permanentemente": {
+                    "id": "2a35c5cafe3e8e0404bb74d627b40ab9",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 346-1753058260112-345\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 346-1753058260112-345\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 347-1753058260112-346\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 347-1753058260112-346\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 347-1753058260112-346\" eliminada permanentemente",
+                    "id": "15fb8983df82a2fcc600bb310ae1e2f4",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 348-1753058260112-347\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 348-1753058260112-347\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 348-1753058260112-347\" eliminada permanentemente",
+                    "id": "a075d6e0e4b8dca7a0b4cc343835da81",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 349-1753058260112-348\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 349-1753058260112-348\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 349-1753058260112-348\" eliminada permanentemente",
+                    "id": "4732d970ec312abc4cdeceedb214ef34",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 35-1753058260109-34\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 35-1753058260109-34\" eliminada permanentemente",
+                    "id": "dc601e1965b57612068b7c7896f2e838",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 35-1753058260109-34\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 350-1753058260112-349\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 350-1753058260112-349\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 350-1753058260112-349\" eliminada permanentemente",
+                    "id": "1f024daeb82463f0a5b76723e172d0ca",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 351-1753058260112-350\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 351-1753058260112-350\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 351-1753058260112-350\" eliminada permanentemente",
+                    "id": "9f5e2125dd8fa08dc800052c32d2ce1f",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 352-1753058260112-351\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 352-1753058260112-351\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 352-1753058260112-351\" eliminada permanentemente",
+                    "id": "0fa9b219e0e035089792ed529e860699",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 353-1753058260112-352\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 353-1753058260112-352\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 353-1753058260112-352\" eliminada permanentemente",
+                    "id": "770ee7cf9b2bd51670409c2efe01a2e5"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 354-1753058260112-353\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 354-1753058260112-353\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 354-1753058260112-353\" eliminada permanentemente",
+                    "id": "2ceb4d39e0ee0adae6dcc9090377cdfe",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 355-1753058260112-354\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 355-1753058260112-354\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 355-1753058260112-354\" eliminada permanentemente",
+                    "id": "36214a028c577cbdd6616940c21053f7",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 356-1753058260112-355\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 356-1753058260112-355\" eliminada permanentemente",
+                    "id": "29e8abc19a64c8139adc9fe0ef673e3d",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 356-1753058260112-355\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 357-1753058260112-356\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 357-1753058260112-356\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 357-1753058260112-356\" eliminada permanentemente",
+                    "id": "cf0b6297113cdcb06c06f735d3901969",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 358-1753058260112-357\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 358-1753058260112-357\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 358-1753058260112-357\" eliminada permanentemente",
+                    "id": "f0b711d2ca87e5160a47e1797ccdaa61",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 359-1753058260112-358\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 359-1753058260112-358\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 359-1753058260112-358\" eliminada permanentemente",
+                    "id": "d71671acec67b5f90a925e0b18a771f4",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 36-1753058260109-35\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 36-1753058260109-35\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 36-1753058260109-35\" eliminada permanentemente",
+                    "id": "23ef693ab8f7ef956da142c66128b6e4",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 360-1753058260112-359\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 360-1753058260112-359\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 360-1753058260112-359\" eliminada permanentemente",
+                    "id": "ba4a2675eaf12ea3df6a56debdb71c0e",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 361-1753058260112-360\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 361-1753058260112-360\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 361-1753058260112-360\" eliminada permanentemente",
+                    "id": "2e474b291aa53d5d07ea62f74a9f4934",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 362-1753058260112-361\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 362-1753058260112-361\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 362-1753058260112-361\" eliminada permanentemente",
+                    "id": "3f28bbf037aceddbf8b5822d57e742e2",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 363-1753058260112-362\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 363-1753058260112-362\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 363-1753058260112-362\" eliminada permanentemente",
+                    "id": "cca1e5acde53cf563808edba66e0852b",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 364-1753058260112-363\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 364-1753058260112-363\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 364-1753058260112-363\" eliminada permanentemente",
+                    "id": "1b26b1456748c35ce11a8b38f8bf66d5"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 365-1753058260112-364\" eliminada permanentemente": {
+                    "id": "3d4d65ec4a7f3f184b08cd77c01dd79b",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 365-1753058260112-364\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 365-1753058260112-364\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 366-1753058260112-365\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 366-1753058260112-365\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 366-1753058260112-365\" eliminada permanentemente",
+                    "id": "98a9e2f99b89f9c8da046be0b9e36e6d",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 367-1753058260112-366\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 367-1753058260112-366\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 367-1753058260112-366\" eliminada permanentemente",
+                    "id": "a3ae4e102fd51db50ae993c7504205d5"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 368-1753058260112-367\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 368-1753058260112-367\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 368-1753058260112-367\" eliminada permanentemente",
+                    "id": "abc85eb172e58cfb52985715b88b6327"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 369-1753058260112-368\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 369-1753058260112-368\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 369-1753058260112-368\" eliminada permanentemente",
+                    "id": "c10cc7dbc71978fb9b3719179418e1ad",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 37-1753058260109-36\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 37-1753058260109-36\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 37-1753058260109-36\" eliminada permanentemente",
+                    "id": "2016e3acd98f6bcea0640231c6060bac",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 370-1753058260112-369\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 370-1753058260112-369\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 370-1753058260112-369\" eliminada permanentemente",
+                    "id": "85da64453906253bf655447121d1594f",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 371-1753058260112-370\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 371-1753058260112-370\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 371-1753058260112-370\" eliminada permanentemente",
+                    "id": "7e2d08b9356c1be454b3dda7548b58da",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 372-1753058260112-371\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 372-1753058260112-371\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 372-1753058260112-371\" eliminada permanentemente",
+                    "id": "e01c454ecde690744600dfc68bd0470a"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 373-1753058260112-372\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 373-1753058260112-372\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 373-1753058260112-372\" eliminada permanentemente",
+                    "id": "7ea041e728f7acaab9aa54b22906f092",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 374-1753058260112-373\" eliminada permanentemente": {
+                    "id": "74a61071ab046733d0f574d40ae6a6aa",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 374-1753058260112-373\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 374-1753058260112-373\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 375-1753058260112-374\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 375-1753058260112-374\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 375-1753058260112-374\" eliminada permanentemente",
+                    "id": "9cd8958652325a87d18c2bb05209486c"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 376-1753058260112-375\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 376-1753058260112-375\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 376-1753058260112-375\" eliminada permanentemente",
+                    "id": "989673c9b4bf0dca852dba0258038cc1",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 377-1753058260112-376\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 377-1753058260112-376\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 377-1753058260112-376\" eliminada permanentemente",
+                    "id": "4a242f2367c9c30b819a16b38e648f31",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 378-1753058260112-377\" eliminada permanentemente": {
+                    "id": "caf2a738dd52ff8b2f6af3893d5350d8",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 378-1753058260112-377\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 378-1753058260112-377\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 379-1753058260112-378\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 379-1753058260112-378\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 379-1753058260112-378\" eliminada permanentemente",
+                    "id": "a8a1943be65eb815f1f5319c6c4348c6",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 38-1753058260109-37\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 38-1753058260109-37\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 38-1753058260109-37\" eliminada permanentemente",
+                    "id": "58f6ad370655ae3ce35cead0523f683b",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 380-1753058260112-379\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 380-1753058260112-379\" eliminada permanentemente",
+                    "id": "c5968fb9e30dd016e96dda815ccad44f",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 380-1753058260112-379\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 381-1753058260112-380\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 381-1753058260112-380\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 381-1753058260112-380\" eliminada permanentemente",
+                    "id": "8bccfb115f861404c161081a8abe884c"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 382-1753058260112-381\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 382-1753058260112-381\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 382-1753058260112-381\" eliminada permanentemente",
+                    "id": "824e757da40a3dd0efe6299f85add8dc",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 383-1753058260112-382\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 383-1753058260112-382\" eliminada permanentemente",
+                    "id": "8e75491d82a344ad87717cac3b50c1c0",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 383-1753058260112-382\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 384-1753058260112-383\" eliminada permanentemente": {
+                    "id": "998dc99736e7484c9334237cf9c2b228",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 384-1753058260112-383\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 384-1753058260112-383\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 385-1753058260112-384\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 385-1753058260112-384\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 385-1753058260112-384\" eliminada permanentemente",
+                    "id": "9c80d1367c5bc20a840e06e6a54ea79a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 386-1753058260112-385\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 386-1753058260112-385\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 386-1753058260112-385\" eliminada permanentemente",
+                    "id": "3894c6cdb15b25f8b96b8440b0bcc41d",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 387-1753058260112-386\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 387-1753058260112-386\" eliminada permanentemente",
+                    "id": "65416d6b6bc68dbf1e762a333cfcbfa5",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 387-1753058260112-386\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 388-1753058260112-387\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 388-1753058260112-387\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 388-1753058260112-387\" eliminada permanentemente",
+                    "id": "d39b15f90056a62de13b9986140c4e94"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 389-1753058260112-388\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 389-1753058260112-388\" eliminada permanentemente",
+                    "id": "c726dbd1795f5605887fd59aa7da0334",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 389-1753058260112-388\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 39-1753058260109-38\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 39-1753058260109-38\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 39-1753058260109-38\" eliminada permanentemente",
+                    "id": "b40c17f424be986dcf40b2851189f118",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 390-1753058260112-389\" eliminada permanentemente": {
+                    "id": "be8f09820de27966786297bbcba80615",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 390-1753058260112-389\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 390-1753058260112-389\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 391-1753058260112-390\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 391-1753058260112-390\" eliminada permanentemente",
+                    "id": "94c27428f8b5d53e8ff0169007643d87",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 391-1753058260112-390\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 392-1753058260112-391\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 392-1753058260112-391\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 392-1753058260112-391\" eliminada permanentemente",
+                    "id": "67e32d5da70d69295a4302d19bce5739",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 393-1753058260112-392\" eliminada permanentemente": {
+                    "id": "00e55dbac5d90fc8cba7b8a68054f68b",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 393-1753058260112-392\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 393-1753058260112-392\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 394-1753058260112-393\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 394-1753058260112-393\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 394-1753058260112-393\" eliminada permanentemente",
+                    "id": "8ff856e3ee361917c896bcc87d88ff2e",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 395-1753058260112-394\" eliminada permanentemente": {
+                    "id": "c79c0f0d0102a9fcbfbc1f0a37b1f4b7",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 395-1753058260112-394\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 395-1753058260112-394\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 396-1753058260112-395\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 396-1753058260112-395\" eliminada permanentemente",
+                    "id": "452173ce408dcc2c4498190cef391fe9",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 396-1753058260112-395\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 397-1753058260112-396\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 397-1753058260112-396\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 397-1753058260112-396\" eliminada permanentemente",
+                    "id": "4a4d7a7cb65ec32810154a34dbca6bc8",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 398-1753058260112-397\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 398-1753058260112-397\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 398-1753058260112-397\" eliminada permanentemente",
+                    "id": "27c9ada7a78e758c576c449be54088bd",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 399-1753058260112-398\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 399-1753058260112-398\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 399-1753058260112-398\" eliminada permanentemente",
+                    "id": "309c0899ba1f729fe4625db67b402cfd",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 4-1753058260109-3\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 4-1753058260109-3\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 4-1753058260109-3\" eliminada permanentemente",
+                    "id": "5f6aff1deef2c72bef146bbf2023a5ee",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 40-1753058260109-39\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 40-1753058260109-39\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 40-1753058260109-39\" eliminada permanentemente",
+                    "id": "1a295958d21ddffcbd09809eaf252a20",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 400-1753058260112-399\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 400-1753058260112-399\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 400-1753058260112-399\" eliminada permanentemente",
+                    "id": "69fa326a3e48852daef61e99b43d6822"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 401-1753058260113-400\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 401-1753058260113-400\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 401-1753058260113-400\" eliminada permanentemente",
+                    "id": "316333608b9657d922da0bc2024f378b",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 402-1753058260113-401\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 402-1753058260113-401\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 402-1753058260113-401\" eliminada permanentemente",
+                    "id": "781ac09707c27ca900bcde1b455c64ae"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 403-1753058260113-402\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 403-1753058260113-402\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 403-1753058260113-402\" eliminada permanentemente",
+                    "id": "145379f463be4b15eb270c4fbadd098e"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 404-1753058260113-403\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 404-1753058260113-403\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 404-1753058260113-403\" eliminada permanentemente",
+                    "id": "36e207f1db9465bbae6155a74c929b96",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 405-1753058260113-404\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 405-1753058260113-404\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 405-1753058260113-404\" eliminada permanentemente",
+                    "id": "a25eedfe4f40c2d4e996689716debc84"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 406-1753058260113-405\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 406-1753058260113-405\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 406-1753058260113-405\" eliminada permanentemente",
+                    "id": "49047df7d8298b5a5045e356b5adcd30"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 407-1753058260113-406\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 407-1753058260113-406\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 407-1753058260113-406\" eliminada permanentemente",
+                    "id": "b7419f59fa1a62de7b758bdb20cdb407",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 408-1753058260113-407\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 408-1753058260113-407\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 408-1753058260113-407\" eliminada permanentemente",
+                    "id": "fa4d95eabc083fb4d6c416c0f653072c",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 409-1753058260113-408\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 409-1753058260113-408\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 409-1753058260113-408\" eliminada permanentemente",
+                    "id": "8b02ee1c8653bba1479b983d4536809d",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 41-1753058260109-40\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 41-1753058260109-40\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 41-1753058260109-40\" eliminada permanentemente",
+                    "id": "d3985c5584653fd8e117df63a8439600"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 410-1753058260113-409\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 410-1753058260113-409\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 410-1753058260113-409\" eliminada permanentemente",
+                    "id": "063d3d6d0204161da54152ee4ef822ac"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 411-1753058260113-410\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 411-1753058260113-410\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 411-1753058260113-410\" eliminada permanentemente",
+                    "id": "5589d6ecdac0aa1cbb19b7ed68cc8c98",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 412-1753058260113-411\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 412-1753058260113-411\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 412-1753058260113-411\" eliminada permanentemente",
+                    "id": "841cc21545f5d2621b6c1de8150af7a3",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 413-1753058260113-412\" eliminada permanentemente": {
+                    "id": "68e4a29cb04956970750d9f7f9e41cdc",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 413-1753058260113-412\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 413-1753058260113-412\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 414-1753058260113-413\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 414-1753058260113-413\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 414-1753058260113-413\" eliminada permanentemente",
+                    "id": "2f6969e9eae2b2edbb865c13304d52cb",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 415-1753058260113-414\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 415-1753058260113-414\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 415-1753058260113-414\" eliminada permanentemente",
+                    "id": "68386ee0771623a35a8ad6fd2f08854e",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 416-1753058260113-415\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 416-1753058260113-415\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 416-1753058260113-415\" eliminada permanentemente",
+                    "id": "5e327590cda9de387ad5ccb0505cecab"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 417-1753058260113-416\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 417-1753058260113-416\" eliminada permanentemente",
+                    "id": "06453338c39f7f24d38507add75c71e3",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 417-1753058260113-416\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 418-1753058260113-417\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 418-1753058260113-417\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 418-1753058260113-417\" eliminada permanentemente",
+                    "id": "2881be35dce65ead114fe96a305f92ec",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 419-1753058260113-418\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 419-1753058260113-418\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 419-1753058260113-418\" eliminada permanentemente",
+                    "id": "f0397acbd324b9ea8eb97e4b160a4f3f",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 42-1753058260109-41\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 42-1753058260109-41\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 42-1753058260109-41\" eliminada permanentemente",
+                    "id": "9181a0f093da6a165d5d4e5843dd6d9e"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 420-1753058260113-419\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 420-1753058260113-419\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 420-1753058260113-419\" eliminada permanentemente",
+                    "id": "dbbe5675843a9e203bdff5e95c404554",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 421-1753058260113-420\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 421-1753058260113-420\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 421-1753058260113-420\" eliminada permanentemente",
+                    "id": "281d15974bac37653de5099019bf2675",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 422-1753058260113-421\" eliminada permanentemente": {
+                    "id": "0aa67425a421cd084129dc1be1f2487d",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 422-1753058260113-421\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 422-1753058260113-421\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 423-1753058260113-422\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 423-1753058260113-422\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 423-1753058260113-422\" eliminada permanentemente",
+                    "id": "71f7ee27c403d0ba16d600382d22f051",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 424-1753058260113-423\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 424-1753058260113-423\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 424-1753058260113-423\" eliminada permanentemente",
+                    "id": "02a88b927ddeaed098d5672a9560f793",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 425-1753058260113-424\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 425-1753058260113-424\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 425-1753058260113-424\" eliminada permanentemente",
+                    "id": "0d848c66b2a563ba70212b69e1bd7839",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 426-1753058260113-425\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 426-1753058260113-425\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 426-1753058260113-425\" eliminada permanentemente",
+                    "id": "2cad362b26f5450d01f167e40d65df9f",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 427-1753058260113-426\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 427-1753058260113-426\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 427-1753058260113-426\" eliminada permanentemente",
+                    "id": "d25f0e99c7d1554779f31c91f343d697",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 428-1753058260113-427\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 428-1753058260113-427\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 428-1753058260113-427\" eliminada permanentemente",
+                    "id": "bd180a4e18c003d435bd92984f4d9662"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 429-1753058260113-428\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 429-1753058260113-428\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 429-1753058260113-428\" eliminada permanentemente",
+                    "id": "fbc6225257c2197d914220a054304491"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 43-1753058260109-42\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 43-1753058260109-42\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 43-1753058260109-42\" eliminada permanentemente",
+                    "id": "1f178adeef4e00861e8d0374a0ffd4c8"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 430-1753058260113-429\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 430-1753058260113-429\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 430-1753058260113-429\" eliminada permanentemente",
+                    "id": "f0aec8411cd866b0d024139acef33412",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 431-1753058260113-430\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 431-1753058260113-430\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 431-1753058260113-430\" eliminada permanentemente",
+                    "id": "1d1c5a7bad0e0b7cb69c931cba5abb06",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 432-1753058260113-431\" eliminada permanentemente": {
+                    "id": "6d9ec7b6db911cddf21fdddc4e3d2f28",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 432-1753058260113-431\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 432-1753058260113-431\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 433-1753058260113-432\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 433-1753058260113-432\" eliminada permanentemente",
+                    "id": "382e6abb69680f5f18fb8c02c3e52c32",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 433-1753058260113-432\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 434-1753058260113-433\" eliminada permanentemente": {
+                    "id": "dd2408e766472a3600eb0865b2799c30",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 434-1753058260113-433\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 434-1753058260113-433\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 435-1753058260113-434\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 435-1753058260113-434\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 435-1753058260113-434\" eliminada permanentemente",
+                    "id": "65cdc5cd7e1cfd13efab907aaa39568e",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 436-1753058260113-435\" eliminada permanentemente": {
+                    "id": "d127ecbd61fffb62e9530981e5550551",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 436-1753058260113-435\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 436-1753058260113-435\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 437-1753058260113-436\" eliminada permanentemente": {
+                    "id": "f71866d219f5f60e4d32ef51570ce2c1",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 437-1753058260113-436\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 437-1753058260113-436\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 438-1753058260113-437\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 438-1753058260113-437\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 438-1753058260113-437\" eliminada permanentemente",
+                    "id": "62944f773aa9055e26d597ea41522063",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 439-1753058260113-438\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 439-1753058260113-438\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 439-1753058260113-438\" eliminada permanentemente",
+                    "id": "dc46b0b98c2d3bc5366520392b8815f9",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 44-1753058260109-43\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 44-1753058260109-43\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 44-1753058260109-43\" eliminada permanentemente",
+                    "id": "f34c9e67d1ee0c16bf86784254d56acf",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 440-1753058260113-439\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 440-1753058260113-439\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 440-1753058260113-439\" eliminada permanentemente",
+                    "id": "d5e8bb138a5a714e0f2a4c41f53f2af1"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 441-1753058260113-440\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 441-1753058260113-440\" eliminada permanentemente",
+                    "id": "1ff5028fe913768dfe548aea3d8a18c7",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 441-1753058260113-440\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 442-1753058260113-441\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 442-1753058260113-441\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 442-1753058260113-441\" eliminada permanentemente",
+                    "id": "6c67f97dd84551ac30838a82bed5f552",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 443-1753058260113-442\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 443-1753058260113-442\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 443-1753058260113-442\" eliminada permanentemente",
+                    "id": "35fa13efd71abe6406f80c98596f9a40",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 444-1753058260113-443\" eliminada permanentemente": {
+                    "id": "9ba739ab806860a1fdddbbc98b728c82",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 444-1753058260113-443\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 444-1753058260113-443\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 445-1753058260113-444\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 445-1753058260113-444\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 445-1753058260113-444\" eliminada permanentemente",
+                    "id": "23ce29ff12e93bb9ee7feefbbee63375",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 446-1753058260113-445\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 446-1753058260113-445\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 446-1753058260113-445\" eliminada permanentemente",
+                    "id": "e7e27240b837e29f58b30078f6036561",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 447-1753058260113-446\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 447-1753058260113-446\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 447-1753058260113-446\" eliminada permanentemente",
+                    "id": "4514b8a91c6e36303b086950c34e570c",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 448-1753058260113-447\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 448-1753058260113-447\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 448-1753058260113-447\" eliminada permanentemente",
+                    "id": "5a3dbd6f34ac847f5feec7fa804d44a2",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 449-1753058260113-448\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 449-1753058260113-448\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 449-1753058260113-448\" eliminada permanentemente",
+                    "id": "a4aa4063342171a4afab7d32b1fc7af9",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 45-1753058260109-44\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 45-1753058260109-44\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 45-1753058260109-44\" eliminada permanentemente",
+                    "id": "9e3746ff8e5fa2c21b635c53a87dd5f0",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 450-1753058260113-449\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 450-1753058260113-449\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 450-1753058260113-449\" eliminada permanentemente",
+                    "id": "86917a7b0a58d14b7af19e54c47c799a",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 451-1753058260113-450\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 451-1753058260113-450\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 451-1753058260113-450\" eliminada permanentemente",
+                    "id": "20c65625a80f69a953d9515ee5bfbedf",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 452-1753058260113-451\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 452-1753058260113-451\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 452-1753058260113-451\" eliminada permanentemente",
+                    "id": "ec4dd7e172d0f30c2ba0b2fbe57ca357",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 453-1753058260113-452\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 453-1753058260113-452\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 453-1753058260113-452\" eliminada permanentemente",
+                    "id": "97ab35b26d9dba23c3b3b15813f0febb",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 454-1753058260113-453\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 454-1753058260113-453\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 454-1753058260113-453\" eliminada permanentemente",
+                    "id": "9e96e785f994a4a8419180e1f580a37e",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 455-1753058260113-454\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 455-1753058260113-454\" eliminada permanentemente",
+                    "id": "2b690a74344cde5c3b5fad04631eb256",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 455-1753058260113-454\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 456-1753058260113-455\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 456-1753058260113-455\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 456-1753058260113-455\" eliminada permanentemente",
+                    "id": "052a14ea66d697adbf1d633e9b1c1164"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 457-1753058260113-456\" eliminada permanentemente": {
+                    "id": "4f3e4b4bbfca03007aa36f6c777fc1c6",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 457-1753058260113-456\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 457-1753058260113-456\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 458-1753058260113-457\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 458-1753058260113-457\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 458-1753058260113-457\" eliminada permanentemente",
+                    "id": "bbe5e751c22e335da060579e8771a1e6",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 459-1753058260113-458\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 459-1753058260113-458\" eliminada permanentemente",
+                    "id": "9f8710a8e9cadb8cd4381ba8619aceba",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 459-1753058260113-458\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 46-1753058260109-45\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 46-1753058260109-45\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 46-1753058260109-45\" eliminada permanentemente",
+                    "id": "86a1d5982a2d53fb149ab0caa6e92dfa",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 460-1753058260113-459\" eliminada permanentemente": {
+                    "id": "e33e47d752167425bec0f112800b81dc",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 460-1753058260113-459\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 460-1753058260113-459\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 461-1753058260113-460\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 461-1753058260113-460\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 461-1753058260113-460\" eliminada permanentemente",
+                    "id": "191df5ee42b2d8c8847e2f46a168c85b"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 462-1753058260113-461\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 462-1753058260113-461\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 462-1753058260113-461\" eliminada permanentemente",
+                    "id": "3e40f3138b8a3e0102762f69b55d45f2",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 463-1753058260113-462\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 463-1753058260113-462\" eliminada permanentemente",
+                    "id": "75a41a93b24104c21287388be767fdf2",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 463-1753058260113-462\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 464-1753058260113-463\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 464-1753058260113-463\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 464-1753058260113-463\" eliminada permanentemente",
+                    "id": "a650b549593ffb0182f53be5020adb08",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 465-1753058260113-464\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 465-1753058260113-464\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 465-1753058260113-464\" eliminada permanentemente",
+                    "id": "ceceea03a37a929065df2cc8ab428854"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 466-1753058260113-465\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 466-1753058260113-465\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 466-1753058260113-465\" eliminada permanentemente",
+                    "id": "baaab83f059033082fb85e006696d2b3",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 467-1753058260113-466\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 467-1753058260113-466\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 467-1753058260113-466\" eliminada permanentemente",
+                    "id": "c44d7930723711cd43aaa075a36b1965",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 468-1753058260113-467\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 468-1753058260113-467\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 468-1753058260113-467\" eliminada permanentemente",
+                    "id": "e938f195ac7103a9587e360f39f2c8ef",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 469-1753058260113-468\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 469-1753058260113-468\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 469-1753058260113-468\" eliminada permanentemente",
+                    "id": "99c9777dc42585d420c0cc877ef03982",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 47-1753058260109-46\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 47-1753058260109-46\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 47-1753058260109-46\" eliminada permanentemente",
+                    "id": "b7dffff7060d80ca54e233f26d8c854d",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 470-1753058260113-469\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 470-1753058260113-469\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 470-1753058260113-469\" eliminada permanentemente",
+                    "id": "16e060159b02ac31faef6b3a22a17ac5",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 471-1753058260113-470\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 471-1753058260113-470\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 471-1753058260113-470\" eliminada permanentemente",
+                    "id": "4e8f2ee9f363fb2e50ca77b08417b454",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 472-1753058260113-471\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 472-1753058260113-471\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 472-1753058260113-471\" eliminada permanentemente",
+                    "id": "6d398125dfa795e764a04edf22680a7a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 473-1753058260113-472\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 473-1753058260113-472\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 473-1753058260113-472\" eliminada permanentemente",
+                    "id": "1a570e1bb5c75774dccbd09644ee5e39",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 474-1753058260113-473\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 474-1753058260113-473\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 474-1753058260113-473\" eliminada permanentemente",
+                    "id": "948a269420ff941d480fd8416faeb171",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 475-1753058260113-474\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 475-1753058260113-474\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 475-1753058260113-474\" eliminada permanentemente",
+                    "id": "2e2f06fcab96a1ca3d0f067f03659ed7",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 476-1753058260113-475\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 476-1753058260113-475\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 476-1753058260113-475\" eliminada permanentemente",
+                    "id": "58dd93c2a3e7d63ae2ae4b4c9fef583c",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 477-1753058260113-476\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 477-1753058260113-476\" eliminada permanentemente",
+                    "id": "58674a59e7d6af3336d26e1efba1beb8",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 477-1753058260113-476\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 478-1753058260113-477\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 478-1753058260113-477\" eliminada permanentemente",
+                    "id": "d6b00322dd69f7bb74d963289164ed0b",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 478-1753058260113-477\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 479-1753058260113-478\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 479-1753058260113-478\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 479-1753058260113-478\" eliminada permanentemente",
+                    "id": "77cb9b9a0bb92192578385f3c8a91211",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 48-1753058260109-47\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 48-1753058260109-47\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 48-1753058260109-47\" eliminada permanentemente",
+                    "id": "69de8289fbf399ed845c632562166754",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 480-1753058260113-479\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 480-1753058260113-479\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 480-1753058260113-479\" eliminada permanentemente",
+                    "id": "a325f972526e0580a20823667c54d7dd"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 481-1753058260113-480\" eliminada permanentemente": {
+                    "id": "3a43ca7ce3219149e5418a4fe592c756",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 481-1753058260113-480\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 481-1753058260113-480\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 482-1753058260113-481\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 482-1753058260113-481\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 482-1753058260113-481\" eliminada permanentemente",
+                    "id": "49660c97a62badf69478c1b1453782d1",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 483-1753058260113-482\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 483-1753058260113-482\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 483-1753058260113-482\" eliminada permanentemente",
+                    "id": "93b294577b72d7087fbe3029cb5dd601",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 484-1753058260113-483\" eliminada permanentemente": {
+                    "id": "28ae542b5787cf5b97620d18fff8a2f1",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 484-1753058260113-483\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 484-1753058260113-483\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 485-1753058260113-484\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 485-1753058260113-484\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 485-1753058260113-484\" eliminada permanentemente",
+                    "id": "99165f43e2a99f261ba8c62d488b66c6",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 486-1753058260113-485\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 486-1753058260113-485\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 486-1753058260113-485\" eliminada permanentemente",
+                    "id": "519079d0d33b4b45feaee543a5864e34",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 487-1753058260113-486\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 487-1753058260113-486\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 487-1753058260113-486\" eliminada permanentemente",
+                    "id": "a27340dfb088920305da51a9d3d3f657",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 488-1753058260113-487\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 488-1753058260113-487\" eliminada permanentemente",
+                    "id": "dbc1b9e549a0dc3857138d1690540b17",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 488-1753058260113-487\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 489-1753058260113-488\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 489-1753058260113-488\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 489-1753058260113-488\" eliminada permanentemente",
+                    "id": "146dfef46e5cdcf7fb74e9f3f95527d5",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 49-1753058260109-48\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 49-1753058260109-48\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 49-1753058260109-48\" eliminada permanentemente",
+                    "id": "82761ae5ea2c4e45874b1dcc1c33ea25",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 490-1753058260113-489\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 490-1753058260113-489\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 490-1753058260113-489\" eliminada permanentemente",
+                    "id": "2be756e6e3b23e8142d4e27aeb9d6bb5",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 491-1753058260113-490\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 491-1753058260113-490\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 491-1753058260113-490\" eliminada permanentemente",
+                    "id": "32248b4d802c99d67b3b321176d2957d",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 492-1753058260113-491\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 492-1753058260113-491\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 492-1753058260113-491\" eliminada permanentemente",
+                    "id": "57b6068a3ea8d0b529d6c2e062b33fd6",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 493-1753058260113-492\" eliminada permanentemente": {
+                    "id": "b63583f20fbd6fee39c1438eb2bc4308",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 493-1753058260113-492\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 493-1753058260113-492\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 494-1753058260113-493\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 494-1753058260113-493\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 494-1753058260113-493\" eliminada permanentemente",
+                    "id": "c0a96a1f6dd2fb07bd8b5f24b6f0e358",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 495-1753058260113-494\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 495-1753058260113-494\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 495-1753058260113-494\" eliminada permanentemente",
+                    "id": "92e76bd7f12f456d1233926c5530ba7b",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 496-1753058260113-495\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 496-1753058260113-495\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 496-1753058260113-495\" eliminada permanentemente",
+                    "id": "2254008972b6544736e3c44983194106",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 497-1753058260113-496\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 497-1753058260113-496\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 497-1753058260113-496\" eliminada permanentemente",
+                    "id": "36d41b38791d3b8f93b9348f2ca9eb67",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 498-1753058260113-497\" eliminada permanentemente": {
+                    "id": "2fc6685434df0aed2fcc24eb07c3743b",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 498-1753058260113-497\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 498-1753058260113-497\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 499-1753058260113-498\" eliminada permanentemente": {
+                    "id": "fb9c660ba06dc73248cff63ec4777a4f",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 499-1753058260113-498\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 499-1753058260113-498\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 5-1753058260109-4\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 5-1753058260109-4\" eliminada permanentemente",
+                    "id": "68a2868b80a65aba26c77a239a0839db",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 5-1753058260109-4\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 50-1753058260109-49\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 50-1753058260109-49\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 50-1753058260109-49\" eliminada permanentemente",
+                    "id": "619b440c52f3dcabd106c0b4467a2b16",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 500-1753058260113-499\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 500-1753058260113-499\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 500-1753058260113-499\" eliminada permanentemente",
+                    "id": "7d3522f48fd680dd7a3f9297f4466ffe",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 51-1753058260109-50\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 51-1753058260109-50\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 51-1753058260109-50\" eliminada permanentemente",
+                    "id": "06976ffcd4ad08ad1057d0d3fd67f738"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 52-1753058260109-51\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 52-1753058260109-51\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 52-1753058260109-51\" eliminada permanentemente",
+                    "id": "ff8409fa2b4c802504ce13ad09e8f06c",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 53-1753058260109-52\" eliminada permanentemente": {
+                    "id": "643ad5851a5a5cb2751b7058525d5137",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 53-1753058260109-52\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 53-1753058260109-52\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 54-1753058260109-53\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 54-1753058260109-53\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 54-1753058260109-53\" eliminada permanentemente",
+                    "id": "24932008ccc5ba0dcd7689424ccd7dbb",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 55-1753058260109-54\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 55-1753058260109-54\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 55-1753058260109-54\" eliminada permanentemente",
+                    "id": "7f17ba00f16579ae03499bf4fc1e2b8b",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 56-1753058260109-55\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 56-1753058260109-55\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 56-1753058260109-55\" eliminada permanentemente",
+                    "id": "ab1b962cb2654c04d762862bf97cdf8b",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 57-1753058260109-56\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 57-1753058260109-56\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 57-1753058260109-56\" eliminada permanentemente",
+                    "id": "96d5defda2d866466cb57b28c907a090"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 58-1753058260109-57\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 58-1753058260109-57\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 58-1753058260109-57\" eliminada permanentemente",
+                    "id": "7210cc5cc4dc304b6cca3dd789000ba7",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 59-1753058260110-58\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 59-1753058260110-58\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 59-1753058260110-58\" eliminada permanentemente",
+                    "id": "54ad07fc9bcd8404727868e202378919",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 6-1753058260109-5\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 6-1753058260109-5\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 6-1753058260109-5\" eliminada permanentemente",
+                    "id": "2303b8c89d8ecf6b9b52770cdc5fea8c",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 60-1753058260110-59\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 60-1753058260110-59\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 60-1753058260110-59\" eliminada permanentemente",
+                    "id": "a4bbec7910a5bf88bbf30876ad308118",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 61-1753058260110-60\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 61-1753058260110-60\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 61-1753058260110-60\" eliminada permanentemente",
+                    "id": "254463e04d765ad89b2aa7f9de3f11de",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 62-1753058260110-61\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 62-1753058260110-61\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 62-1753058260110-61\" eliminada permanentemente",
+                    "id": "bfc02121dccfd048812bddc0cc2425eb"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 63-1753058260110-62\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 63-1753058260110-62\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 63-1753058260110-62\" eliminada permanentemente",
+                    "id": "e236555ec208a095a313b7cd3c47aa76"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 64-1753058260110-63\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 64-1753058260110-63\" eliminada permanentemente",
+                    "id": "82cbff7a2cf37f4c69ea1c45bde02158",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 64-1753058260110-63\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 65-1753058260110-64\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 65-1753058260110-64\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 65-1753058260110-64\" eliminada permanentemente",
+                    "id": "7af087965bf637f64d930df18b9d7d34",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 66-1753058260110-65\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 66-1753058260110-65\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 66-1753058260110-65\" eliminada permanentemente",
+                    "id": "9302b329520bdd7bdae2140294453638",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 67-1753058260110-66\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 67-1753058260110-66\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 67-1753058260110-66\" eliminada permanentemente",
+                    "id": "0119b62a371460b85f52261f3348b853",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 68-1753058260110-67\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 68-1753058260110-67\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 68-1753058260110-67\" eliminada permanentemente",
+                    "id": "610c01e1db160fd65a0cd5877b9d49cf",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 69-1753058260110-68\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 69-1753058260110-68\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 69-1753058260110-68\" eliminada permanentemente",
+                    "id": "8cbc38aca89cef1cad66399cfa80ad13",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 7-1753058260109-6\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 7-1753058260109-6\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 7-1753058260109-6\" eliminada permanentemente",
+                    "id": "3e9336865a5aedc76dada594add47c0f"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 70-1753058260110-69\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 70-1753058260110-69\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 70-1753058260110-69\" eliminada permanentemente",
+                    "id": "0200e7a49f9fd33898cb7edfb715add0"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 71-1753058260110-70\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 71-1753058260110-70\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 71-1753058260110-70\" eliminada permanentemente",
+                    "id": "994d8830edce551e27d3f3d351776d30"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 72-1753058260110-71\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 72-1753058260110-71\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 72-1753058260110-71\" eliminada permanentemente",
+                    "id": "5e6ced61ed68704d8d2492e98e3db57c",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 73-1753058260110-72\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 73-1753058260110-72\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 73-1753058260110-72\" eliminada permanentemente",
+                    "id": "8e1140f01fe159ec789c4bcc8bf25666"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 74-1753058260110-73\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 74-1753058260110-73\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 74-1753058260110-73\" eliminada permanentemente",
+                    "id": "584f15b2fb0c54e03272571d528dee23"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 75-1753058260110-74\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 75-1753058260110-74\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 75-1753058260110-74\" eliminada permanentemente",
+                    "id": "a6c6cb5d654ee31d254329f648f9fdf3",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 76-1753058260110-75\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 76-1753058260110-75\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 76-1753058260110-75\" eliminada permanentemente",
+                    "id": "f7bfed64575222cceabfc4f04abca825",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 77-1753058260110-76\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 77-1753058260110-76\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 77-1753058260110-76\" eliminada permanentemente",
+                    "id": "7e5c479d436be22d037f32cc7a17a5f3",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 78-1753058260110-77\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 78-1753058260110-77\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 78-1753058260110-77\" eliminada permanentemente",
+                    "id": "f67c03a6848127a4d1858c53c70a1082"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 79-1753058260110-78\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 79-1753058260110-78\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 79-1753058260110-78\" eliminada permanentemente",
+                    "id": "874f1dd8a83fa371e2ed3a8c049c243a",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 8-1753058260109-7\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 8-1753058260109-7\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 8-1753058260109-7\" eliminada permanentemente",
+                    "id": "7687a940bdf1b56db9cc6a4d34977854",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 80-1753058260110-79\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 80-1753058260110-79\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 80-1753058260110-79\" eliminada permanentemente",
+                    "id": "d6281aa7f8d64c217e97069854791aef",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 81-1753058260110-80\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 81-1753058260110-80\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 81-1753058260110-80\" eliminada permanentemente",
+                    "id": "a0a5248756f970999eb40b7a49bdc714",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 82-1753058260110-81\" eliminada permanentemente": {
+                    "id": "f05d66c2e5d07489dfec5882491a1f56",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 82-1753058260110-81\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 82-1753058260110-81\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 83-1753058260110-82\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 83-1753058260110-82\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 83-1753058260110-82\" eliminada permanentemente",
+                    "id": "7ea65908aa1ab9f803ecf70d12818f88",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 84-1753058260110-83\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 84-1753058260110-83\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 84-1753058260110-83\" eliminada permanentemente",
+                    "id": "1421fb52f58f8e08ac00abdf6152cb1a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 85-1753058260110-84\" eliminada permanentemente": {
+                    "id": "3e27d38e5d13e26a6085aafb7ee17429",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 85-1753058260110-84\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 85-1753058260110-84\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 86-1753058260110-85\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 86-1753058260110-85\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 86-1753058260110-85\" eliminada permanentemente",
+                    "id": "ec685b1f8bdd76231387334075cb7527",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 87-1753058260110-86\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 87-1753058260110-86\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 87-1753058260110-86\" eliminada permanentemente",
+                    "id": "33004d7657a4211f0e2b88438990d93f",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 88-1753058260110-87\" eliminada permanentemente": {
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 88-1753058260110-87\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 88-1753058260110-87\" eliminada permanentemente",
+                    "id": "0c53f35cb19c504ed8e910c7561501a0",
+                    "passes": 1
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 89-1753058260110-88\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 89-1753058260110-88\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 89-1753058260110-88\" eliminada permanentemente",
+                    "id": "ce3a64ecb796a7a6611c69efdc46ccbe",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 9-1753058260109-8\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 9-1753058260109-8\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 9-1753058260109-8\" eliminada permanentemente",
+                    "id": "8aef3ed5b072e40cafd2cc923cadd58f",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 90-1753058260110-89\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 90-1753058260110-89\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 90-1753058260110-89\" eliminada permanentemente",
+                    "id": "b8d8924208c665bb009e73c220264bc7",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 91-1753058260110-90\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 91-1753058260110-90\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 91-1753058260110-90\" eliminada permanentemente",
+                    "id": "cceea5d7e8a0ef5159b61e40599df548",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 92-1753058260110-91\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 92-1753058260110-91\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 92-1753058260110-91\" eliminada permanentemente",
+                    "id": "b7ac05e7548e86077b68bf7d2df86a17"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 93-1753058260110-92\" eliminada permanentemente": {
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 93-1753058260110-92\" eliminada permanentemente",
+                    "id": "096961a21790f9715a2562470774d907",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 93-1753058260110-92\" eliminada permanentemente"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 94-1753058260110-93\" eliminada permanentemente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 94-1753058260110-93\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 94-1753058260110-93\" eliminada permanentemente",
+                    "id": "50d1a7e1c5e61ac9962b235f43063ef7"
+                },
+                "✅ PR-04.2-04: Sesión \"Sesion 95-1753058260110-94\" eliminada permanentemente": {
+                    "name": "✅ PR-04.2-04: Sesión \"Sesion 95-1753058260110-94\" eliminada permanentemente",
+                    "path": "::✅ PR-04.2-04: Sesión \"Sesion 95-1753058260110-94\" eliminada permanentemente",
+                    "id": "f8111d78e7276cd1d427656eabbf10fd",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Al menos una sesión eliminada exitosamente": {
+                    "name": "✅ PR-04.2-04: Al menos una sesión eliminada exitosamente",
+                    "path": "::✅ PR-04.2-04: Al menos una sesión eliminada exitosamente",
+                    "id": "f6178d3072d91b86efd0a7785c3192b3",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Tasa de éxito aceptable": {
+                    "name": "✅ PR-04.2-04: Tasa de éxito aceptable",
+                    "path": "::✅ PR-04.2-04: Tasa de éxito aceptable",
+                    "id": "76ea50f286614b6728f6b0539d15cf52",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-04.2-04: Proceso completado": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-04.2-04: Proceso completado",
+                    "path": "::✅ PR-04.2-04: Proceso completado",
+                    "id": "51baacf9c68907a08e73020d7bd85c0d"
+                }
+            },
+        "name": "",
+        "path": ""
+    },
+    "metrics": {
+        "http_req_duration{expected_response:true}": {
+            "avg": 545.2706491271824,
+            "min": 340.3379,
+            "med": 448.5116,
+            "max": 15385.7068,
+            "p(90)": 638.5395,
+            "p(95)": 743.4585
+        },
+        "iterations": {
+            "count": 1,
+            "rate": 0.004555675051266481
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_req_connecting": {
+            "min": 0,
+            "med": 0,
+            "max": 49.9473,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.1245568578553616
+        },
+        "http_req_sending": {
+            "avg": 0.10382069825436412,
+            "min": 0,
+            "med": 0,
+            "max": 0.997,
+            "p(90)": 0.5279,
+            "p(95)": 0.5642
+        },
+        "http_req_receiving": {
+            "avg": 0.8413411471321697,
+            "min": 0,
+            "med": 0,
+            "max": 268.1711,
+            "p(90)": 0.67,
+            "p(95)": 0.8898
+        },
+        "session_permanent_delete_duration": {
+            "avg": 508.2775,
+            "min": 340,
+            "med": 448.5,
+            "max": 9475,
+            "p(90)": 630.0000000000002,
+            "p(95)": 742.05,
+            "thresholds": {
+                "avg<=4000": false
+            }
+        },
+        "checks": {
+            "passes": 804,
+            "fails": 1,
+            "thresholds": {
+                "rate>=0.95": false
+            },
+            "value": 0.9987577639751553
+        },
+        "data_received": {
+            "rate": 2220.3130167608983,
+            "count": 487373
+        },
+        "sessions_permanently_deleted": {
+            "count": 400,
+            "rate": 1.8222700205065923
+        },
+        "http_req_duration": {
+            "min": 340.3379,
+            "med": 448.5116,
+            "max": 15385.7068,
+            "p(90)": 638.5395,
+            "p(95)": 743.4585,
+            "avg": 545.2706491271824,
+            "thresholds": {
+                "avg<=4000": false
+            }
+        },
+        "http_req_waiting": {
+            "p(95)": 743.4585,
+            "avg": 544.3254872817959,
+            "min": 340.3379,
+            "med": 448.5116,
+            "max": 15116.5387,
+            "p(90)": 638.4226
+        },
+        "http_req_blocked": {
+            "avg": 0.4867468827930175,
+            "min": 0,
+            "med": 0,
+            "max": 194.5928,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "avg": 0.218569825436409,
+            "min": 0,
+            "med": 0,
+            "max": 87.6465,
+            "p(90)": 0
+        },
+        "iteration_duration": {
+            "avg": 219506.4373,
+            "min": 219506.4373,
+            "med": 219506.4373,
+            "max": 219506.4373,
+            "p(90)": 219506.4373,
+            "p(95)": 219506.4373
+        },
+        "http_reqs": {
+            "count": 401,
+            "rate": 1.8268256955578588
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 401,
+            "value": 0
+        },
+        "data_sent": {
+            "count": 61964,
+            "rate": 282.2878488766762
+        }
+    }
+}

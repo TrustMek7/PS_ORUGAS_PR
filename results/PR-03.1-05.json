@@ -1,0 +1,166 @@
+{
+    "metrics": {
+        "http_req_connecting": {
+            "med": 25.6359,
+            "max": 51.2718,
+            "p(90)": 46.14462,
+            "p(95)": 48.708209999999994,
+            "avg": 25.6359,
+            "min": 0
+        },
+        "enroll_duration": {
+            "med": 8077,
+            "max": 8077,
+            "p(90)": 8077,
+            "p(95)": 8077,
+            "avg": 8077,
+            "min": 8077,
+            "thresholds": {
+                "p(95)<4000": true
+            }
+        },
+        "http_req_blocked": {
+            "min": 0,
+            "med": 74.67295,
+            "max": 149.3459,
+            "p(90)": 134.41131000000001,
+            "p(95)": 141.878605,
+            "avg": 74.67295
+        },
+        "http_req_sending": {
+            "avg": 0.05155,
+            "min": 0,
+            "med": 0.05155,
+            "max": 0.1031,
+            "p(90)": 0.09279,
+            "p(95)": 0.09794499999999999
+        },
+        "http_req_waiting": {
+            "min": 6060.3043,
+            "med": 7067.9848,
+            "max": 8075.6653,
+            "p(90)": 7874.129199999999,
+            "p(95)": 7974.89725,
+            "avg": 7067.9848
+        },
+        "http_req_duration{expected_response:true}": {
+            "med": 7160.84885,
+            "max": 8076.3384,
+            "p(90)": 7893.24049,
+            "p(95)": 7984.789444999999,
+            "avg": 7160.84885,
+            "min": 6245.3593
+        },
+        "data_sent": {
+            "rate": 177.08557026650186,
+            "count": 2566
+        },
+        "checks": {
+            "passes": 3,
+            "fails": 1,
+            "value": 0.75
+        },
+        "iteration_duration": {
+            "min": 14489.9532,
+            "med": 14489.9532,
+            "max": 14489.9532,
+            "p(90)": 14489.9532,
+            "p(95)": 14489.9532,
+            "avg": 14489.9532
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_req_tls_handshaking": {
+            "avg": 43.2194,
+            "min": 0,
+            "med": 43.2194,
+            "max": 86.4388,
+            "p(90)": 77.79492,
+            "p(95)": 82.11686
+        },
+        "students_enrolled": {
+            "count": 5,
+            "rate": 0.34506151649747047
+        },
+        "data_received": {
+            "count": 150016,
+            "rate": 10352.949691776907
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 2,
+            "thresholds": {
+                "rate<0.05": false
+            },
+            "value": 0
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_reqs": {
+            "count": 2,
+            "rate": 0.1380246065989882
+        },
+        "http_req_duration": {
+            "min": 6245.3593,
+            "med": 7160.84885,
+            "max": 8076.3384,
+            "p(90)": 7893.24049,
+            "p(95)": 7984.789444999999,
+            "avg": 7160.84885
+        },
+        "http_req_receiving": {
+            "avg": 92.8125,
+            "min": 0.57,
+            "med": 92.8125,
+            "max": 185.055,
+            "p(90)": 166.6065,
+            "p(95)": 175.83075
+        },
+        "iterations": {
+            "count": 1,
+            "rate": 0.0690123032994941
+        }
+    },
+    "root_group": {
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "✅ Status 200 OK": {
+                    "id": "ee78691b3ae458ab77a55ce82b0f0c48",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ Status 200 OK",
+                    "path": "::✅ Status 200 OK"
+                },
+                "✅ Tiempo ≤ 4s": {
+                    "fails": 1,
+                    "name": "✅ Tiempo ≤ 4s",
+                    "path": "::✅ Tiempo ≤ 4s",
+                    "id": "539ed9a4a84f2714abb85d54c8156a9f",
+                    "passes": 0
+                },
+                "✅ Tasa de éxito ≥ 80%": {
+                    "name": "✅ Tasa de éxito ≥ 80%",
+                    "path": "::✅ Tasa de éxito ≥ 80%",
+                    "id": "76e5553e423a61a65232197d40ac0e2b",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ Al menos 1 estudiante añadido": {
+                    "name": "✅ Al menos 1 estudiante añadido",
+                    "path": "::✅ Al menos 1 estudiante añadido",
+                    "id": "c21bc26960c0a1b50490ece891ef455d",
+                    "passes": 1,
+                    "fails": 0
+                }
+            },
+        "name": ""
+    }
+}

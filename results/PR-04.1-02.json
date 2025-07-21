@@ -1,0 +1,147 @@
+{
+    "metrics": {
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 761.64712,
+            "avg": 504.60573720000014,
+            "min": 330.8157,
+            "med": 451.15985,
+            "max": 2401.528,
+            "p(90)": 672.98787
+        },
+        "http_req_blocked": {
+            "min": 0,
+            "med": 0,
+            "max": 134.2753,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.26859679999999997
+        },
+        "data_sent": {
+            "count": 257861,
+            "rate": 1016.8229258157767
+        },
+        "http_req_sending": {
+            "med": 0.0451,
+            "max": 0.9973,
+            "p(90)": 0.58174,
+            "p(95)": 0.6469499999999995,
+            "avg": 0.23782500000000006,
+            "min": 0
+        },
+        "http_req_waiting": {
+            "med": 451.0295,
+            "max": 2401.405,
+            "p(90)": 672.98787,
+            "p(95)": 760.90251,
+            "avg": 504.16124040000057,
+            "min": 330.0867
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 500,
+            "value": 0
+        },
+        "data_received": {
+            "count": 558537,
+            "rate": 2202.4781821072843
+        },
+        "http_req_receiving": {
+            "med": 0,
+            "max": 1.0968,
+            "p(90)": 0.7343500000000002,
+            "p(95)": 0.9002749999999992,
+            "avg": 0.20667179999999993,
+            "min": 0
+        },
+        "iteration_duration": {
+            "med": 453.34434999999996,
+            "max": 2402.8247,
+            "p(90)": 674.58365,
+            "p(95)": 764.3700349999999,
+            "avg": 507.1614711999997,
+            "min": 334.2757
+        },
+        "iterations": {
+            "count": 500,
+            "rate": 1.9716493107057227
+        },
+        "http_reqs": {
+            "count": 500,
+            "rate": 1.9716493107057227
+        },
+        "http_req_duration": {
+            "med": 451.15985,
+            "max": 2401.528,
+            "p(90)": 672.98787,
+            "p(95)": 761.64712,
+            "avg": 504.60573720000014,
+            "min": 330.8157,
+            "thresholds": {
+                "p(95)<3000": false
+            }
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "checks": {
+            "passes": 1500,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.95": false
+            },
+            "value": 1
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "avg": 0.15887020000000002,
+            "min": 0,
+            "med": 0,
+            "max": 79.4351,
+            "p(90)": 0
+        },
+        "http_req_connecting": {
+            "max": 49.5439,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.0990878,
+            "min": 0,
+            "med": 0
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "✅ PR-04.1-02: Solicitud exitosa (201 o 200)": {
+                    "name": "✅ PR-04.1-02: Solicitud exitosa (201 o 200)",
+                    "path": "::✅ PR-04.1-02: Solicitud exitosa (201 o 200)",
+                    "id": "db09efbeb855da53487c99e22d6d08e0",
+                    "passes": 500,
+                    "fails": 0
+                },
+                "✅ PR-04.1-02: Tiempo ≤ 3s": {
+                    "name": "✅ PR-04.1-02: Tiempo ≤ 3s",
+                    "path": "::✅ PR-04.1-02: Tiempo ≤ 3s",
+                    "id": "486773a868cf3f9b2135541381d5f1a6",
+                    "passes": 500,
+                    "fails": 0
+                },
+                "✅ PR-04.1-02: Respuesta válida": {
+                    "passes": 500,
+                    "fails": 0,
+                    "name": "✅ PR-04.1-02: Respuesta válida",
+                    "path": "::✅ PR-04.1-02: Respuesta válida",
+                    "id": "0368bb28e5adf14f2316742dfc94a0fc"
+                }
+            }
+    }
+}

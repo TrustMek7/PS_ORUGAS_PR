@@ -1,0 +1,883 @@
+{
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "✅ PR-05.1-03: Consulta de notificaciones exitosa": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Consulta de notificaciones exitosa",
+                    "path": "::✅ PR-05.1-03: Consulta de notificaciones exitosa",
+                    "id": "568382ec00e77a2dd1746beeaf6d81f5",
+                    "passes": 1
+                },
+                "✅ PR-05.1-03: Respuesta contiene datos válidos": {
+                    "name": "✅ PR-05.1-03: Respuesta contiene datos válidos",
+                    "path": "::✅ PR-05.1-03: Respuesta contiene datos válidos",
+                    "id": "55e081b4d9815e7bdeb13ad4c5a269bc",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti1\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti1\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti1\" editada exitosamente",
+                    "id": "6ad8b3bcadd1b05934b1b7a75434ae44",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Tiempo de edición aceptable": {
+                    "id": "8af06839f8244187abd66a2bb8a2de38",
+                    "passes": 100,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Tiempo de edición aceptable",
+                    "path": "::✅ PR-05.1-03: Tiempo de edición aceptable"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti2\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti2\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti2\" editada exitosamente",
+                    "id": "11c6e873e0326b023706cad03b58ac0a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti3\" editada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti3\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti3\" editada exitosamente",
+                    "id": "5a25af23e95ce3010512cd759afe76e1"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti4\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti4\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti4\" editada exitosamente",
+                    "id": "1e1d9429752542a82642de1b75c92bc1",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti5\" editada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti5\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti5\" editada exitosamente",
+                    "id": "8fc4d4dfd243d44c3f7592cc7eac7322"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti6\" editada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti6\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti6\" editada exitosamente",
+                    "id": "bf23503b6622eeda63b75e309e50ae16"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti7\" editada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti7\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti7\" editada exitosamente",
+                    "id": "c7923c6069c6564b560a448f90c73312",
+                    "passes": 1
+                },
+                "✅ PR-05.1-03: Notificación \"Noti8\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti8\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti8\" editada exitosamente",
+                    "id": "ff8820c13e047651fd55f65254d47211",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti9\" editada exitosamente": {
+                    "id": "5306cba3cd7cd435844aa5e4f9ed60f5",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti9\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti9\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti10\" editada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti10\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti10\" editada exitosamente",
+                    "id": "c240a01df2ac0b5d1a0df4a985338bc1",
+                    "passes": 1
+                },
+                "✅ PR-05.1-03: Notificación \"Noti11\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti11\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti11\" editada exitosamente",
+                    "id": "4b3089078d38ccf9f999d69ae122c079",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti12\" editada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti12\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti12\" editada exitosamente",
+                    "id": "9c656530fb4006d573bd0d26871a0453",
+                    "passes": 1
+                },
+                "✅ PR-05.1-03: Notificación \"Noti13\" editada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti13\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti13\" editada exitosamente",
+                    "id": "bb40afebeb1194f978a670ebcfffff41"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti14\" editada exitosamente": {
+                    "id": "422d568df2fbebc86e39aa1ee53cfa45",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti14\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti14\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti15\" editada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti15\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti15\" editada exitosamente",
+                    "id": "def60d3509472da6abdc7a721dc0fce6",
+                    "passes": 1
+                },
+                "✅ PR-05.1-03: Notificación \"Noti16\" editada exitosamente": {
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti16\" editada exitosamente",
+                    "id": "051d2e272bcb36a6a8e7825f820cc416",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti16\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti17\" editada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti17\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti17\" editada exitosamente",
+                    "id": "5f6eeccbe07699f68bf02b0e99e8c9b8",
+                    "passes": 1
+                },
+                "✅ PR-05.1-03: Notificación \"Noti18\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti18\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti18\" editada exitosamente",
+                    "id": "4eaec7d0b67125148f1306b9e5bffa68",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti19\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti19\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti19\" editada exitosamente",
+                    "id": "5fef0f91043dda6382d82077ee1253ca",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti20\" editada exitosamente": {
+                    "id": "672a3815f6bcc0e655694d4945b1de35",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti20\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti20\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti21\" editada exitosamente": {
+                    "id": "31f228a55b1206ecadca8925d42a60f3",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti21\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti21\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti22\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti22\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti22\" editada exitosamente",
+                    "id": "6af5ac86c4d4280f39cda1b65db77c92",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti23\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti23\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti23\" editada exitosamente",
+                    "id": "686d9fde122dfcc0c2bd63d5aac3f94b",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti24\" editada exitosamente": {
+                    "id": "94c431d441ae441a697a1433b55ffbcd",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti24\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti24\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti25\" editada exitosamente": {
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti25\" editada exitosamente",
+                    "id": "9e17fd6ea75631b7d4a2eca38d4da221",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti25\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti26\" editada exitosamente": {
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti26\" editada exitosamente",
+                    "id": "312c737cf0c2bc25a9bdb42819ecc25b",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti26\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti27\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti27\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti27\" editada exitosamente",
+                    "id": "13a9095dbd4a95c5085c0ab1bb3313aa",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti28\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti28\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti28\" editada exitosamente",
+                    "id": "978ab63fa799cbda2f39c881718394e9",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti29\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti29\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti29\" editada exitosamente",
+                    "id": "0f0a0fa04cbec0dc68301177647dfb4d",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti30\" editada exitosamente": {
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti30\" editada exitosamente",
+                    "id": "af050fd16a8aaf4e0b665521782a57ae",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti30\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti31\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti31\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti31\" editada exitosamente",
+                    "id": "cb780b08c799ffd3125db6183e3af16c",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti32\" editada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti32\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti32\" editada exitosamente",
+                    "id": "65d50cb5305e798aed9327ed188a5d54"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti33\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti33\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti33\" editada exitosamente",
+                    "id": "9413797443a329a510bec5966208678d",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti34\" editada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti34\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti34\" editada exitosamente",
+                    "id": "eda493cf6b79f4e6789fbffa3c0e8e9d"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti35\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti35\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti35\" editada exitosamente",
+                    "id": "3da3d3814f66fa5a805273abdf108a8b",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti36\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti36\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti36\" editada exitosamente",
+                    "id": "abc009e8d9c81af09eb8dee1ce3231c5",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti37\" editada exitosamente": {
+                    "id": "6306c738c8c812d1eac5b6aa5d16c01f",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti37\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti37\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti38\" editada exitosamente": {
+                    "id": "3a97f6e571f42122f1c0d34f68297df5",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti38\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti38\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti39\" editada exitosamente": {
+                    "id": "5015ee88e5322c9d5090ce278b76bd39",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti39\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti39\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti40\" editada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti40\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti40\" editada exitosamente",
+                    "id": "41b305ab18cbddcf3e5209fd7d4b5f0e",
+                    "passes": 1
+                },
+                "✅ PR-05.1-03: Notificación \"Noti41\" editada exitosamente": {
+                    "id": "ed8fe1eb30ebe8021f767c2a2e67e286",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti41\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti41\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti42\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti42\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti42\" editada exitosamente",
+                    "id": "4c5e95dc229d9226780dcfab8b7f4b32",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti43\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti43\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti43\" editada exitosamente",
+                    "id": "caec7f51ef8dfade8138dfdc3e09fd1a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti44\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti44\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti44\" editada exitosamente",
+                    "id": "ef8dcbade7a0de927752beda374e10ff",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti45\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti45\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti45\" editada exitosamente",
+                    "id": "c036c77a9a6a9a2c5152bc7c2751a2ac",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti46\" editada exitosamente": {
+                    "id": "ea6ee61e13531d92ef442c331fc3e03a",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti46\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti46\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti47\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti47\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti47\" editada exitosamente",
+                    "id": "425807c00183d5da8f6aa690285ec2fa",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti48\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti48\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti48\" editada exitosamente",
+                    "id": "d92f4c5b51f216c46a02824274babacb",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti49\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti49\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti49\" editada exitosamente",
+                    "id": "2daffb4e3e5743e1771a9364c0a4acc0",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti50\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti50\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti50\" editada exitosamente",
+                    "id": "feac61134fcf0e14fd041029e679fd17",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti51\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti51\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti51\" editada exitosamente",
+                    "id": "7dba6b45cf9a611e98f8852046ca5719",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti52\" editada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti52\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti52\" editada exitosamente",
+                    "id": "1c0feb5d0ce0af7aa4634f775b65fda4",
+                    "passes": 1
+                },
+                "✅ PR-05.1-03: Notificación \"Noti53\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti53\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti53\" editada exitosamente",
+                    "id": "b8372deabcf2d1ee720cf4bf3030f8ac",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti54\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti54\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti54\" editada exitosamente",
+                    "id": "ed660d4f03736a9b9f35e6877c309da6",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti55\" editada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti55\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti55\" editada exitosamente",
+                    "id": "3778425c5af624a18ad7e04f6cc3ee01",
+                    "passes": 1
+                },
+                "✅ PR-05.1-03: Notificación \"Noti56\" editada exitosamente": {
+                    "id": "17b83b981acf692ac0704c165ab1b347",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti56\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti56\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti57\" editada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti57\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti57\" editada exitosamente",
+                    "id": "c4393272bf1bcc4c760c0d43d913e36e"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti58\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti58\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti58\" editada exitosamente",
+                    "id": "84ed9126d3399a8f612eca3fc14d01bd",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti59\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti59\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti59\" editada exitosamente",
+                    "id": "649b16d936bda15f58e5aa683a464e57",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti60\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti60\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti60\" editada exitosamente",
+                    "id": "e836c8c3976151d28269001de1a24fac",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti61\" editada exitosamente": {
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti61\" editada exitosamente",
+                    "id": "0b21c68cd0569432ddebdb99a8f7e01c",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti61\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti62\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti62\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti62\" editada exitosamente",
+                    "id": "f9ecd97177a0e55ac779bc7cf8f79229",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti63\" editada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti63\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti63\" editada exitosamente",
+                    "id": "57fe934510b584369b97a0febb977e78"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti64\" editada exitosamente": {
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti64\" editada exitosamente",
+                    "id": "9128166f916baab46e2a66e0565e05e3",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti64\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti65\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti65\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti65\" editada exitosamente",
+                    "id": "e9fc4ab4f059714d3167993aff53acd4",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti66\" editada exitosamente": {
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti66\" editada exitosamente",
+                    "id": "5144ebb5972a6e09ca1a704af01076d8",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti66\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti68\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti68\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti68\" editada exitosamente",
+                    "id": "1e43313552439d92ac7dc3c4afe3403a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti69\" editada exitosamente": {
+                    "id": "772fd1e3858c5f9616bfa29f505b2e21",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti69\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti69\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti70\" editada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti70\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti70\" editada exitosamente",
+                    "id": "2ed077d5699348941ccaacc9283e4e38"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti71\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti71\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti71\" editada exitosamente",
+                    "id": "228555a425d2f0ef5e29922e8b56c00a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti72\" editada exitosamente": {
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti72\" editada exitosamente",
+                    "id": "3ea8aeb63c1189ad93e5b7626345cb89",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti72\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti73\" editada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti73\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti73\" editada exitosamente",
+                    "id": "50e870cb7d7bc6e9805adc621673a917"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti75\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti75\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti75\" editada exitosamente",
+                    "id": "c9fcc00a7e0d9aea4cd65162458bd52a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti76\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti76\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti76\" editada exitosamente",
+                    "id": "e34808102f93b60787ee2a440cbe4087",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti78\" editada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti78\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti78\" editada exitosamente",
+                    "id": "a8ced90c85dbeae9bccb05135dac5431",
+                    "passes": 1
+                },
+                "✅ PR-05.1-03: Notificación \"Noti80\" editada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti80\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti80\" editada exitosamente",
+                    "id": "4ed78efdf0c1ff0f2e94f47bde6b49a2"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti81\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti81\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti81\" editada exitosamente",
+                    "id": "658751581d379b404691825c502fdd69",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti82\" editada exitosamente": {
+                    "id": "703aa018537087ae809125fa140a23bd",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti82\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti82\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti83\" editada exitosamente": {
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti83\" editada exitosamente",
+                    "id": "a8fb7c2da95301ce20045d0bb9c74897",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti83\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti85\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti85\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti85\" editada exitosamente",
+                    "id": "f96532e9f91f3e9a3658499797e88c28",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti87\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti87\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti87\" editada exitosamente",
+                    "id": "cccd8f30a7a93ecfad48d837f8a26fb4",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti88\" editada exitosamente": {
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti88\" editada exitosamente",
+                    "id": "53a6e54d4ebaf5410d614a73ce7bea57",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti88\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti89\" editada exitosamente": {
+                    "id": "84d433e8c56c6ac86b10a7954a060ab5",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti89\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti89\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti90\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti90\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti90\" editada exitosamente",
+                    "id": "a55c1fa2373505a6b9471621e0953971",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti92\" editada exitosamente": {
+                    "id": "f15a4c74d161c5351d83bd90274ad755",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti92\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti92\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti94\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti94\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti94\" editada exitosamente",
+                    "id": "0b8f21f205a3fbffab74c3c046c1b203",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti95\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti95\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti95\" editada exitosamente",
+                    "id": "4f927f41c471d7aa5a99930bb03b20a8",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti96\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti96\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti96\" editada exitosamente",
+                    "id": "c79076b87ed904bb52c5cd382cea99f4",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti97\" editada exitosamente": {
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti97\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti97\" editada exitosamente",
+                    "id": "ed8c66b3b01c5826ad0ce2ac5786044b",
+                    "passes": 1
+                },
+                "✅ PR-05.1-03: Notificación \"Noti99\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti99\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti99\" editada exitosamente",
+                    "id": "2e720adec720b70173e61589cc5a518a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti67\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti67\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti67\" editada exitosamente",
+                    "id": "f69f6cdb26e9fba4e9b1c0604461ebbf",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti74\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti74\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti74\" editada exitosamente",
+                    "id": "cc17ea8d445c700f46ef2bd7975fbf06",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti77\" editada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti77\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti77\" editada exitosamente",
+                    "id": "cbcfb0e02f64b482c0fe8b3261ed459a"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti79\" editada exitosamente": {
+                    "id": "e348b58e6421f58d38e1862126a2d801",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti79\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti79\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti84\" editada exitosamente": {
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti84\" editada exitosamente",
+                    "id": "7206191229a521ff1ee57bde5d3be259",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti84\" editada exitosamente"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti86\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti86\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti86\" editada exitosamente",
+                    "id": "9ed0f082df567781788d3b6d0e03c40a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti91\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti91\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti91\" editada exitosamente",
+                    "id": "b2644b14b9a1dbda331da6746944045d",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti93\" editada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti93\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti93\" editada exitosamente",
+                    "id": "1c8c479d62ea2c143d9f9638cb0289bb"
+                },
+                "✅ PR-05.1-03: Notificación \"Noti98\" editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Notificación \"Noti98\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti98\" editada exitosamente",
+                    "id": "a395eb2e8b8dbfcb7f598ba8a406b778",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Notificación \"Noti100\" editada exitosamente": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Notificación \"Noti100\" editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Notificación \"Noti100\" editada exitosamente",
+                    "id": "752b2c2514b720cca89c635a5e084602"
+                },
+                "✅ PR-05.1-03: Al menos una notificación editada exitosamente": {
+                    "name": "✅ PR-05.1-03: Al menos una notificación editada exitosamente",
+                    "path": "::✅ PR-05.1-03: Al menos una notificación editada exitosamente",
+                    "id": "e594f8959667179378757694b0c812d2",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Tasa de éxito aceptable": {
+                    "name": "✅ PR-05.1-03: Tasa de éxito aceptable",
+                    "path": "::✅ PR-05.1-03: Tasa de éxito aceptable",
+                    "id": "8ef5b580fe3aac81ba7e751b276d0b96",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-05.1-03: Proceso completado": {
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-05.1-03: Proceso completado",
+                    "path": "::✅ PR-05.1-03: Proceso completado",
+                    "id": "93193f4492e5a5d28764759a23d59ea6"
+                }
+            },
+        "name": "",
+        "path": ""
+    },
+    "metrics": {
+        "notifications_edited": {
+            "count": 100,
+            "rate": 2.585924424434768
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 101,
+            "value": 0
+        },
+        "http_req_receiving": {
+            "max": 20.4695,
+            "p(90)": 0.7458,
+            "p(95)": 0.9979,
+            "avg": 0.39859306930693067,
+            "min": 0,
+            "med": 0
+        },
+        "checks": {
+            "passes": 205,
+            "fails": 0,
+            "thresholds": {
+                "rate>=0.95": false
+            },
+            "value": 1
+        },
+        "http_req_duration": {
+            "p(90)": 590.8535,
+            "p(95)": 602.1882,
+            "avg": 378.95186435643564,
+            "min": 232.3335,
+            "med": 322.3858,
+            "max": 789.3559,
+            "thresholds": {
+                "avg<=3000": false
+            }
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 378.95186435643564,
+            "min": 232.3335,
+            "med": 322.3858,
+            "max": 789.3559,
+            "p(90)": 590.8535,
+            "p(95)": 602.1882
+        },
+        "http_req_sending": {
+            "max": 1.5159,
+            "p(90)": 0.5531,
+            "p(95)": 0.6676,
+            "avg": 0.1488227722772277,
+            "min": 0,
+            "med": 0
+        },
+        "http_req_waiting": {
+            "p(95)": 602.1882,
+            "avg": 378.4044485148514,
+            "min": 232.3136,
+            "med": 321.9118,
+            "max": 789.2405,
+            "p(90)": 590.8535
+        },
+        "http_reqs": {
+            "rate": 2.611783668679116,
+            "count": 101
+        },
+        "iteration_duration": {
+            "p(90)": 38670.7833,
+            "p(95)": 38670.7833,
+            "avg": 38670.7833,
+            "min": 38670.7833,
+            "med": 38670.7833,
+            "max": 38670.7833
+        },
+        "http_req_connecting": {
+            "max": 48.3154,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.47837029702970296,
+            "min": 0,
+            "med": 0
+        },
+        "notification_edit_duration": {
+            "max": 789,
+            "p(90)": 591,
+            "p(95)": 602,
+            "avg": 376.67,
+            "min": 233,
+            "med": 322,
+            "thresholds": {
+                "avg<=3000": false
+            }
+        },
+        "http_req_blocked": {
+            "med": 0,
+            "max": 155.5384,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 1.5399841584158416,
+            "min": 0
+        },
+        "data_received": {
+            "count": 76674,
+            "rate": 1982.7316931911143
+        },
+        "iterations": {
+            "count": 1,
+            "rate": 0.025859244244347684
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "data_sent": {
+            "rate": 903.5737123859967,
+            "count": 34942
+        },
+        "vus": {
+            "min": 1,
+            "max": 1,
+            "value": 1
+        },
+        "http_req_tls_handshaking": {
+            "max": 102.7109,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 1.016939603960396,
+            "min": 0,
+            "med": 0
+        }
+    }
+}

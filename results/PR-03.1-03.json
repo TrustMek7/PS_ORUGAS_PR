@@ -1,0 +1,191 @@
+{
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "✅ PR-03.1-03: Cursos - Status 200 OK": {
+                    "path": "::✅ PR-03.1-03: Cursos - Status 200 OK",
+                    "id": "b6755c90b3eec47bc616e43fe3041d96",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-03.1-03: Cursos - Status 200 OK"
+                },
+                "✅ PR-03.1-03: Delete Status OK": {
+                    "fails": 0,
+                    "name": "✅ PR-03.1-03: Delete Status OK",
+                    "path": "::✅ PR-03.1-03: Delete Status OK",
+                    "id": "3ac0ad3817b48d6d9acdfb06be9b56b2",
+                    "passes": 5
+                },
+                "✅ PR-03.1-03: Delete Time ≤ 1s": {
+                    "name": "✅ PR-03.1-03: Delete Time ≤ 1s",
+                    "path": "::✅ PR-03.1-03: Delete Time ≤ 1s",
+                    "id": "4d57aa830acc3032cb28ad8a0d82538f",
+                    "passes": 5,
+                    "fails": 0
+                },
+                "✅ PR-03.1-03: Validación final - Estudiantes eliminados": {
+                    "id": "2732b49d0d27c0e3991da7aa9c6ec9ab",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-03.1-03: Validación final - Estudiantes eliminados",
+                    "path": "::✅ PR-03.1-03: Validación final - Estudiantes eliminados"
+                },
+                "✅ PR-03.1-03: Tiempo total ≤ 5s": {
+                    "path": "::✅ PR-03.1-03: Tiempo total ≤ 5s",
+                    "id": "b72d00c745f637abd1c8faa60a762f90",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-03.1-03: Tiempo total ≤ 5s"
+                },
+                "✅ PR-03.1-03: Tasa de éxito ≥ 80%": {
+                    "name": "✅ PR-03.1-03: Tasa de éxito ≥ 80%",
+                    "path": "::✅ PR-03.1-03: Tasa de éxito ≥ 80%",
+                    "id": "6d314cd3eb89596f47dbd35dddf5925d",
+                    "passes": 1,
+                    "fails": 0
+                }
+            }
+    },
+    "metrics": {
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_req_tls_handshaking": {
+            "med": 0,
+            "max": 84.5227,
+            "p(90)": 25.356809999999985,
+            "p(95)": 54.939754999999955,
+            "avg": 10.5653375,
+            "min": 0
+        },
+        "total_delete_duration": {
+            "avg": 3008,
+            "min": 3008,
+            "med": 3008,
+            "max": 3008,
+            "p(90)": 3008,
+            "p(95)": 3008,
+            "thresholds": {
+                "p(95)<5000": false
+            }
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 8,
+            "thresholds": {
+                "rate<0.05": false
+            },
+            "value": 0
+        },
+        "checks": {
+            "passes": 14,
+            "fails": 0,
+            "value": 1
+        },
+        "students_deleted": {
+            "count": 5,
+            "rate": 0.4994715590904823
+        },
+        "data_received": {
+            "count": 151496,
+            "rate": 15133.588663194341
+        },
+        "http_req_receiving": {
+            "max": 129.8758,
+            "p(90)": 39.61989999999998,
+            "p(95)": 84.74784999999994,
+            "avg": 16.416787499999998,
+            "min": 0,
+            "med": 0
+        },
+        "iterations": {
+            "count": 1,
+            "rate": 0.09989431181809647
+        },
+        "delete_student_duration": {
+            "avg": 580.4,
+            "min": 510,
+            "med": 558,
+            "max": 667,
+            "p(90)": 656.2,
+            "p(95)": 661.6,
+            "thresholds": {
+                "p(95)<2000": false
+            }
+        },
+        "http_reqs": {
+            "count": 8,
+            "rate": 0.7991544945447717
+        },
+        "http_req_duration": {
+            "avg": 1211.5418375000002,
+            "min": 328.8401,
+            "med": 542.33065,
+            "max": 6093.7105,
+            "p(90)": 2294.7817299999992,
+            "p(95)": 4194.246114999997
+        },
+        "http_req_duration{expected_response:true}": {
+            "max": 6093.7105,
+            "p(90)": 2294.7817299999992,
+            "p(95)": 4194.246114999997,
+            "avg": 1211.5418375000002,
+            "min": 328.8401,
+            "med": 542.33065
+        },
+        "vus": {
+            "min": 1,
+            "max": 1,
+            "value": 1
+        },
+        "http_req_connecting": {
+            "avg": 6.1685375,
+            "min": 0,
+            "med": 0,
+            "max": 49.3483,
+            "p(90)": 14.804489999999992,
+            "p(95)": 32.07639499999998
+        },
+        "http_req_sending": {
+            "avg": 0.0977875,
+            "min": 0,
+            "med": 0,
+            "max": 0.5093,
+            "p(90)": 0.34389,
+            "p(95)": 0.42659499999999984
+        },
+        "iteration_duration": {
+            "min": 10010.58,
+            "med": 10010.58,
+            "max": 10010.58,
+            "p(90)": 10010.58,
+            "p(95)": 10010.58,
+            "avg": 10010.58
+        },
+        "http_req_blocked": {
+            "p(95)": 127.4701349999999,
+            "avg": 24.5134875,
+            "min": 0,
+            "med": 0,
+            "max": 196.1079,
+            "p(90)": 58.83236999999996
+        },
+        "http_req_waiting": {
+            "p(90)": 2255.302409999999,
+            "p(95)": 4109.313904999997,
+            "avg": 1195.0272624999998,
+            "min": 328.8401,
+            "med": 541.8612499999999,
+            "max": 5963.3254
+        },
+        "data_sent": {
+            "count": 2658,
+            "rate": 265.5190808125004
+        }
+    }
+}

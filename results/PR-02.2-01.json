@@ -1,0 +1,155 @@
+{
+    "metrics": {
+        "http_req_connecting": {
+            "med": 0,
+            "max": 52.0869,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.520869,
+            "min": 0
+        },
+        "http_req_duration": {
+            "avg": 1867.255828,
+            "min": 629.0595,
+            "med": 1486.5185000000001,
+            "max": 12722.8836,
+            "p(90)": 2298.338560000001,
+            "p(95)": 3661.7058049999987
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "checks": {
+            "fails": 8,
+            "passes": 492,
+            "value": 0.984
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 1825.645717346939,
+            "min": 629.0595,
+            "med": 1477.54245,
+            "max": 12722.8836,
+            "p(90)": 2195.1061799999998,
+            "p(95)": 3210.150929999999
+        },
+        "http_req_blocked": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 1.466991,
+            "min": 0,
+            "med": 0,
+            "max": 146.6991
+        },
+        "iterations": {
+            "count": 100,
+            "rate": 0.5205343668597323
+        },
+        "http_reqs": {
+            "count": 100,
+            "rate": 0.5205343668597323
+        },
+        "http_req_receiving": {
+            "p(95)": 0.85432,
+            "avg": 0.24029299999999992,
+            "min": 0,
+            "med": 0,
+            "max": 10.4925,
+            "p(90)": 0.4703800000000002
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_req_sending": {
+            "p(90)": 0.7381000000000002,
+            "p(95)": 0.8319699999999998,
+            "avg": 0.28690899999999997,
+            "min": 0,
+            "med": 0.2487,
+            "max": 0.998
+        },
+        "http_req_failed": {
+            "passes": 2,
+            "fails": 98,
+            "value": 0.02
+        },
+        "http_req_tls_handshaking": {
+            "max": 89.0712,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.8907120000000001,
+            "min": 0,
+            "med": 0
+        },
+        "data_received": {
+            "count": 47382,
+            "rate": 246.63959370547838
+        },
+        "iteration_duration": {
+            "p(90)": 2349.760890000001,
+            "p(95)": 3713.618314999999,
+            "avg": 1921.0702069999993,
+            "min": 681.4267,
+            "med": 1539.1287499999999,
+            "max": 12774.9295
+        },
+        "data_sent": {
+            "count": 25860,
+            "rate": 134.61018726992677
+        },
+        "http_req_waiting": {
+            "min": 628.7588,
+            "med": 1480.7634,
+            "max": 12722.202,
+            "p(90)": 2297.645550000001,
+            "p(95)": 3660.709229999998,
+            "avg": 1866.7286260000008
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "✅ Curso creado exitosamente": {
+                    "fails": 2,
+                    "name": "✅ Curso creado exitosamente",
+                    "path": "::✅ Curso creado exitosamente",
+                    "id": "7c43af25eeb5ace28f69e858d0dbb0a1",
+                    "passes": 98
+                },
+                "✅ Respuesta rápida (≤5s por curso)": {
+                    "fails": 4,
+                    "name": "✅ Respuesta rápida (≤5s por curso)",
+                    "path": "::✅ Respuesta rápida (≤5s por curso)",
+                    "id": "7eb2edd33c07e8f9cc9b59dc8a3b608a",
+                    "passes": 96
+                },
+                "✅ Sin errores del servidor": {
+                    "path": "::✅ Sin errores del servidor",
+                    "id": "ddb67ecb32b9a2cab99083ed2f1f5e0f",
+                    "passes": 98,
+                    "fails": 2,
+                    "name": "✅ Sin errores del servidor"
+                },
+                "✅ Autenticación válida": {
+                    "fails": 0,
+                    "name": "✅ Autenticación válida",
+                    "path": "::✅ Autenticación válida",
+                    "id": "d4a463161cb06b720b306a7ba6a63b9b",
+                    "passes": 100
+                },
+                "✅ Payload procesado correctamente": {
+                    "fails": 0,
+                    "name": "✅ Payload procesado correctamente",
+                    "path": "::✅ Payload procesado correctamente",
+                    "id": "62dfa2dedc057e135d85aa5411c179c3",
+                    "passes": 100
+                }
+            }
+    }
+}

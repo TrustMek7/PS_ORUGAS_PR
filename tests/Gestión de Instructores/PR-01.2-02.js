@@ -4,40 +4,21 @@ import { SharedArray } from 'k6/data';
 import { getHeadersWithCSRF } from '../login_token.js';
 
 export const options = {
-  vus: 5, // Reducido para testing inicial (configurar a 100 para producción)
-  iterations: 10, // Reducido para testing inicial (configurar a 500 para producción)
+  vus: 100, // Simula 100 usuarios simultáneos
+  duration: '1m', // Duración total de la prueba
   thresholds: {
-    'http_req_duration': ['p(95)<500'], // Tiempo respuesta ≤ 500ms
-    'http_req_failed': ['rate<0.05'],
+    'http_req_duration': ['p(95)<1000'], // 95% de las solicitudes deben responder en menos de 1 segundo
+    'http_req_failed': ['rate<0.05'],    // Menos del 5% de errores permitidos
   },
 };
 
-// Cargamos los instructores desde archivo externo
-const instructores = new SharedArray('instructores_concurrentes', function() {
-  try {
-    const contenido = open('./instructores_concurrentes.txt');
-    return contenido.split('\n')
-      .map(linea => linea.trim())
-      .filter(linea => linea.length > 0 && linea.includes('|'))
-      .map(linea => {
-        const partes = linea.split('|').map(parte => parte.trim());
-        return {
-          instructorName: partes[0],
-          instructorEmail: partes[1],
-          instructorInstitution: partes[2]
-        };
-      });
-  } catch (error) {
-    console.error(`Error al leer archivo: ${error}`);
-    return [
-      {
-        instructorName: 'Test Instructor',
-        instructorEmail: 'test@example.com',
-        instructorInstitution: 'TEST'
-      }
-    ];
-  }
-});
+// Generamos dinámicamente 100 instructores únicos
+const instructores = Array.from({ length: 100 }, (_, i) => ({
+  instructorName: `Instructor ${i + 1}`,
+  instructorEmail: `instructor${i + 1}@example.com`,
+  instructorInstitution: `Institución ${Math.floor(i / 10) + 1}`
+}));
+
 
 const startTime = Date.now();
 

@@ -1,0 +1,216 @@
+{
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "✅ PR-03.1-04: Cursos - Status 200 OK": {
+                    "name": "✅ PR-03.1-04: Cursos - Status 200 OK",
+                    "path": "::✅ PR-03.1-04: Cursos - Status 200 OK",
+                    "id": "3bcab51b2cf61e9d3cd16747566d2f1a",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ PR-03.1-04: Página - Status 200 OK": {
+                    "path": "::✅ PR-03.1-04: Página - Status 200 OK",
+                    "id": "82e8d1097fa41cead9803bc7b332562d",
+                    "passes": 310,
+                    "fails": 0,
+                    "name": "✅ PR-03.1-04: Página - Status 200 OK"
+                },
+                "✅ PR-03.1-04: Tiempo de carga ≤ 2s": {
+                    "fails": 0,
+                    "name": "✅ PR-03.1-04: Tiempo de carga ≤ 2s",
+                    "path": "::✅ PR-03.1-04: Tiempo de carga ≤ 2s",
+                    "id": "0247b752a33a943726657723143b344b",
+                    "passes": 310
+                },
+                "✅ PR-03.1-04: Contenido HTML válido": {
+                    "name": "✅ PR-03.1-04: Contenido HTML válido",
+                    "path": "::✅ PR-03.1-04: Contenido HTML válido",
+                    "id": "a05f21ea7f1aca6ae96c4ca7701376f0",
+                    "passes": 310,
+                    "fails": 0
+                },
+                "✅ PR-03.1-04: Página contiene elementos de estudiantes": {
+                    "name": "✅ PR-03.1-04: Página contiene elementos de estudiantes",
+                    "path": "::✅ PR-03.1-04: Página contiene elementos de estudiantes",
+                    "id": "7362fb369128021faa7f6042582a151e",
+                    "passes": 310,
+                    "fails": 0
+                },
+                "✅ PR-03.1-04: Al menos 1 curso procesado exitosamente": {
+                    "path": "::✅ PR-03.1-04: Al menos 1 curso procesado exitosamente",
+                    "id": "b07d41bbd443103852677c5fe33a13c7",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-03.1-04: Al menos 1 curso procesado exitosamente"
+                },
+                "✅ PR-03.1-04: Total de estudiantes >1000": {
+                    "name": "✅ PR-03.1-04: Total de estudiantes >1000",
+                    "path": "::✅ PR-03.1-04: Total de estudiantes >1000",
+                    "id": "77ea88c39075b0c572fc67c888406683",
+                    "passes": 0,
+                    "fails": 1
+                },
+                "✅ PR-03.1-04: Tasa de éxito de carga ≥ 80%": {
+                    "path": "::✅ PR-03.1-04: Tasa de éxito de carga ≥ 80%",
+                    "id": "ca65d82d3af71a5c2dcaed7f71be5652",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ PR-03.1-04: Tasa de éxito de carga ≥ 80%"
+                },
+                "✅ PR-03.1-04: Al menos 1 curso con muchos estudiantes": {
+                    "name": "✅ PR-03.1-04: Al menos 1 curso con muchos estudiantes",
+                    "path": "::✅ PR-03.1-04: Al menos 1 curso con muchos estudiantes",
+                    "id": "99e3b5eff3d239e327717a1509341ddc",
+                    "passes": 0,
+                    "fails": 1
+                },
+                "✅ PR-03.1-04: Simulación - Manejo de >1000 estudiantes": {
+                    "name": "✅ PR-03.1-04: Simulación - Manejo de >1000 estudiantes",
+                    "path": "::✅ PR-03.1-04: Simulación - Manejo de >1000 estudiantes",
+                    "id": "da6f2ecfbab764d619206c0206fcbf46",
+                    "passes": 1,
+                    "fails": 0
+                }
+            }
+    },
+    "metrics": {
+        "http_req_duration": {
+            "avg": 299.0755294685992,
+            "min": 183.6561,
+            "med": 282.6215,
+            "max": 5537.6697,
+            "p(90)": 379.3333,
+            "p(95)": 397.316
+        },
+        "http_req_blocked": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.22192801932367148,
+            "min": 0,
+            "med": 0,
+            "max": 136.6927
+        },
+        "http_reqs": {
+            "count": 621,
+            "rate": 2.4911081719012067
+        },
+        "http_req_duration{expected_response:true}": {
+            "min": 183.6561,
+            "med": 282.6215,
+            "max": 5537.6697,
+            "p(90)": 379.3333,
+            "p(95)": 397.316,
+            "avg": 299.0755294685992
+        },
+        "http_req_receiving": {
+            "avg": 2.1138637681159422,
+            "min": 0,
+            "med": 0.9457,
+            "max": 211.6282,
+            "p(90)": 3.7396,
+            "p(95)": 3.9876
+        },
+        "checks": {
+            "passes": 1244,
+            "fails": 2,
+            "value": 0.9983948635634029
+        },
+        "iterations": {
+            "count": 1,
+            "rate": 0.00401144633156394
+        },
+        "http_req_sending": {
+            "med": 0,
+            "max": 1.2817,
+            "p(90)": 0.5592,
+            "p(95)": 0.6859,
+            "avg": 0.1372980676328502,
+            "min": 0
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_req_tls_handshaking": {
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.13376666666666667,
+            "min": 0,
+            "med": 0,
+            "max": 83.0691
+        },
+        "data_received": {
+            "count": 3121658,
+            "rate": 12522.363532497226
+        },
+        "page_load_duration": {
+            "max": 356,
+            "p(90)": 256,
+            "p(95)": 260,
+            "avg": 225.69032258064516,
+            "min": 184,
+            "med": 226,
+            "thresholds": {
+                "p(95)<2000": false
+            }
+        },
+        "vus_max": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "student_count_per_course": {
+            "med": 0,
+            "max": 256,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.8258064516129032,
+            "min": 0
+        },
+        "iteration_duration": {
+            "avg": 249286.6192,
+            "min": 249286.6192,
+            "med": 249286.6192,
+            "max": 249286.6192,
+            "p(90)": 249286.6192,
+            "p(95)": 249286.6192
+        },
+        "http_req_failed": {
+            "fails": 621,
+            "passes": 0,
+            "thresholds": {
+                "rate<0.05": false
+            },
+            "value": 0
+        },
+        "http_req_waiting": {
+            "min": 180.8419,
+            "med": 281.6654,
+            "max": 5326.0415,
+            "p(90)": 378.9475,
+            "p(95)": 397.316,
+            "avg": 296.82436763285
+        },
+        "data_sent": {
+            "count": 103962,
+            "rate": 417.0379835220503
+        },
+        "total_students_loaded": {
+            "count": 1500,
+            "rate": 6.017169497345909
+        },
+        "http_req_connecting": {
+            "avg": 0.07855378421900161,
+            "min": 0,
+            "med": 0,
+            "max": 48.7819,
+            "p(90)": 0,
+            "p(95)": 0
+        }
+    }
+}
