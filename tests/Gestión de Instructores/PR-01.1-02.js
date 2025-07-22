@@ -4,13 +4,13 @@ import { SharedArray } from 'k6/data';
 import { getHeadersWithCSRF } from '../login_token.js';
 
 export const options = {
-  vus: 5, // Reducido para testing inicial
-  iterations: 10, // Reducido para testing inicial
+  vus: 100,
+  duration: '1m',
   thresholds: {
-    'http_req_duration': ['p(95)<1000'], // Tiempo ≤ 1s por lote
+    'http_req_duration': ['p(95)<1000'],
     'http_req_failed': ['rate<0.05'],
   },
-};
+}
 
 // Cargamos los instructores una sola vez y los compartimos entre VUs
 const instructores = new SharedArray('instructores', function() {

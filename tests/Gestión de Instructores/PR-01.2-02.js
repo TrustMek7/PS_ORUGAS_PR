@@ -62,8 +62,6 @@ export function handleSummary(data) {
   console.log(`  ❌ SOLICITUDES FALLIDAS: ${fallidos}`);
   console.log(`  ⏱️  TIEMPO PROMEDIO POR LOTE: ${promedio}ms`);
   console.log(`  ⌛ TIEMPO TOTAL: ${Math.round(totalDuracion / 1000)}s`);
-  console.log(`  👥 USUARIOS CONCURRENTES: 5 VUs (testing - configurar a 100 para producción)`);
-
   if (fallidos === 0 && promedio <= 500 && totalDuracion <= 300000) {
     console.log(`  ✅ VALIDACIÓN: Dentro del umbral de tiempo y errores aceptables`);
   } else {

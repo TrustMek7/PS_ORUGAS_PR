@@ -5,7 +5,7 @@ import { getHeadersWithCSRF } from '../login_token.js';
 
 export const options = {
   vus: 1,
-  iterations: 5, // Reducido para testing inicial (configurar a 500 para producción)
+  iterations: 500, 
   thresholds: {
     'http_req_duration': ['p(95)<1000'], // Tiempo ≤ 1s por lote
     'http_req_failed': ['rate<0.05'],
@@ -15,7 +15,7 @@ export const options = {
 // Cargamos los instructores desde archivo JSON externo
 const instructores = new SharedArray('instructores_individuales', function() {
   try {
-    const data = JSON.parse(open('./instructores_individuales.json'));
+    const data = JSON.parse(open('./instructores_500.json'));
     return data;
   } catch (error) {
     console.error(`Error al leer archivo JSON: ${error}`);
