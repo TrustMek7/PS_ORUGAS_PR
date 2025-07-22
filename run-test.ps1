@@ -26,7 +26,13 @@ for ($i = 0; $i -lt $modulos.Count; $i++) {
 
 do {
     $moduloIndex = Read-Host "`n[?] Seleccione un modulo (1-$($modulos.Count))"
-} while (-not ($moduloIndex -as [int]) -or $moduloIndex -lt 1 -or $moduloIndex -gt $modulos.Count)
+    $moduloIndexInt = $moduloIndex -as [int]
+    if (-not $moduloIndexInt -or $moduloIndexInt -lt 1 -or $moduloIndexInt -gt $modulos.Count) {
+        Write-Host "ERROR: Por favor ingrese un numero valido entre 1 y $($modulos.Count)" -ForegroundColor Red
+    }
+} while (-not $moduloIndexInt -or $moduloIndexInt -lt 1 -or $moduloIndexInt -gt $modulos.Count)
+
+$moduloIndex = $moduloIndexInt
 
 $moduloSeleccionado = $modulos[$moduloIndex - 1].FullName
 
@@ -46,7 +52,13 @@ for ($i = 0; $i -lt $tests.Count; $i++) {
 
 do {
     $testIndex = Read-Host "`n[?] Seleccione un test (1-$($tests.Count))"
-} while (-not ($testIndex -as [int]) -or $testIndex -lt 1 -or $testIndex -gt $tests.Count)
+    $testIndexInt = $testIndex -as [int]
+    if (-not $testIndexInt -or $testIndexInt -lt 1 -or $testIndexInt -gt $tests.Count) {
+        Write-Host "ERROR: Por favor ingrese un numero valido entre 1 y $($tests.Count)" -ForegroundColor Red
+    }
+} while (-not $testIndexInt -or $testIndexInt -lt 1 -or $testIndexInt -gt $tests.Count)
+
+$testIndex = $testIndexInt
 
 $testSeleccionado = $tests[$testIndex - 1].FullName
 $nombreArchivo = $tests[$testIndex - 1].BaseName

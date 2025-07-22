@@ -33,8 +33,13 @@ for ($i = 0; $i -lt $modulos.Count; $i++) {
 
 do {
     $moduloIndex = Read-Host "`n[?] Seleccione un modulo para ejecutar todos sus tests (1-$($modulos.Count))"
-} while (-not ($moduloIndex -as [int]) -or $moduloIndex -lt 1 -or $moduloIndex -gt $modulos.Count)
+    $moduloIndexInt = $moduloIndex -as [int]
+    if (-not $moduloIndexInt -or $moduloIndexInt -lt 1 -or $moduloIndexInt -gt $modulos.Count) {
+        Write-Host "ERROR: Por favor ingrese un numero valido entre 1 y $($modulos.Count)" -ForegroundColor Red
+    }
+} while (-not $moduloIndexInt -or $moduloIndexInt -lt 1 -or $moduloIndexInt -gt $modulos.Count)
 
+$moduloIndex = $moduloIndexInt
 $moduloSeleccionado = $modulos[$moduloIndex - 1]
 
 # 2. Obtener todos los tests del modulo seleccionado

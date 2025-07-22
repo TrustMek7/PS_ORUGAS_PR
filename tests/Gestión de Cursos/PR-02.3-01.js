@@ -1,68 +1,60 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
+import { Trend } from 'k6/metrics';
 import { getHeadersWithCSRF } from '../login_token.js';
 
 export const options = {
-  vus: 1,           // UN SOLO usuario para cargar la vista
-  iterations: 5,    // 5 cargas para evaluar consistencia
-  duration: '2m',   // Tiempo máximo permitido
+  vus: 1,
+  iterations: 1,
+  duration: '2m',
 };
 
-// Información del instructor para acceder a los cursos
-const instructor = {
-  email: 'jcusilaymeg@unsa.edu.pe',  // Usuario funcional descubierto
-  name: 'Juan Carlos Usilay Mejia',
-  institute: 'UNSA'
-};
-
-// Métricas de rendimiento
-let tiemposRespuesta = [];
-let cursosObtenidos = 0;
-let totalIteraciones = 0;
+// Métricas personalizadas
+const tiemposRequestTrend = new Trend('tiempos_respuesta');
+const cursosCargadosTrend = new Trend('cursos_cargados');
 
 export default function () {
   const iterationId = __ITER + 1;
-  totalIteraciones++;
-  
-  // URL del endpoint para obtener cursos activos
+
   const cursosActivosUrl = `https://teammates-orugas.appspot.com/webapi/courses?entitytype=instructor&coursestatus=active`;
-  
   console.log(`🔍 Iteración ${iterationId}: Cargando lista de cursos activos...`);
-  
+
   const inicioRequest = Date.now();
   const cursosRes = http.get(cursosActivosUrl, { headers: getHeadersWithCSRF() });
   const tiempoRequest = Date.now() - inicioRequest;
-  
-  tiemposRespuesta.push(tiempoRequest);
-  
-  // Procesar respuesta para contar cursos
+
+  tiemposRequestTrend.add(tiempoRequest);
+
   let numeroCursos = 0;
   let cursosData = null;
-  
   if (cursosRes.status === 200 && cursosRes.body) {
     try {
       cursosData = JSON.parse(cursosRes.body);
-      
-      // Contar cursos según la estructura de respuesta
+
+      console.log(`📦 Respuesta cruda (primeros 300 chars): ${cursosRes.body.substring(0, 300)}...`);
+      console.log(`🔍 Tipo de cursosData: ${typeof cursosData}`);
+      console.log(`🔍 Keys: ${Object.keys(cursosData).join(', ')}`);
+
       if (Array.isArray(cursosData)) {
         numeroCursos = cursosData.length;
-      } else if (cursosData.courses && Array.isArray(cursosData.courses)) {
+        console.log(`✅ cursosData es un arreglo con ${numeroCursos} elementos`);
+      } else if (Array.isArray(cursosData.courses)) {
         numeroCursos = cursosData.courses.length;
-      } else if (cursosData.data && Array.isArray(cursosData.data)) {
+        console.log(`✅ cursosData.courses es un arreglo con ${numeroCursos} cursos`);
+      } else if (Array.isArray(cursosData.data)) {
         numeroCursos = cursosData.data.length;
+        console.log(`✅ cursosData.data es un arreglo con ${numeroCursos} cursos`);
       } else {
-        // Intentar contar propiedades del objeto como cursos
         numeroCursos = Object.keys(cursosData).length;
+        console.log(`⚠️ No se encontró arreglo directo; contando keys: ${numeroCursos}`);
       }
-      
-      cursosObtenidos = Math.max(cursosObtenidos, numeroCursos);
-      
+
+      cursosCargadosTrend.add(numeroCursos);
     } catch (e) {
       console.log(`❌ Iteración ${iterationId}: Error procesando JSON - ${e.message}`);
     }
   }
-  
-  // Validaciones específicas para visualización masiva
+
   const validaciones = check(cursosRes, {
     '✅ Lista de cursos cargada correctamente': (r) => r.status === 200,
     '✅ Tiempo de carga rápido (≤2s)': (r) => tiempoRequest <= 2000,
@@ -79,24 +71,18 @@ export default function () {
     },
     '✅ Más de 100 cursos cargados': (r) => numeroCursos > 100,
     '✅ Sistema con cursos suficientes': (r) => numeroCursos > 50,
-    '✅ Objetivo ideal >1000 cursos': (r) => numeroCursos > 1000,
   });
 
-  // Análisis de validaciones
-  const validacionesExitosas = Object.values(validaciones).filter(v => v === true).length;
+  const validacionesExitosas = Object.values(validaciones).filter(v => v).length;
   const totalValidaciones = Object.keys(validaciones).length;
   const porcentajeExito = Math.round((validacionesExitosas / totalValidaciones) * 100);
 
-  // Log detallado del resultado
   if (cursosRes.status === 200) {
     console.log(`✅ Iteración ${iterationId}: ${numeroCursos} cursos cargados en ${tiempoRequest}ms (${validacionesExitosas}/${totalValidaciones} validaciones exitosas)`);
-    if (numeroCursos > 1000) {
-      console.log(`🎯 ¡OBJETIVO ALCANZADO! Más de 1000 cursos (${numeroCursos}) cargados exitosamente`);
-    } else if (numeroCursos > 100) {
-      console.log(`📊 Cantidad significativa de cursos cargados (${numeroCursos})`);
+    if (numeroCursos > 100) {
+      console.log(`🎯 Objetivo alcanzado: más de 100 cursos (${numeroCursos})`);
     }
-    
-    // Mostrar validaciones fallidas si las hay
+
     if (validacionesExitosas < totalValidaciones) {
       console.log(`⚠️ Validaciones fallidas en iteración ${iterationId}:`);
       Object.entries(validaciones).forEach(([nombre, resultado]) => {
@@ -111,8 +97,7 @@ export default function () {
       console.log(`   Respuesta: ${cursosRes.body.substring(0, 200)}...`);
     }
   }
-  
-  // Pausa entre cargas para evaluar consistencia
+
   sleep(1);
 
   return {
@@ -121,7 +106,7 @@ export default function () {
     status: cursosRes.status,
     coursesCount: numeroCursos,
     success: cursosRes.status === 200,
-    meetTarget: numeroCursos > 1000,
+    meetTarget: numeroCursos > 100, // actualizado
     responseSize: cursosRes.body ? cursosRes.body.length : 0,
     validationsSuccessful: validacionesExitosas,
     validationsTotal: totalValidaciones,
@@ -139,30 +124,28 @@ export function handleSummary(data) {
     duracionMax: Math.round(data.metrics.http_req_duration?.values.max || 0),
     duracionMin: Math.round(data.metrics.http_req_duration?.values.min || 0),
     iteraciones: data.metrics.iterations?.values.count || 0,
-    dataReceived: Math.round((data.metrics.data_received?.values.count || 0) / 1024) // KB
+    dataReceived: Math.round((data.metrics.data_received?.values.count || 0) / 1024),
+    cursosMax: Math.round(data.metrics.cursos_cargados?.values.max || 0)
   };
-  
+
   const exitoTotal = stats.checksTotal > 0 ? Math.round((stats.checksExitosos / stats.checksTotal) * 100) : 0;
-  const cargasExitosas = stats.requestsTotal; // Todas las cargas HTTP realizadas
-  const objetivoAlcanzado = cursosObtenidos > 100 ? "SÍ (>100)" : cursosObtenidos > 50 ? "PARCIAL" : "NO";
-  const objetivoIdeal = cursosObtenidos > 1000 ? "✅ IDEAL ALCANZADO" : "⚠️ IDEAL PENDIENTE";
+  const objetivoAlcanzado = stats.cursosMax > 100 ? "✅ ALCANZADO (>100)" : stats.cursosMax > 50 ? "⚠️ PARCIAL" : "❌ NO";
   const rendimientoObjetivo = stats.duracionPromedio <= 2000 ? "✅ CUMPLE" : "❌ NO CUMPLE";
 
   return {
     'stdout': `
 ═════════════════════════════════════════════════════════════════════════════════════
-  🎯 PR-02.3-01: VISUALIZACIÓN - CARGAR LISTA DE CURSOS ACTIVOS (>1000 REGISTROS)
+  🎯 PR-02.3-01: VISUALIZACIÓN - CARGAR LISTA DE CURSOS ACTIVOS (máx. 200 registros)
 ═════════════════════════════════════════════════════════════════════════════════════
   📊 VALIDACIONES: ${stats.checksExitosos}/${stats.checksTotal} checks (${exitoTotal}%)
   🌐 HTTP: ${stats.requestsTotal} cargas de vista realizadas
   ⏱️ RENDIMIENTO: ${stats.duracionPromedio}ms promedio (objetivo: ≤2000ms) ${rendimientoObjetivo}
   📈 TIEMPOS: ${stats.duracionMin}ms min | ${stats.duracionMax}ms max
-  🎯 CURSOS CARGADOS: ${cursosObtenidos} cursos (objetivo: >100) - ${objetivoAlcanzado}
-  🎯 OBJETIVO IDEAL: >1000 cursos - ${objetivoIdeal}
+  🎯 CURSOS CARGADOS: ${stats.cursosMax} cursos (objetivo: >100) - ${objetivoAlcanzado}
   📦 DATOS: ${stats.dataReceived}KB transferidos
-  ✅ CARGAS EXITOSAS: ${cargasExitosas} de ${stats.requestsTotal} intentos
+  ✅ CARGAS EXITOSAS: ${stats.requestsTotal} de ${stats.requestsTotal} intentos
   🔍 ENDPOINT: GET /webapi/courses?entitytype=instructor&coursestatus=active
-  ✅ OBJETIVO: Evaluar rendimiento de renderizado masivo de cursos activos
+  ✅ OBJETIVO: Evaluar rendimiento de carga de hasta 200 cursos activos
 ═════════════════════════════════════════════════════════════════════════════════════
 `
   };

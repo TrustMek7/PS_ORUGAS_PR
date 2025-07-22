@@ -8,15 +8,9 @@ export const options = {
   duration: '10m',  // Tiempo máximo permitido para completar el proceso
 };
 
-// Información del administrador para acceder a los cursos
-const administrador = {
-  email: 'jcusilaymeg@unsa.edu.pe',  // Usuario funcional descubierto
-  name: 'Juan Carlos Usilay Mejia',
-  institute: 'UNSA'
-};
-
 // Variables para métricas de rendimiento
 let cursosEliminados = 0;
+let cursosEliminadosLista = []; // Lista de cursos realmente eliminados
 let tiempoInicio = Date.now();
 let tiemposRespuesta = [];
 let cursosDisponibles = [];
@@ -167,6 +161,7 @@ export default function (data) {
   
   if (realmenteEliminado) {
     cursosEliminados++;
+    cursosEliminadosLista.push(cursoId); // Agregar a la lista de eliminados
     errorConsecutivos = 0;
     console.log(`✅ Curso ${iterationId + 1}/100 ELIMINADO exitosamente en ${tiempoRequest}ms - ${cursoId} (${validacionesExitosas}/${totalValidaciones} validaciones exitosas)`);
     
@@ -210,6 +205,13 @@ export default function (data) {
   
   if ((iterationId + 1) % 10 === 0 || iterationId === 0) {
     console.log(`📊 Progreso: ${progreso}% (${iterationId + 1}/${totalIteraciones}) | Eliminados: ${cursosEliminados} | Tiempo: ${tiempoTranscurrido}s | ETA: ${tiempoEstimado}s`);
+    
+    // Mostrar lista de cursos realmente eliminados cada 10 iteraciones
+    if (cursosEliminadosLista.length > 0) {
+      console.log(`🗑️ CURSOS ELIMINADOS REALMENTE: [${cursosEliminadosLista.join(', ')}]`);
+    } else {
+      console.log(`⚠️ NINGÚN CURSO ELIMINADO AÚN`);
+    }
   }
   
   // Pausa mínima entre requests para mantener rendimiento del backend
@@ -276,6 +278,9 @@ export function handleSummary(data) {
   • Tiempo promedio por curso: ${stats.duracionPromedio}ms
   • Cursos procesados por segundo: ${tiempoTotalSegundos > 0 ? Math.round(cursosEliminados / tiempoTotalSegundos) : 0}
   • Errores consecutivos máximos: ${errorConsecutivos}
+  
+  🗑️ CURSOS REALMENTE ELIMINADOS (${cursosEliminadosLista.length}):
+  ${cursosEliminadosLista.length > 0 ? cursosEliminadosLista.map((curso, index) => `${index + 1}. ${curso}`).join('\n  ') : 'NINGÚN CURSO ELIMINADO'}
 ═════════════════════════════════════════════════════════════════════════════════════
 `
   };
