@@ -1,12 +1,20 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
+import { Counter, Gauge } from 'k6/metrics';
 import { getHeadersWithCSRF } from '../login_token.js';
 
 export const options = {
   vus: 1,           // UN SOLO usuario para acciones masivas
   iterations: 100,  // Eliminar 100 cursos archivados secuencialmente
   duration: '10m',  // Tiempo máximo permitido para completar el proceso
+   tags: {
+    modulo: 'Gestión de cursos',
+  },
 };
+
+// Métricas k6 para tracking confiable
+const cursosEliminadosMetric = new Counter('cursos_archivados_eliminados_exitosos');
+const tiempoEliminacionMetric = new Gauge('tiempo_eliminacion_promedio_ms');
 
 // Información del administrador para acceder a los cursos
 const administrador = {
@@ -190,8 +198,11 @@ export default function (data) {
   
   if (realmenteEliminado) {
     cursosEliminados++;
+    cursosEliminadosMetric.add(1); // Incrementar métrica k6
+    tiempoEliminacionMetric.add(tiempoRequest); // Actualizar métrica de tiempo
     errorConsecutivos = 0;
     console.log(`✅ Curso archivado ${iterationId + 1}/100 ELIMINADO exitosamente en ${tiempoRequest}ms - ${cursoId} (${validacionesExitosas}/${totalValidaciones} validaciones exitosas)`);
+    console.log(`   🎯 Total eliminados acumulados: ${cursosEliminados}`);
     
     if (tiempoRequest <= 3000) {
       console.log(`⚡ Rendimiento excelente: Eliminado en ${tiempoRequest}ms (objetivo: ≤3s)`);
@@ -272,16 +283,24 @@ export function handleSummary(data) {
     dataReceived: Math.round((data.metrics.data_received?.values.count || 0) / 1024) // KB
   };
   
+  // Usar métricas k6 en lugar de variables globales
+  const cursosEliminadosTotal = data.metrics.cursos_archivados_eliminados_exitosos?.values.count || 0;
+  const tiempoEliminacionPromedio = Math.round(data.metrics.tiempo_eliminacion_promedio_ms?.values.avg || 0);
+  
+  // Debug información de métricas
+  console.log(`🔍 DEBUG FINAL - cursosEliminadosTotal: ${cursosEliminados}, k6Metric: ${cursosEliminadosTotal}`);
+  console.log(`🔍 DEBUG FINAL - tiempoPromedio: ${stats.duracionPromedio}ms, eliminacionMetric: ${tiempoEliminacionPromedio}ms`);
+  
   const exitoTotal = stats.checksTotal > 0 ? Math.round((stats.checksExitosos / stats.checksTotal) * 100) : 0;
   const cursosObjetivo = 100;
-  const objetivoAlcanzado = cursosEliminados >= cursosObjetivo ? "✅ CUMPLIDO" : cursosEliminados >= cursosObjetivo * 0.8 ? "⚠️ PARCIAL" : "❌ NO CUMPLIDO";
+  const objetivoAlcanzado = cursosEliminadosTotal >= cursosObjetivo ? "✅ CUMPLIDO" : cursosEliminadosTotal >= cursosObjetivo * 0.8 ? "⚠️ PARCIAL" : "❌ NO CUMPLIDO";
   const rendimientoObjetivo = stats.duracionPromedio <= 3000 ? "✅ CUMPLE" : "❌ NO CUMPLE";
   const eficienciaBackend = stats.duracionPromedio <= 3000 && exitoTotal >= 80 ? "✅ EFICIENTE" : "⚠️ REVISAR";
   const consistenciaEliminacion = errorConsecutivos <= 2 ? "✅ CONSISTENTE" : "⚠️ INCONSISTENTE";
   
   const tiempoTotalSegundos = Math.round((Date.now() - tiempoInicio) / 1000);
   const tiempoTotalMinutos = Math.round(tiempoTotalSegundos / 60);
-  const throughput = tiempoTotalSegundos > 0 ? Math.round((cursosEliminados / tiempoTotalSegundos) * 60) : 0; // cursos por minuto
+  const throughput = tiempoTotalSegundos > 0 ? Math.round((cursosEliminadosTotal / tiempoTotalSegundos) * 60) : 0; // cursos por minuto
 
   return {
     'stdout': `
@@ -289,7 +308,7 @@ export function handleSummary(data) {
   🗑️ PR-02.4-03: ACCIÓN MASIVA - ELIMINAR TODOS LOS CURSOS ARCHIVADOS (100 CURSOS)
 ═════════════════════════════════════════════════════════════════════════════════════
   📊 VALIDACIONES: ${stats.checksExitosos}/${stats.checksTotal} checks (${exitoTotal}%)
-  🎯 CURSOS ELIMINADOS: ${cursosEliminados}/${cursosObjetivo} cursos - ${objetivoAlcanzado}
+  🎯 CURSOS ELIMINADOS: ${cursosEliminadosTotal}/${cursosObjetivo} cursos - ${objetivoAlcanzado}
   ⏱️ RENDIMIENTO: ${stats.duracionPromedio}ms promedio (objetivo: ≤3s) ${rendimientoObjetivo}
   📈 TIEMPOS: ${stats.duracionMin}ms min | ${stats.duracionMax}ms max
   🌐 HTTP: ${stats.requestsTotal} requests PUT realizados
@@ -302,16 +321,16 @@ export function handleSummary(data) {
   ✅ OBJETIVO: Validar eliminación masiva de cursos archivados con consistencia
   
   📋 MÉTRICAS DETALLADAS:
-  • Tasa de éxito: ${Math.round((cursosEliminados / cursosObjetivo) * 100)}%
+  • Tasa de éxito: ${Math.round((cursosEliminadosTotal / cursosObjetivo) * 100)}%
   • Tiempo promedio por curso: ${stats.duracionPromedio}ms
-  • Cursos procesados por segundo: ${tiempoTotalSegundos > 0 ? Math.round(cursosEliminados / tiempoTotalSegundos) : 0}
+  • Cursos procesados por segundo: ${tiempoTotalSegundos > 0 ? Math.round(cursosEliminadosTotal / tiempoTotalSegundos) : 0}
   • Errores consecutivos máximos: ${errorConsecutivos}
   • Consistencia en eliminación intermedia: ${consistenciaEliminacion}
   
   🎯 OBJETIVOS ESPECÍFICOS:
   ✓ Eliminar 100 cursos archivados: ${objetivoAlcanzado}
   ✓ Acción ≤ 3s por curso: ${rendimientoObjetivo}
-  ✓ Todos eliminados correctamente: ${cursosEliminados === cursosObjetivo ? "✅ SÍ" : "❌ NO"}
+  ✓ Todos eliminados correctamente: ${cursosEliminadosTotal === cursosObjetivo ? "✅ SÍ" : "❌ NO"}
   ✓ Consistencia en eliminación intermedia: ${consistenciaEliminacion}
 ═════════════════════════════════════════════════════════════════════════════════════
 `

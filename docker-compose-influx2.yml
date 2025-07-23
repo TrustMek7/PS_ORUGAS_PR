@@ -2,7 +2,7 @@ version: '3.8'
 services:
   # InfluxDB - Base de datos de series temporales para métricas k6
   influxdb:
-    image: influxdb:2.0
+    image: influxdb:2.7
     container_name: ps_orugas_influxdb
     ports:
       - "8086:8086"

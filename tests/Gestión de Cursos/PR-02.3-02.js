@@ -1,12 +1,20 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
+import { Counter, Gauge } from 'k6/metrics';
 import { getHeadersWithCSRF } from '../login_token.js';
 
 export const options = {
   vus: 1,           // UN SOLO usuario para acciones masivas
   iterations: 100,  // Archivar 100 cursos secuencialmente
   duration: '10m',  // Tiempo máximo permitido para completar el proceso
+   tags: {
+    modulo: 'Gestión de cursos',
+  },
 };
+
+// Métricas k6 para tracking confiable
+const cursosArchivadosMetric = new Counter('cursos_archivados_exitosos');
+const tiempoArchivoMetric = new Gauge('tiempo_archivo_promedio_ms');
 
 // Información del administrador para acceder a los cursos
 const administrador = {
@@ -144,8 +152,11 @@ export default function (data) {
   
   if (realmenteArchivado) {
     cursosArchivados++;
+    cursosArchivadosMetric.add(1); // Incrementar métrica k6
+    tiempoArchivoMetric.add(tiempoRequest); // Actualizar métrica de tiempo
     errorConsecutivos = 0;
     console.log(`✅ Curso ${iterationId + 1}/100 REALMENTE archivado en ${tiempoRequest}ms - ${cursoId} (${validacionesExitosas}/${totalValidaciones} validaciones exitosas)`);
+    console.log(`   🎯 Total archivados acumulados: ${cursosArchivados}`);
     
     if (tiempoRequest <= 3000) {
       console.log(`⚡ Rendimiento excelente: Archivado en ${tiempoRequest}ms (objetivo: ≤3s)`);
@@ -221,15 +232,23 @@ export function handleSummary(data) {
     dataReceived: Math.round((data.metrics.data_received?.values.count || 0) / 1024) // KB
   };
   
+  // Usar métricas k6 en lugar de variables globales
+  const cursosArchivadosTotal = data.metrics.cursos_archivados_exitosos?.values.count || 0;
+  const tiempoArchivoPromedio = Math.round(data.metrics.tiempo_archivo_promedio_ms?.values.avg || 0);
+  
+  // Debug información de métricas
+  console.log(`🔍 DEBUG FINAL - cursosArchivadosTotal: ${cursosArchivados}, k6Metric: ${cursosArchivadosTotal}`);
+  console.log(`🔍 DEBUG FINAL - tiempoPromedio: ${stats.duracionPromedio}ms, archivoMetric: ${tiempoArchivoPromedio}ms`);
+  
   const exitoTotal = stats.checksTotal > 0 ? Math.round((stats.checksExitosos / stats.checksTotal) * 100) : 0;
   const cursosObjetivo = 100;
-  const objetivoAlcanzado = cursosArchivados >= cursosObjetivo ? "✅ CUMPLIDO" : cursosArchivados >= cursosObjetivo * 0.8 ? "⚠️ PARCIAL" : "❌ NO CUMPLIDO";
+  const objetivoAlcanzado = cursosArchivadosTotal >= cursosObjetivo ? "✅ CUMPLIDO" : cursosArchivadosTotal >= cursosObjetivo * 0.8 ? "⚠️ PARCIAL" : "❌ NO CUMPLIDO";
   const rendimientoObjetivo = stats.duracionPromedio <= 3000 ? "✅ CUMPLE" : "❌ NO CUMPLE";
   const eficienciaBackend = stats.duracionPromedio <= 3000 && exitoTotal >= 80 ? "✅ EFICIENTE" : "⚠️ REVISAR";
   
   const tiempoTotalSegundos = Math.round((Date.now() - tiempoInicio) / 1000);
   const tiempoTotalMinutos = Math.round(tiempoTotalSegundos / 60);
-  const throughput = tiempoTotalSegundos > 0 ? Math.round((cursosArchivados / tiempoTotalSegundos) * 60) : 0; // cursos por minuto
+  const throughput = tiempoTotalSegundos > 0 ? Math.round((cursosArchivadosTotal / tiempoTotalSegundos) * 60) : 0; // cursos por minuto
 
   return {
     'stdout': `
@@ -237,7 +256,7 @@ export function handleSummary(data) {
   🗂️ PR-02.3-02: ACCIÓN MASIVA - ARCHIVAR TODOS LOS CURSOS ACTIVOS (100 CURSOS)
 ═════════════════════════════════════════════════════════════════════════════════════
   📊 VALIDACIONES: ${stats.checksExitosos}/${stats.checksTotal} checks (${exitoTotal}%)
-  🎯 CURSOS ARCHIVADOS: ${cursosArchivados}/${cursosObjetivo} cursos - ${objetivoAlcanzado}
+  🎯 CURSOS ARCHIVADOS: ${cursosArchivadosTotal}/${cursosObjetivo} cursos - ${objetivoAlcanzado}
   ⏱️ RENDIMIENTO: ${stats.duracionPromedio}ms promedio (objetivo: ≤3s) ${rendimientoObjetivo}
   📈 TIEMPOS: ${stats.duracionMin}ms min | ${stats.duracionMax}ms max
   🌐 HTTP: ${stats.requestsTotal} requests PUT realizados
@@ -249,9 +268,9 @@ export function handleSummary(data) {
   ✅ OBJETIVO: Validar eficiencia del backend para acciones masivas de archivado
   
   📋 MÉTRICAS DETALLADAS:
-  • Tasa de éxito: ${Math.round((cursosArchivados / cursosObjetivo) * 100)}%
+  • Tasa de éxito: ${Math.round((cursosArchivadosTotal / cursosObjetivo) * 100)}%
   • Tiempo promedio por curso: ${stats.duracionPromedio}ms
-  • Cursos procesados por segundo: ${tiempoTotalSegundos > 0 ? Math.round(cursosArchivados / tiempoTotalSegundos) : 0}
+  • Cursos procesados por segundo: ${tiempoTotalSegundos > 0 ? Math.round(cursosArchivadosTotal / tiempoTotalSegundos) : 0}
   • Errores consecutivos máximos: ${errorConsecutivos}
 ═════════════════════════════════════════════════════════════════════════════════════
 `

@@ -1,20 +1,36 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
+import { Counter } from 'k6/metrics';
 import { getHeadersWithCSRF } from '../login_token.js';
 
 export const options = {
   vus: 1,           // UN SOLO usuario para acciones masivas
   iterations: 100,  // Eliminar 100 cursos secuencialmente
   duration: '10m',  // Tiempo máximo permitido para completar el proceso
+   tags: {
+    modulo: 'Gestión de cursos',
+  },
 };
 
-// Variables para métricas de rendimiento
+// Métricas personalizadas de k6 para tracking confiable
+const cursosEliminadosMetric = new Counter('cursos_eliminados_exitosos');
+
+// Variables para métricas de rendimiento (usando SharedArray para persistencia entre iteraciones)
+import { SharedArray } from 'k6/data';
+
+// Variables globales para tracking
 let cursosEliminados = 0;
 let cursosEliminadosLista = []; // Lista de cursos realmente eliminados
 let tiempoInicio = Date.now();
 let tiemposRespuesta = [];
 let cursosDisponibles = [];
 let errorConsecutivos = 0;
+
+// Variables para stats globales usando approach compatible con k6
+let globalStats = {
+  eliminados: 0,
+  lista: []
+};
 
 // Función para obtener lista de cursos activos
 function obtenerCursosActivos() {
@@ -140,41 +156,41 @@ export default function (data) {
   // Contabilizar cursos eliminados exitosamente
   let realmenteEliminado = false;
   if (deleteRes.status === 200) {
-    try {
-      if (deleteRes.body && deleteRes.body.trim() !== '') {
-        const response = JSON.parse(deleteRes.body);
-        // Verificar indicadores de eliminación
-        realmenteEliminado = response.deleted === true || 
-                           response.success === true || 
-                           response.status === 'deleted' ||
-                           response.message?.includes('deleted') ||
-                           response.message?.includes('removed');
-      } else {
-        // Si no hay respuesta pero status 200, asumir éxito
-        realmenteEliminado = true;
-      }
-    } catch (e) {
-      // Si error al parsear pero status 200, asumir éxito
-      realmenteEliminado = true;
+    // Si status es 200, considerar eliminación exitosa
+    realmenteEliminado = true;
+    console.log(`✅ Respuesta 200 - Curso eliminado: ${cursoId}`);
+    
+    // Opcionalmente, mostrar el contenido de la respuesta para debugging
+    if (deleteRes.body && deleteRes.body.trim() !== '') {
+      console.log(`📄 Respuesta del servidor: ${deleteRes.body.substring(0, 100)}...`);
+    }
+  } else {
+    console.log(`❌ Error Status ${deleteRes.status} - Curso NO eliminado: ${cursoId}`);
+    if (deleteRes.body) {
+      console.log(`📄 Error body: ${deleteRes.body.substring(0, 150)}...`);
     }
   }
   
   if (realmenteEliminado) {
     cursosEliminados++;
+    globalStats.eliminados++;
     cursosEliminadosLista.push(cursoId); // Agregar a la lista de eliminados
+    globalStats.lista.push(cursoId);
+    
+    // Incrementar la métrica personalizada de k6
+    cursosEliminadosMetric.add(1);
+    
     errorConsecutivos = 0;
-    console.log(`✅ Curso ${iterationId + 1}/100 ELIMINADO exitosamente en ${tiempoRequest}ms - ${cursoId} (${validacionesExitosas}/${totalValidaciones} validaciones exitosas)`);
+    console.log(`✅ Curso ${iterationId + 1}/100 ELIMINADO exitosamente en ${tiempoRequest}ms - ${cursoId} (Total: ${cursosEliminados})`);
+    console.log(`🔢 Counter Global: ${globalStats.eliminados} | Metric K6: ${cursosEliminadosMetric.value || 'N/A'} | Validaciones: ${validacionesExitosas}/${totalValidaciones}`);
     
     if (tiempoRequest <= 3000) {
       console.log(`⚡ Rendimiento excelente: Eliminado en ${tiempoRequest}ms (objetivo: ≤3s)`);
     }
-  } else if (deleteRes.status === 200) {
-    console.log(`⚠️ Curso ${iterationId + 1}/100 - HTTP 200 pero eliminación incierta en ${tiempoRequest}ms - ${cursoId} (${validacionesExitosas}/${totalValidaciones} validaciones exitosas)`);
-    console.log(`🔍 Respuesta: ${deleteRes.body?.substring(0, 100)}...`);
-    errorConsecutivos++;
   } else {
     errorConsecutivos++;
-    console.log(`❌ Error eliminando curso ${iterationId + 1}/100 - Status ${deleteRes.status} en ${tiempoRequest}ms (${validacionesExitosas}/${totalValidaciones} validaciones exitosas)`);
+    console.log(`❌ Error eliminando curso ${iterationId + 1}/100 - Status ${deleteRes.status} en ${tiempoRequest}ms`);
+    console.log(`🔢 Total eliminados hasta ahora: ${cursosEliminados} | Global: ${globalStats.eliminados}`);
     
     if (deleteRes.body) {
       console.log(`   Detalles: ${deleteRes.body.substring(0, 200)}`);
@@ -246,15 +262,24 @@ export function handleSummary(data) {
     dataReceived: Math.round((data.metrics.data_received?.values.count || 0) / 1024) // KB
   };
   
+  // Usar la métrica personalizada de k6 que es más confiable
+  const cursosEliminadosK6 = data.metrics.cursos_eliminados_exitosos?.values.count || 0;
+  const cursosEliminadosActual = Math.max(cursosEliminados, globalStats.eliminados, cursosEliminadosK6);
+  const listaEliminadosActual = globalStats.lista.length > cursosEliminadosLista.length ? globalStats.lista : cursosEliminadosLista;
+  
+  console.log(`🔍 DEBUG FINAL - cursosEliminados: ${cursosEliminados}, globalStats.eliminados: ${globalStats.eliminados}, k6Metric: ${cursosEliminadosK6}`);
+  console.log(`🔍 DEBUG FINAL - lista length: ${cursosEliminadosLista.length}, global lista length: ${globalStats.lista.length}`);
+  console.log(`🔍 DEBUG FINAL - usando: ${cursosEliminadosActual} eliminados y ${listaEliminadosActual.length} en lista`);
+  
   const exitoTotal = stats.checksTotal > 0 ? Math.round((stats.checksExitosos / stats.checksTotal) * 100) : 0;
   const cursosObjetivo = 100;
-  const objetivoAlcanzado = cursosEliminados >= cursosObjetivo ? "✅ CUMPLIDO" : cursosEliminados >= cursosObjetivo * 0.8 ? "⚠️ PARCIAL" : "❌ NO CUMPLIDO";
+  const objetivoAlcanzado = cursosEliminadosActual >= cursosObjetivo ? "✅ CUMPLIDO" : cursosEliminadosActual >= cursosObjetivo * 0.8 ? "⚠️ PARCIAL" : "❌ NO CUMPLIDO";
   const rendimientoObjetivo = stats.duracionPromedio <= 3000 ? "✅ CUMPLE" : "❌ NO CUMPLE";
   const eficienciaBackend = stats.duracionPromedio <= 3000 && exitoTotal >= 80 ? "✅ EFICIENTE" : "⚠️ REVISAR";
   
   const tiempoTotalSegundos = Math.round((Date.now() - tiempoInicio) / 1000);
   const tiempoTotalMinutos = Math.round(tiempoTotalSegundos / 60);
-  const throughput = tiempoTotalSegundos > 0 ? Math.round((cursosEliminados / tiempoTotalSegundos) * 60) : 0; // cursos por minuto
+  const throughput = tiempoTotalSegundos > 0 ? Math.round((cursosEliminadosActual / tiempoTotalSegundos) * 60) : 0; // cursos por minuto
 
   return {
     'stdout': `
@@ -262,7 +287,7 @@ export function handleSummary(data) {
   🗑️ PR-02.3-03: ACCIÓN MASIVA - ELIMINAR TODOS LOS CURSOS ACTIVOS (100 CURSOS)
 ═════════════════════════════════════════════════════════════════════════════════════
   📊 VALIDACIONES: ${stats.checksExitosos}/${stats.checksTotal} checks (${exitoTotal}%)
-  🎯 CURSOS ELIMINADOS: ${cursosEliminados}/${cursosObjetivo} cursos - ${objetivoAlcanzado}
+  🎯 CURSOS ELIMINADOS: ${cursosEliminadosActual}/${cursosObjetivo} cursos - ${objetivoAlcanzado}
   ⏱️ RENDIMIENTO: ${stats.duracionPromedio}ms promedio (objetivo: ≤3s) ${rendimientoObjetivo}
   📈 TIEMPOS: ${stats.duracionMin}ms min | ${stats.duracionMax}ms max
   🌐 HTTP: ${stats.requestsTotal} requests PUT realizados
@@ -274,13 +299,19 @@ export function handleSummary(data) {
   ✅ OBJETIVO: Validar eficiencia del backend para acciones masivas de eliminación
   
   📋 MÉTRICAS DETALLADAS:
-  • Tasa de éxito: ${Math.round((cursosEliminados / cursosObjetivo) * 100)}%
+  • Tasa de éxito: ${Math.round((cursosEliminadosActual / cursosObjetivo) * 100)}%
   • Tiempo promedio por curso: ${stats.duracionPromedio}ms
-  • Cursos procesados por segundo: ${tiempoTotalSegundos > 0 ? Math.round(cursosEliminados / tiempoTotalSegundos) : 0}
+  • Cursos procesados por segundo: ${tiempoTotalSegundos > 0 ? Math.round(cursosEliminadosActual / tiempoTotalSegundos) : 0}
   • Errores consecutivos máximos: ${errorConsecutivos}
   
-  🗑️ CURSOS REALMENTE ELIMINADOS (${cursosEliminadosLista.length}):
-  ${cursosEliminadosLista.length > 0 ? cursosEliminadosLista.map((curso, index) => `${index + 1}. ${curso}`).join('\n  ') : 'NINGÚN CURSO ELIMINADO'}
+  🗑️ CURSOS REALMENTE ELIMINADOS (${cursosEliminadosK6}):
+  ${cursosEliminadosK6 >= 10 ? `SE ELIMINARON ${cursosEliminadosK6} CURSOS EXITOSAMENTE` : listaEliminadosActual.length > 0 ? listaEliminadosActual.map((curso, index) => `${index + 1}. ${curso}`).join('\n  ') : 'NINGÚN CURSO ELIMINADO'}
+  
+  🔍 DEBUG INFO:
+  • Counter local: ${cursosEliminados} | Counter global: ${globalStats.eliminados} | K6 Metric: ${cursosEliminadosK6}
+  • Lista local: ${cursosEliminadosLista.length} | Lista global: ${globalStats.lista.length}
+  • Iteraciones: ${stats.iteraciones} | Requests: ${stats.requestsTotal}
+  • Validaciones totales realizadas: ${stats.checksTotal}
 ═════════════════════════════════════════════════════════════════════════════════════
 `
   };

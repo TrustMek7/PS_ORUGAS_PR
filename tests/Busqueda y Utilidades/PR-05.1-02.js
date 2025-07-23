@@ -22,6 +22,9 @@ export const options = {
     'http_req_duration': ['avg<=5000'],
     'checks': ['rate>=0.95'],
   },
+  tags: {
+  modulo: 'Busqueda y Utilidades',
+},
 };
 
 // 📥 Cargar notificaciones desde archivo

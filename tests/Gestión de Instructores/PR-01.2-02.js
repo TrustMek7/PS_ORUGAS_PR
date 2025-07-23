@@ -10,6 +10,9 @@ export const options = {
     'http_req_duration': ['p(95)<1000'], // 95% de las solicitudes deben responder en menos de 1 segundo
     'http_req_failed': ['rate<0.05'],    // Menos del 5% de errores permitidos
   },
+  tags: {
+    modulo: 'Gestión de Instructores',
+  },
 };
 
 // Generamos dinámicamente 100 instructores únicos

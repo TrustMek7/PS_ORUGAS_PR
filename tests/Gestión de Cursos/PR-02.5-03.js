@@ -14,6 +14,9 @@ export const options = {
     'delete_course_duration': ['p(95)<4000'],
     'http_req_failed': ['rate<0.05'],
   },
+   tags: {
+    modulo: 'Gestión de cursos',
+  },
 };
 
 export default function () {

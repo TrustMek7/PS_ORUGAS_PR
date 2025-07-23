@@ -17,6 +17,9 @@ export const options = {
     'http_req_duration': ['p(95)<5000'],
     'courses_count': ['avg>=0'],
   },
+  tags: {
+    modulo: 'Gestión de Instructores',
+  },
 };
 
 export default function () {

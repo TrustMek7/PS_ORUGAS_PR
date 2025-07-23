@@ -10,6 +10,9 @@ export const options = {
     'http_req_duration': ['p(95)<1000'], // Tiempo ≤ 1s por lote
     'http_req_failed': ['rate<0.05'],
   },
+  tags: {
+    modulo: 'Gestión de Instructores',
+  },
 };
 
 // Cargamos los instructores desde archivo JSON externo

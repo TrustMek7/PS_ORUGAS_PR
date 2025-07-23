@@ -1,12 +1,20 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
+import { Counter, Gauge } from 'k6/metrics';
 import { getHeadersWithCSRF } from '../login_token.js';
 
 export const options = {
   vus: 1,           // UN SOLO usuario para acciones masivas individuales
   iterations: 100,  // Restaurar 100 cursos uno por uno
   duration: '10m',  // Tiempo máximo permitido para completar el proceso
+   tags: {
+    modulo: 'Gestión de cursos',
+  },
 };
+
+// Métricas k6 para tracking confiable
+const cursosRestauradosMetric = new Counter('cursos_restaurados_exitosos');
+const tiempoRestauracionMetric = new Gauge('tiempo_restauracion_promedio_ms');
 
 // Variables para métricas de rendimiento
 let cursosRestaurados = 0;
@@ -182,7 +190,9 @@ export default function (data) {
     
     if (realmenteRestaurado) {
       cursosRestaurados++;
+      cursosRestauradosMetric.add(1); // Incrementar métrica k6
       errorConsecutivos = 0;
+      console.log(`   🎯 Total restaurados acumulados: ${cursosRestaurados}`);
     }
   } else {
     errorConsecutivos++;
@@ -229,6 +239,9 @@ export default function (data) {
   const tiempoPromedio = tiemposRespuesta.reduce((a, b) => a + b, 0) / tiemposRespuesta.length;
   const tiempoEstimado = Math.round((tiempoPromedio * (totalIteraciones - iterationId - 1)) / 1000);
   
+  // Actualizar métrica de tiempo
+  tiempoRestauracionMetric.add(tiempoRequest);
+  
   console.log(`📊 Progreso: ${progreso}% (${iterationId + 1}/${totalIteraciones}) | Promedio: ${Math.round(tiempoPromedio)}ms | ETA: ${tiempoEstimado}s`);
   
   // Control de errores consecutivos
@@ -272,14 +285,22 @@ export function handleSummary(data) {
     dataReceived: Math.round((data.metrics.data_received?.values.count || 0) / 1024) // KB
   };
   
+  // Usar métricas k6 en lugar de variables globales
+  const cursosRestauradosTotal = data.metrics.cursos_restaurados_exitosos?.values.count || 0;
+  const tiempoRestauracionPromedio = Math.round(data.metrics.tiempo_restauracion_promedio_ms?.values.avg || 0);
+  
+  // Debug información de métricas
+  console.log(`🔍 DEBUG FINAL - cursosRestauradosTotal: ${cursosRestaurados}, k6Metric: ${cursosRestauradosTotal}`);
+  console.log(`🔍 DEBUG FINAL - tiempoPromedio: ${stats.duracionPromedio}ms, restauracionMetric: ${tiempoRestauracionPromedio}ms`);
+  
   const exitoTotal = stats.checksTotal > 0 ? Math.round((stats.checksExitosos / stats.checksTotal) * 100) : 0;
   const objetivoTiempo = stats.duracionPromedio <= 4000 ? "✅ CUMPLIDO" : "❌ NO CUMPLIDO";
-  const objetivoCantidad = cursosRestaurados >= 100 ? "✅ CUMPLIDO" : "⚠️ PARCIAL";
-  const objetivoGeneral = stats.duracionPromedio <= 4000 && cursosRestaurados >= 80 && exitoTotal >= 80 ? "✅ CUMPLIDO" : "⚠️ REVISAR";
+  const objetivoCantidad = cursosRestauradosTotal >= 100 ? "✅ CUMPLIDO" : "⚠️ PARCIAL";
+  const objetivoGeneral = stats.duracionPromedio <= 4000 && cursosRestauradosTotal >= 80 && exitoTotal >= 80 ? "✅ CUMPLIDO" : "⚠️ REVISAR";
   const rendimientoIndividual = stats.duracionPromedio <= 2000 ? "⚡ ÓPTIMO" : stats.duracionPromedio <= 4000 ? "✅ BUENO" : "⚠️ MEJORAR";
   
   const tiempoTotalSegundos = Math.round((Date.now() - tiempoInicio) / 1000);
-  const throughput = tiempoTotalSegundos > 0 ? Math.round((cursosRestaurados / tiempoTotalSegundos) * 60) : 0; // cursos por minuto
+  const throughput = tiempoTotalSegundos > 0 ? Math.round((cursosRestauradosTotal / tiempoTotalSegundos) * 60) : 0; // cursos por minuto
 
   return {
     'stdout': `
@@ -287,7 +308,7 @@ export function handleSummary(data) {
   🔄 PR-02.5-02: ACCIÓN MASIVA - RESTAURAR INDIVIDUALMENTE CURSOS ELIMINADOS
 ═════════════════════════════════════════════════════════════════════════════════════
   📊 VALIDACIONES: ${stats.checksExitosos}/${stats.checksTotal} checks (${exitoTotal}%)
-  🔄 CURSOS RESTAURADOS: ${cursosRestaurados}/100 cursos - ${objetivoCantidad}
+  🔄 CURSOS RESTAURADOS: ${cursosRestauradosTotal}/100 cursos - ${objetivoCantidad}
   ⏱️ TIEMPO POR CURSO: ${stats.duracionPromedio}ms promedio (objetivo: ≤4s) ${objetivoTiempo}
   📈 TIEMPOS: ${stats.duracionMin}ms min | ${stats.duracionMax}ms max
   🌐 HTTP: ${stats.requestsTotal} requests DELETE realizados
@@ -299,9 +320,9 @@ export function handleSummary(data) {
   ✅ OBJETIVO GENERAL: ${objetivoGeneral}
   🎯 OBJETIVO DE RENDIMIENTO: ${stats.duracionPromedio <= 2000 ? "⚡ ÓPTIMO" : stats.duracionPromedio <= 4000 ? "✅ BUENO" : "⚠️ MEJORAR"}
   🎯 RESUMEN DEL OBJETIVO:
-  ✓ Restaurar 100 cursos uno por uno: ${cursosRestaurados >= 100 ? 'COMPLETADO' : `PARCIAL (${cursosRestaurados}/100)`}
+  ✓ Restaurar 100 cursos uno por uno: ${cursosRestauradosTotal >= 100 ? 'COMPLETADO' : `PARCIAL (${cursosRestauradosTotal}/100)`}
   ✓ Tiempo ≤ 4s por curso: ${objetivoTiempo}
-  ✓ Todos los cursos restaurados correctamente: ${cursosRestaurados === stats.iteraciones ? 'SÍ' : 'PARCIAL'}
+  ✓ Todos los cursos restaurados correctamente: ${cursosRestauradosTotal === stats.iteraciones ? 'SÍ' : 'PARCIAL'}
   ✓ Evaluar desempeño individual: ${rendimientoIndividual}
   ✓ Operaciones individuales eficientes: ${stats.duracionPromedio <= 4000 && exitoTotal >= 80 ? 'SÍ' : 'REVISAR'}
 ═════════════════════════════════════════════════════════════════════════════════════

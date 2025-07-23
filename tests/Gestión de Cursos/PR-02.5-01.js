@@ -6,6 +6,9 @@ export const options = {
   vus: 1,           // UN SOLO usuario para pruebas de visualización
   iterations: 5,    // Múltiples intentos para validar consistencia
   duration: '2m',   // Tiempo máximo para completar las pruebas
+   tags: {
+    modulo: 'Gestión de cursos',
+  },
 };
 
 // Información del administrador para acceder a los cursos

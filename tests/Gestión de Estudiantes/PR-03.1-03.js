@@ -16,6 +16,9 @@ export const options = {
     'total_delete_duration': ['p(95)<5000'], // Más realista: ≤ 5s para acción masiva
     'delete_student_duration': ['p(95)<2000'], // ≤ 2s por estudiante individual
   },
+   tags: {
+    modulo: 'Gestión de Estudiantes',
+  },
 };
 
 export default function () {

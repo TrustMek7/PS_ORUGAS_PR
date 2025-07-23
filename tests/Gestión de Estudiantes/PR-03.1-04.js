@@ -16,6 +16,9 @@ export const options = {
     'http_req_failed': ['rate<0.05'],
     'page_load_duration': ['p(95)<2000'], // Tiempo de carga ≤ 2s
   },
+   tags: {
+    modulo: 'Gestión de Estudiantes',
+  },
 };
 
 export default function () {

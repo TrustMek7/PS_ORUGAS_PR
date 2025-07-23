@@ -10,6 +10,9 @@ export const options = {
     http_req_duration: ['p(95)<2000'], // 95% de las requests deben completarse en <2s
     http_req_failed: ['rate<0.1'], // Menos del 10% de requests pueden fallar
   },
+  tags: {
+    modulo: 'Gestión de Instructores',
+  },
 };
 
 // Variables para el resumen final

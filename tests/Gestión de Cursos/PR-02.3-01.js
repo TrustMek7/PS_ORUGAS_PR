@@ -7,6 +7,9 @@ export const options = {
   vus: 1,
   iterations: 1,
   duration: '2m',
+   tags: {
+    modulo: 'Gestión de cursos',
+  },
 };
 
 // Métricas personalizadas

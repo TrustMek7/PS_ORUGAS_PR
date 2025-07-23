@@ -8,7 +8,10 @@ export const options = {
   thresholds: {
     'http_req_duration': ['p(95)<4000'], // Acción ≤ 4s por sesión
     'checks': ['rate>0.95']
-  }
+  },
+  tags: {
+    modulo: 'Sesiones de Feedback',
+  },
 };
 
 export default function () {

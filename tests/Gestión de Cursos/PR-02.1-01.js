@@ -6,6 +6,9 @@ export const options = {
   vus: 100,
   iterations: 100,
   duration: '5m',
+  tags: {
+    modulo: 'Gestión de cursos',
+  },
 };
 
 // Datos de ejemplo para crear cursos con institutos reales de Perú

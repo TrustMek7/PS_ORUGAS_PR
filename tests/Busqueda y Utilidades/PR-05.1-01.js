@@ -21,6 +21,9 @@ export const options = {
     'http_req_duration': ['avg<=2000'],
     'checks': ['rate>=0.95'],
   },
+  tags: {
+  modulo: 'Busqueda y Utilidades',
+},
 };
 
 export default function () {

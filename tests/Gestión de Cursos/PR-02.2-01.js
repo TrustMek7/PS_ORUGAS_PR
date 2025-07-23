@@ -1,12 +1,20 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
+import { Counter, Gauge } from 'k6/metrics';
 import { getHeadersWithCSRF } from '../login_token.js';
 
 export const options = {
   vus: 1,          // UN SOLO usuario (administrador)
   iterations: 100, // 100 cursos secuenciales
   duration: '10m', // Tiempo máximo permitido
+   tags: {
+    modulo: 'Gestión de cursos',
+  },
 };
+
+// Métricas k6 para tracking confiable
+const cursosCreadosMetric = new Counter('cursos_creados_exitosos');
+const tiempoCreacionMetric = new Gauge('tiempo_creacion_promedio_ms');
 
 // Datos de ejemplo para crear cursos variados
 const cursosEjemplo = [
@@ -76,7 +84,10 @@ export default function () {
   // Contabilizar cursos exitosos
   if (createRes.status === 200 || createRes.status === 201) {
     cursosCreados++;
+    cursosCreadosMetric.add(1); // Incrementar métrica k6
+    tiempoCreacionMetric.add(tiempoRequest); // Actualizar métrica de tiempo
     console.log(`✅ ADMIN: Curso ${iterationId + 1}/100 creado exitosamente (${tiempoRequest}ms) - ${cursoUnico.courseId}`);
+    console.log(`   🎯 Total creados acumulados: ${cursosCreados}`);
   } else {
     console.log(`❌ ADMIN: Error en curso ${iterationId + 1}/100 - Status ${createRes.status} (${tiempoRequest}ms)`);
     if (createRes.body) {

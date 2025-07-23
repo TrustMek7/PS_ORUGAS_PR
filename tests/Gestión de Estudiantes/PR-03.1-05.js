@@ -14,6 +14,9 @@ export const options = {
     'http_req_failed': ['rate<0.05'],
     'enroll_duration': ['p(95)<4000'],
   },
+   tags: {
+    modulo: 'Gestión de Estudiantes',
+  },
 };
 
 // Cargar datos de estudiantes desde archivo JSON

@@ -9,7 +9,10 @@ export const options = {
   thresholds: {
     'http_req_duration': ['p(95)<3000'], // Acción masiva ≤ 3s (95%)
     'checks': ['rate>0.95']
-  }
+  },
+  tags: {
+    modulo: 'Gestión de Instructores',
+  },
 };
 
 let pendingRequests = [];

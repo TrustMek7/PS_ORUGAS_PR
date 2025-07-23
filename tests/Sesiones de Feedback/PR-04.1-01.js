@@ -17,6 +17,9 @@ export const options = {
     'http_req_duration': ['p(95)<2000'],
     'session_count': ['avg>=0'],
   },
+  tags: {
+    modulo: 'Sesiones de Feedback',
+  },
 };
 
 export default function () {

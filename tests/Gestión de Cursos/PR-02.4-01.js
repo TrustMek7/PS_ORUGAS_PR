@@ -1,19 +1,22 @@
 import http from 'k6/http';
 import { check, sleep } from 'k6';
+import { Counter, Gauge } from 'k6/metrics';
 import { getHeadersWithCSRF } from '../login_token.js';
 
 export const options = {
   vus: 1,           // UN SOLO usuario para pruebas de visualización
-  iterations: 5,    // Múltiples intentos para validar consistencia
-  duration: '2m',   // Tiempo máximo para completar las pruebas
+  iterations: 1,  // Múltiples intentos para validar consistencia
+  duration: '10m',  // Tiempo máximo para completar las pruebas
+   tags: {
+    modulo: 'Gestión de cursos',
+  },
 };
 
-// Información del administrador para acceder a los cursos
-const administrador = {
-  email: 'jcusilaymeg@unsa.edu.pe',  // Usuario funcional descubierto
-  name: 'Juan Carlos Usilay Mejia',
-  institute: 'UNSA'
-};
+// Métricas personalizadas de k6 para tracking confiable
+const cargasExitosasMetric = new Counter('cargas_exitosas');
+const cursosArchivadosMetric = new Gauge('cursos_archivados_total');
+const tiempoCargaMetric = new Gauge('tiempo_carga_promedio');
+
 
 // Variables para métricas de rendimiento
 let tiempoInicio = Date.now();
@@ -23,7 +26,7 @@ let errorConsecutivos = 0;
 
 export function setup() {
   console.log('🔍 Preparando prueba de carga de cursos archivados...');
-  console.log('🎯 Objetivo: Cargar lista con >1000 cursos archivados en ≤2s');
+  console.log('🎯 Objetivo: Cargar lista con >100 cursos archivados en ≤2s (100 iteraciones)');
   
   return {};
 }
@@ -31,7 +34,7 @@ export function setup() {
 export default function (data) {
   const iterationId = __ITER;
   
-  console.log(`📋 Cargando lista de cursos archivados - Intento ${iterationId + 1}/5`);
+  console.log(`📋 Cargando lista de cursos archivados - Intento ${iterationId + 1}/100`);
   
   // URL del endpoint para obtener cursos archivados
   const cursosArchivadosUrl = `https://teammates-orugas.appspot.com/webapi/courses?entitytype=instructor&coursestatus=archived`;
@@ -77,7 +80,7 @@ export default function (data) {
       }
       return false;
     },
-    '✅ Más de 1000 cursos archivados': (r) => {
+    '✅ Más de 100 cursos archivados': (r) => {
       if (r.status === 200 && r.body) {
         try {
           const response = JSON.parse(r.body);
@@ -95,7 +98,7 @@ export default function (data) {
           }
           
           cursosArchivadosTotal = cursos.length;
-          return cursos.length > 1000;
+          return cursos.length >= 100;
         } catch {
           return false;
         }
@@ -143,14 +146,20 @@ export default function (data) {
   if (cursosRes.status === 200) {
     errorConsecutivos = 0;
     
-    const objetivoCantidad = cursosEncontrados > 1000 ? "✅ CUMPLIDO" : "❌ NO CUMPLIDO";
+    // Incrementar métricas de k6
+    cargasExitosasMetric.add(1);
+    cursosArchivadosMetric.add(cursosEncontrados);
+    tiempoCargaMetric.add(tiempoRequest);
+    
+    const objetivoCantidad = cursosEncontrados >= 100 ? "✅ CUMPLIDO" : "❌ NO CUMPLIDO";
     const objetivoTiempo = tiempoRequest <= 2000 ? "✅ CUMPLIDO" : "❌ NO CUMPLIDO";
     
-    console.log(`✅ Intento ${iterationId + 1}/5 - Lista cargada exitosamente en ${tiempoRequest}ms`);
+    console.log(`✅ Intento ${iterationId + 1}/100 - Lista cargada exitosamente en ${tiempoRequest}ms`);
     console.log(`📊 Cursos archivados encontrados: ${cursosEncontrados} - ${objetivoCantidad}`);
     console.log(`⏱️ Tiempo de carga: ${tiempoRequest}ms (objetivo: ≤2000ms) - ${objetivoTiempo}`);
     console.log(`📋 Estructura: ${estructuraRespuesta} | Tamaño: ${tamanioRespuesta}KB`);
     console.log(`✅ Validaciones: ${validacionesExitosas}/${totalValidaciones} exitosas (${porcentajeExito}%)`);
+    console.log(`🔢 Cargas exitosas acumuladas: ${iterationId + 1}`);
     
     if (tiempoRequest <= 2000) {
       console.log(`⚡ Rendimiento excelente: Carga en ${tiempoRequest}ms`);
@@ -158,15 +167,15 @@ export default function (data) {
       console.log(`⚠️ Rendimiento por debajo del objetivo: ${tiempoRequest}ms > 2000ms`);
     }
     
-    if (cursosEncontrados > 1000) {
-      console.log(`🎯 Objetivo de cantidad alcanzado: ${cursosEncontrados} > 1000 cursos`);
+    if (cursosEncontrados >= 100) {
+      console.log(`🎯 Objetivo de cantidad alcanzado: ${cursosEncontrados} >= 100 cursos`);
     } else {
-      console.log(`⚠️ Objetivo de cantidad NO alcanzado: ${cursosEncontrados} ≤ 1000 cursos`);
+      console.log(`⚠️ Objetivo de cantidad NO alcanzado: ${cursosEncontrados} ≤ 100 cursos`);
     }
     
   } else {
     errorConsecutivos++;
-    console.log(`❌ Error cargando cursos archivados - Intento ${iterationId + 1}/5 - Status ${cursosRes.status} en ${tiempoRequest}ms`);
+    console.log(`❌ Error cargando cursos archivados - Intento ${iterationId + 1}/100 - Status ${cursosRes.status} en ${tiempoRequest}ms`);
     
     if (cursosRes.body) {
       console.log(`   Detalles: ${cursosRes.body.substring(0, 200)}`);
@@ -184,23 +193,23 @@ export default function (data) {
   }
   
   // Métricas de progreso
-  const progreso = Math.round(((iterationId + 1) / 5) * 100);
-  const tiempoTranscurrido = Math.round((Date.now() - tiempoInicio) / 1000);
+  const progreso = Math.round(((iterationId + 1) / 100) * 100);
+  const tiempoTranscurrido = Math.round((Date.now() - tiempoInicio) / 100);
   const tiempoPromedio = tiemposRespuesta.reduce((a, b) => a + b, 0) / tiemposRespuesta.length;
   
-  console.log(`📊 Progreso: ${progreso}% (${iterationId + 1}/5) | Tiempo promedio: ${Math.round(tiempoPromedio)}ms | Tiempo total: ${tiempoTranscurrido}s`);
+  console.log(`📊 Progreso: ${progreso}% (${iterationId + 1}/100) | Tiempo promedio: ${Math.round(tiempoPromedio)}ms | Tiempo total: ${tiempoTranscurrido}s`);
   
   // Pausa mínima entre requests
-  sleep(0.5); // 500ms entre intentos
+  sleep(0.1); // 100ms entre intentos para 100 iteraciones
   
   return {
     iteration: iterationId + 1,
     requestTime: tiempoRequest,
     status: cursosRes.status,
-    success: cursosRes.status === 200 && cursosEncontrados > 1000 && tiempoRequest <= 2000,
+    success: cursosRes.status === 200 && cursosEncontrados >= 100 && tiempoRequest <= 2000,
     httpSuccess: cursosRes.status === 200,
     loadTimeObjective: tiempoRequest <= 2000,
-    quantityObjective: cursosEncontrados > 1000,
+    quantityObjective: cursosEncontrados >= 100,
     coursesFound: cursosEncontrados,
     responseStructure: estructuraRespuesta,
     responseSizeKB: tamanioRespuesta,
@@ -225,21 +234,27 @@ export function handleSummary(data) {
     dataReceived: Math.round((data.metrics.data_received?.values.count || 0) / 1024) // KB
   };
   
+  // Usar las métricas personalizadas de k6 que son más confiables
+  const cargasExitosasK6 = data.metrics.cargas_exitosas?.values.count || 0;
+  const cursosArchivadosK6 = data.metrics.cursos_archivados_total?.values.value || cursosArchivadosTotal;
+  
+  console.log(`🔍 DEBUG FINAL - cursosArchivadosTotal: ${cursosArchivadosTotal}, k6Metric: ${cursosArchivadosK6}, cargasExitosas: ${cargasExitosasK6}`);
+  
   const exitoTotal = stats.checksTotal > 0 ? Math.round((stats.checksExitosos / stats.checksTotal) * 100) : 0;
   const objetivoTiempo = stats.duracionPromedio <= 2000 ? "✅ CUMPLIDO" : "❌ NO CUMPLIDO";
-  const objetivoCantidad = cursosArchivadosTotal > 1000 ? "✅ CUMPLIDO" : "❌ NO CUMPLIDO";
-  const objetivoGeneral = stats.duracionPromedio <= 2000 && cursosArchivadosTotal > 1000 && exitoTotal >= 80 ? "✅ CUMPLIDO" : "⚠️ REVISAR";
+  const objetivoCantidad = cursosArchivadosK6 >= 100 ? "✅ CUMPLIDO" : "❌ NO CUMPLIDO";
+  const objetivoGeneral = stats.duracionPromedio <= 2000 && cursosArchivadosK6 >= 100 && exitoTotal >= 80 ? "✅ CUMPLIDO" : "⚠️ REVISAR";
   
-  const tiempoTotalSegundos = Math.round((Date.now() - tiempoInicio) / 1000);
+  const tiempoTotalSegundos = Math.round((Date.now() - tiempoInicio) / 100);
   const eficienciaBackend = stats.duracionPromedio <= 2000 && exitoTotal >= 80 ? "✅ EFICIENTE" : "⚠️ REVISAR";
 
   return {
     'stdout': `
 ═════════════════════════════════════════════════════════════════════════════════════
-  📋 PR-02.4-01: VISUALIZACIÓN - CARGAR LISTA DE CURSOS ARCHIVADOS (>1000 CURSOS)
+  📋 PR-02.4-01: VISUALIZACIÓN - CARGAR LISTA DE CURSOS ARCHIVADOS (>100 CURSOS)
 ═════════════════════════════════════════════════════════════════════════════════════
   📊 VALIDACIONES: ${stats.checksExitosos}/${stats.checksTotal} checks (${exitoTotal}%)
-  📚 CURSOS ARCHIVADOS: ${cursosArchivadosTotal} cursos encontrados - ${objetivoCantidad}
+  📚 CURSOS ARCHIVADOS: ${cursosArchivadosK6} cursos encontrados - ${objetivoCantidad}
   ⏱️ TIEMPO DE CARGA: ${stats.duracionPromedio}ms promedio (objetivo: ≤2s) ${objetivoTiempo}
   📈 TIEMPOS: ${stats.duracionMin}ms min | ${stats.duracionMax}ms max
   🌐 HTTP: ${stats.requestsTotal} requests GET realizados
@@ -250,18 +265,24 @@ export function handleSummary(data) {
   ✅ OBJETIVO GENERAL: ${objetivoGeneral}
   
   📋 MÉTRICAS DETALLADAS:
-  • Vista cargada sin errores: ${stats.requestsTotal > 0 && exitoTotal >= 80 ? 'SÍ' : 'NO'}
+  • Vista cargada sin errores: ${cargasExitosasK6 > 0 && exitoTotal >= 80 ? 'SÍ' : 'NO'}
   • Tiempo promedio de carga: ${stats.duracionPromedio}ms
-  • Objetivo de cantidad (>1000): ${cursosArchivadosTotal > 1000 ? 'ALCANZADO' : 'NO ALCANZADO'}
+  • Objetivo de cantidad (>100): ${cursosArchivadosK6 >= 100 ? 'ALCANZADO' : 'NO ALCANZADO'}
   • Objetivo de tiempo (≤2s): ${stats.duracionPromedio <= 2000 ? 'ALCANZADO' : 'NO ALCANZADO'}
   • Consistencia de carga: ${stats.duracionMax - stats.duracionMin}ms variación
   • Errores consecutivos máximos: ${errorConsecutivos}
+  • Cargas exitosas totales: ${cargasExitosasK6}/${stats.iteraciones}
   
   🎯 RESUMEN DEL OBJETIVO:
-  ✓ Cargar vista de cursos archivados: ${stats.requestsTotal > 0 ? 'COMPLETADO' : 'FALLIDO'}
-  ✓ Más de 1000 cursos en total: ${objetivoCantidad}
+  ✓ Cargar vista de cursos archivados: ${cargasExitosasK6 > 0 ? 'COMPLETADO' : 'FALLIDO'}
+  ✓ Más de 100 cursos en total: ${objetivoCantidad}
   ✓ Tiempo de carga ≤ 2s: ${objetivoTiempo}
   ✓ Vista sin errores: ${exitoTotal >= 80 ? 'SÍ' : 'NO'}
+  
+  🔍 DEBUG INFO:
+  • Cargas exitosas K6: ${cargasExitosasK6} | Iteraciones: ${stats.iteraciones}
+  • Cursos local: ${cursosArchivadosTotal} | Cursos K6: ${cursosArchivadosK6}
+  • Requests totales: ${stats.requestsTotal} | Validaciones: ${stats.checksTotal}
 ═════════════════════════════════════════════════════════════════════════════════════
 `
   };

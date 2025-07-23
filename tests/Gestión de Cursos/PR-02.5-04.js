@@ -14,6 +14,9 @@ export const options = {
     'restore_course_duration': ['p(95)<3000'], // Acción ≤ 3s según el PR
     'http_req_failed': ['rate<0.05'],
   },
+   tags: {
+    modulo: 'Gestión de cursos',
+  },
 };
 
 export default function () {

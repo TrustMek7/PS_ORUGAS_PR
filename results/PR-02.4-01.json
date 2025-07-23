@@ -1,190 +1,204 @@
 {
     "root_group": {
-        "checks": {
-            "✅ Respuesta HTTP exitosa": {
-                "id": "173ea9dba3d35dbb1fc0c49c9ac5985a",
-                "passes": 5,
-                "fails": 0,
-                "name": "✅ Respuesta HTTP exitosa",
-                "path": "::✅ Respuesta HTTP exitosa"
-            },
-            "✅ Carga rápida (≤2s)": {
-                "fails": 5,
-                "name": "✅ Carga rápida (≤2s)",
-                "path": "::✅ Carga rápida (≤2s)",
-                "id": "f5d89f2b0a3a5cea136b3a4f1c09a075",
-                "passes": 0
-            },
-            "✅ Sin errores del servidor": {
-                "name": "✅ Sin errores del servidor",
-                "path": "::✅ Sin errores del servidor",
-                "id": "ddb67ecb32b9a2cab99083ed2f1f5e0f",
-                "passes": 5,
-                "fails": 0
-            },
-            "✅ Autenticación válida": {
-                "name": "✅ Autenticación válida",
-                "path": "::✅ Autenticación válida",
-                "id": "d4a463161cb06b720b306a7ba6a63b9b",
-                "passes": 5,
-                "fails": 0
-            },
-            "✅ Endpoint disponible": {
-                "fails": 0,
-                "name": "✅ Endpoint disponible",
-                "path": "::✅ Endpoint disponible",
-                "id": "1297dfde0805f7393317b210b13a2c49",
-                "passes": 5
-            },
-            "✅ Operación permitida": {
-                "name": "✅ Operación permitida",
-                "path": "::✅ Operación permitida",
-                "id": "e4e7fc46b35019a928d4b8ba8c3d71d7",
-                "passes": 5,
-                "fails": 0
-            },
-            "✅ Respuesta con contenido": {
-                "fails": 0,
-                "name": "✅ Respuesta con contenido",
-                "path": "::✅ Respuesta con contenido",
-                "id": "01c9f4d0b9dca5ed1a6f0119d5108c73",
-                "passes": 5
-            },
-            "✅ Formato JSON válido": {
-                "id": "e2d285dcb5175f03b03b1f7254d2bf35",
-                "passes": 5,
-                "fails": 0,
-                "name": "✅ Formato JSON válido",
-                "path": "::✅ Formato JSON válido"
-            },
-            "✅ Lista de cursos presente": {
-                "name": "✅ Lista de cursos presente",
-                "path": "::✅ Lista de cursos presente",
-                "id": "1d2677525fc8abc32bd6dc1e34aec5ac",
-                "passes": 5,
-                "fails": 0
-            },
-            "✅ Más de 1000 cursos archivados": {
-                "passes": 0,
-                "fails": 5,
-                "name": "✅ Más de 1000 cursos archivados",
-                "path": "::✅ Más de 1000 cursos archivados",
-                "id": "2d8368067f3086451482c4210f89f5e9"
-            }
-        },
-        "name": "",
         "path": "",
         "id": "d41d8cd98f00b204e9800998ecf8427e",
-        "groups": {}
+        "groups": {},
+        "checks": {
+                "✅ Respuesta HTTP exitosa": {
+                    "fails": 0,
+                    "name": "✅ Respuesta HTTP exitosa",
+                    "path": "::✅ Respuesta HTTP exitosa",
+                    "id": "173ea9dba3d35dbb1fc0c49c9ac5985a",
+                    "passes": 1
+                },
+                "✅ Carga rápida (≤2s)": {
+                    "passes": 0,
+                    "fails": 1,
+                    "name": "✅ Carga rápida (≤2s)",
+                    "path": "::✅ Carga rápida (≤2s)",
+                    "id": "f5d89f2b0a3a5cea136b3a4f1c09a075"
+                },
+                "✅ Sin errores del servidor": {
+                    "name": "✅ Sin errores del servidor",
+                    "path": "::✅ Sin errores del servidor",
+                    "id": "ddb67ecb32b9a2cab99083ed2f1f5e0f",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ Autenticación válida": {
+                    "id": "d4a463161cb06b720b306a7ba6a63b9b",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ Autenticación válida",
+                    "path": "::✅ Autenticación válida"
+                },
+                "✅ Endpoint disponible": {
+                    "id": "1297dfde0805f7393317b210b13a2c49",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ Endpoint disponible",
+                    "path": "::✅ Endpoint disponible"
+                },
+                "✅ Operación permitida": {
+                    "name": "✅ Operación permitida",
+                    "path": "::✅ Operación permitida",
+                    "id": "e4e7fc46b35019a928d4b8ba8c3d71d7",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ Respuesta con contenido": {
+                    "name": "✅ Respuesta con contenido",
+                    "path": "::✅ Respuesta con contenido",
+                    "id": "01c9f4d0b9dca5ed1a6f0119d5108c73",
+                    "passes": 1,
+                    "fails": 0
+                },
+                "✅ Formato JSON válido": {
+                    "id": "e2d285dcb5175f03b03b1f7254d2bf35",
+                    "passes": 1,
+                    "fails": 0,
+                    "name": "✅ Formato JSON válido",
+                    "path": "::✅ Formato JSON válido"
+                },
+                "✅ Lista de cursos presente": {
+                    "fails": 0,
+                    "name": "✅ Lista de cursos presente",
+                    "path": "::✅ Lista de cursos presente",
+                    "id": "1d2677525fc8abc32bd6dc1e34aec5ac",
+                    "passes": 1
+                },
+                "✅ Más de 100 cursos archivados": {
+                    "fails": 0,
+                    "name": "✅ Más de 100 cursos archivados",
+                    "path": "::✅ Más de 100 cursos archivados",
+                    "id": "f2283ddbe7cd7148b71d73a0a623889f",
+                    "passes": 1
+                }
+            },
+        "name": ""
     },
     "metrics": {
-        "http_req_sending": {
-            "min": 0,
-            "med": 0,
-            "max": 0.564,
-            "p(90)": 0.54408,
-            "p(95)": 0.55404,
-            "avg": 0.21563999999999997
-        },
-        "http_req_waiting": {
-            "avg": 4059.2989400000006,
-            "min": 2681.5589,
-            "med": 3785.6242,
-            "max": 5421.9438,
-            "p(90)": 5174.08776,
-            "p(95)": 5298.01578
-        },
-        "checks": {
-            "passes": 40,
-            "fails": 10,
-            "value": 0.8
-        },
-        "http_req_duration{expected_response:true}": {
-            "p(90)": 5217.9949799999995,
-            "p(95)": 5349.807639999999,
-            "avg": 4103.61368,
-            "min": 2714.4478,
-            "med": 3828.7105,
-            "max": 5481.6203
-        },
-        "data_sent": {
-            "count": 2909,
-            "rate": 124.36079662046436
-        },
-        "vus": {
-            "min": 1,
-            "max": 1,
-            "value": 1
-        },
-        "http_req_receiving": {
-            "med": 43.0863,
-            "max": 65.1047,
-            "p(90)": 62.72774,
-            "p(95)": 63.916219999999996,
-            "avg": 44.0991,
-            "min": 20.2533
-        },
         "http_reqs": {
-            "count": 5,
-            "rate": 0.21375179893513985
-        },
-        "iteration_duration": {
-            "avg": 4677.99384,
-            "min": 3265.8925,
-            "med": 4348.5704,
-            "max": 6166.3605,
-            "p(90)": 5857.28586,
-            "p(95)": 6011.823179999999
-        },
-        "http_req_blocked": {
-            "p(95)": 135.36744,
-            "avg": 33.841860000000004,
-            "min": 0,
-            "med": 0,
-            "max": 169.2093,
-            "p(90)": 101.52558000000002
-        },
-        "iterations": {
-            "count": 5,
-            "rate": 0.21375179893513985
-        },
-        "http_req_connecting": {
-            "avg": 9.524420000000001,
-            "min": 0,
-            "med": 0,
-            "max": 47.6221,
-            "p(90)": 28.573260000000005,
-            "p(95)": 38.09768
-        },
-        "http_req_tls_handshaking": {
-            "avg": 24.10434,
-            "min": 0,
-            "med": 0,
-            "max": 120.5217,
-            "p(90)": 72.31302000000001,
-            "p(95)": 96.41735999999997
-        },
-        "data_received": {
-            "count": 239057,
-            "rate": 10219.772759607546
+            "rate": 0.41065299575466935,
+            "count": 1
         },
         "http_req_duration": {
-            "med": 3828.7105,
-            "max": 5481.6203,
-            "p(90)": 5217.9949799999995,
-            "p(95)": 5349.807639999999,
-            "avg": 4103.61368,
-            "min": 2714.4478
+            "p(90)": 2095.7065,
+            "p(95)": 2095.7065,
+            "avg": 2095.7065,
+            "min": 2095.7065,
+            "med": 2095.7065,
+            "max": 2095.7065
         },
-        "http_req_failed": {
-            "passes": 0,
-            "fails": 5,
-            "value": 0
+        "cursos_archivados_total": {
+            "value": 100,
+            "min": 100,
+            "max": 100
+        },
+        "iteration_duration": {
+            "min": 2434.0832,
+            "med": 2434.0832,
+            "max": 2434.0832,
+            "p(90)": 2434.0832,
+            "p(95)": 2434.0832,
+            "avg": 2434.0832
+        },
+        "http_req_sending": {
+            "min": 0.0343,
+            "med": 0.0343,
+            "max": 0.0343,
+            "p(90)": 0.0343,
+            "p(95)": 0.0343,
+            "avg": 0.0343
+        },
+        "http_req_receiving": {
+            "p(95)": 58.506,
+            "avg": 58.506,
+            "min": 58.506,
+            "med": 58.506,
+            "max": 58.506,
+            "p(90)": 58.506
+        },
+        "http_req_duration{expected_response:true}": {
+            "avg": 2095.7065,
+            "min": 2095.7065,
+            "med": 2095.7065,
+            "max": 2095.7065,
+            "p(90)": 2095.7065,
+            "p(95)": 2095.7065
+        },
+        "http_req_tls_handshaking": {
+            "med": 83.4925,
+            "max": 83.4925,
+            "p(90)": 83.4925,
+            "p(95)": 83.4925,
+            "avg": 83.4925,
+            "min": 83.4925
+        },
+        "data_received": {
+            "count": 52479,
+            "rate": 21550.65856420929
+        },
+        "http_req_waiting": {
+            "avg": 2037.1662,
+            "min": 2037.1662,
+            "med": 2037.1662,
+            "max": 2037.1662,
+            "p(90)": 2037.1662,
+            "p(95)": 2037.1662
+        },
+        "cargas_exitosas": {
+            "count": 1,
+            "rate": 0.41065299575466935
+        },
+        "http_req_blocked": {
+            "avg": 190.4384,
+            "min": 190.4384,
+            "med": 190.4384,
+            "max": 190.4384,
+            "p(90)": 190.4384,
+            "p(95)": 190.4384
         },
         "vus_max": {
             "value": 1,
             "min": 1,
             "max": 1
+        },
+        "iterations": {
+            "count": 1,
+            "rate": 0.41065299575466935
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "http_req_connecting": {
+            "max": 47.5885,
+            "p(90)": 47.5885,
+            "p(95)": 47.5885,
+            "avg": 47.5885,
+            "min": 47.5885,
+            "med": 47.5885
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 1,
+            "value": 0
+        },
+        "checks": {
+            "passes": 9,
+            "fails": 1,
+            "value": 0.9
+        },
+        "tiempo_carga_promedio": {
+            "value": 2286,
+            "min": 2286,
+            "max": 2286
+        },
+        "data_sent": {
+            "count": 1292,
+            "rate": 530.5636705150328
         }
     },
     "setup_data": {}
