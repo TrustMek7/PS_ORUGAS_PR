@@ -39,7 +39,7 @@ export function getHeaders() {
 export function getHeadersWithCSRF() {
   return {
     'Content-Type': 'application/json',
-    'X-CSRF-Token': TOKENS.csrfToken, // ✅ corrección aquí
+    'X-CSRF-Token': TOKENS.csrfToken, 
     'Cookie': getCookies(),
   };
 }
